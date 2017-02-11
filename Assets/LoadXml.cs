@@ -26,7 +26,7 @@ public class LoadXml : MonoBehaviour // the Class
 	public void GetLevel()
 	{
 		XmlDocument xmlDoc = new XmlDocument(); // xmlDoc is the new xml document.
-		xmlDoc.LoadXml(config.xml); // load the file.
+		xmlDoc.LoadXml("config.xml"); // load the file.
 		XmlNodeList levelsList = xmlDoc.GetElementsByTagName("level"); // array of the level nodes.
 
 		foreach (XmlNode levelInfo in levelsList)
