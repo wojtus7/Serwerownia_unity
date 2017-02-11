@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OtwieranieSzafy : MonoBehaviour
 {
+    int numerSzafy = 1;
 
     bool hasCollided = false;
     string labelText = "";
@@ -22,12 +23,22 @@ public class OtwieranieSzafy : MonoBehaviour
         {
             hasCollided = true;
             labelText = "Wciśnij E aby zajrzeć do szafy.";
+            var pa = c.gameObject.GetComponent<PlayerActions>();
+            if (pa != null)
+            {
+                pa.InCabinetProximity = numerSzafy;
+            }
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider c)
     {
         hasCollided = false;
+        var pa = c.gameObject.GetComponent<PlayerActions>();
+        if (pa != null)
+        {
+            pa.InCabinetProximity = 0;
+        }
     }
 
 	// Use this for initialization
