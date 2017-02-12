@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OtwieranieSzafy : MonoBehaviour
+public class CabinetProximityTrigger : MonoBehaviour
 {
-    int numerSzafy = 1;
+    public int numerSzafy = 1;
 
     bool hasCollided = false;
     string labelText = "";

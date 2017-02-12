@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerActions : MonoBehaviour {
 
@@ -8,10 +9,13 @@ public class PlayerActions : MonoBehaviour {
     bool isInCabinet = false;
     Camera tempCamera;
 
+    FirstPersonController normalController;
+    CabinetController cabinetController;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+        normalController = this.gameObject.GetComponent<FirstPersonController>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -32,6 +36,8 @@ public class PlayerActions : MonoBehaviour {
                         tempCamera = cabinetCamera;
                         tempCamera.enabled = true;
                         isInCabinet = true;
+                        cabinetController = cabinet.GetComponentInChildren<CabinetController>();
+                        SwitchControl(cabinetController, normalController);
                     }
                 }
                 else
@@ -39,10 +45,17 @@ public class PlayerActions : MonoBehaviour {
                     tempCamera.enabled = false;
                     this.gameObject.GetComponentInChildren<Camera>().enabled = true;
                     isInCabinet = false;
+                    SwitchControl(normalController, cabinetController);
                 }
 
             }
         }
 
 	}
+
+    private void SwitchControl(MonoBehaviour inputToEnable, MonoBehaviour inputToDisable)
+    {
+        inputToDisable.enabled = false;
+        inputToEnable.enabled = true;
+    }
 }
