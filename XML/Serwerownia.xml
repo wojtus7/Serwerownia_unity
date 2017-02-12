@@ -1,0 +1,11 @@
+<inventory>
+
+<cabinet name="szafa_1">
+
+<item type="2" size="4">typ2</item>
+<item type="A" size="4">typ3</item>
+<item type="A" size="4">typ1</item>
+
+</cabinet>
+
+</inventory>
