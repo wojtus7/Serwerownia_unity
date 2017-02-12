@@ -59,6 +59,17 @@ ModelImporter:
     100102: podloga
     100104: klima2_001
     100106: UPS2_001
+    100108: podloga_001
+    100110: ActinaSolar
+    100112: AT_9000_28SP
+    100114: blade1
+    100116: blade2
+    100118: cs1708i
+    100120: laptop
+    100122: poweredge1855
+    100124: SPHEREON4500
+    100126: typ3_001
+    100128: typ4_001
     400000: AS400
     400002: bezpiecznik1_1
     400004: bezpiecznik1_2
@@ -113,6 +124,17 @@ ModelImporter:
     400102: podloga
     400104: klima2_001
     400106: UPS2_001
+    400108: podloga_001
+    400110: ActinaSolar
+    400112: AT_9000_28SP
+    400114: blade1
+    400116: blade2
+    400118: cs1708i
+    400120: laptop
+    400122: poweredge1855
+    400124: SPHEREON4500
+    400126: typ3_001
+    400128: typ4_001
     2300000: AS400
     2300002: bezpiecznik1_1
     2300004: bezpiecznik1_2
@@ -166,6 +188,17 @@ ModelImporter:
     2300100: podloga
     2300102: klima2_001
     2300104: UPS2_001
+    2300106: podloga_001
+    2300108: ActinaSolar
+    2300110: AT_9000_28SP
+    2300112: blade1
+    2300114: blade2
+    2300116: cs1708i
+    2300118: laptop
+    2300120: poweredge1855
+    2300122: SPHEREON4500
+    2300124: typ3_001
+    2300126: typ4_001
     3300000: AS400
     3300002: bezpiecznik1_1
     3300004: bezpiecznik1_2
@@ -219,6 +252,17 @@ ModelImporter:
     3300100: podloga
     3300102: klima2_001
     3300104: UPS2_001
+    3300106: podloga_001
+    3300108: ActinaSolar
+    3300110: AT_9000_28SP
+    3300112: blade1
+    3300114: blade2
+    3300116: cs1708i
+    3300118: laptop
+    3300120: poweredge1855
+    3300122: SPHEREON4500
+    3300124: typ3_001
+    3300126: typ4_001
     4300000: Cube_001
     4300002: Cube
     4300004: lampa3_001
@@ -272,6 +316,17 @@ ModelImporter:
     4300100: podloga
     4300102: UPS2_001
     4300104: klima2_001
+    4300106: podloga_001
+    4300108: blade2
+    4300110: blade1
+    4300112: poweredge1855
+    4300114: typ4_001
+    4300116: AT_9000_28SP
+    4300118: SPHEREON4500
+    4300120: typ3_001
+    4300122: laptop
+    4300124: cs1708i
+    4300126: ActinaSolar
     7400000: Default Take
     9500000: //RootNode
   materials:
