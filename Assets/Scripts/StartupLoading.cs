@@ -26,52 +26,57 @@ public class StartupLoading : MonoBehaviour {
         {
             var items = cabinet.Elements();
             var cabinetObject = GameObject.Find(cabinet.Attribute("name").Value);
-            float heightOffset = 0.0f;
 
-            foreach (var item in items)
+            if (cabinetObject != null)
             {
-                // check for custom offset
-                if(item.Attribute("spacing") != null)
+                float heightOffset = 0.0f;
+
+                foreach (var item in items)
                 {
-                    float spacingOffset = float.Parse(item.Attribute("spacing").Value);
-                    heightOffset += spacingOffset;
-                }
-
-                prefabName = item.Value;
-                var prefabType = Resources.Load(prefabName);
-
-                var newPosition = startingOffset;
-
-                if (prefabType != null)
-                {
-                    newItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
-
-                    // offset center of new object by half of its height + previous offset from other objects
-                    float height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
-                    heightOffset += height;
-
-                    // apply offset
-                    newPosition.z += heightOffset;
-                    newItem.transform.localPosition = newPosition;
-
-                    // apply custom or default rotation
-                    if (item.Element("rotation") != null)
+                    // check for custom offset
+                    if (item.Attribute("spacing") != null)
                     {
-                        Vector3 r;
-                        r.x = float.Parse(item.Element("rotation").Attribute("x").Value);
-                        r.y = float.Parse(item.Element("rotation").Attribute("y").Value);
-                        r.z = float.Parse(item.Element("rotation").Attribute("z").Value);
-                        newItem.transform.Rotate(r);
+                        float spacingOffset = float.Parse(item.Attribute("spacing").Value);
+                        heightOffset += spacingOffset;
                     }
-                    else
-                        newItem.transform.Rotate(90, 0, 0);
 
-                    // add second half of object's height and global item spacing for offsetting next objects
-                    heightOffset += height + verticalSpacing;
+                    prefabName = item.Value;
+                    var prefabType = Resources.Load(prefabName);
+
+                    var newPosition = startingOffset;
+
+                    if (prefabType != null)
+                    {
+                        newItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
+
+                        // offset center of new object by half of its height + previous offset from other objects
+                        float height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
+                        heightOffset += height;
+
+                        // apply offset
+                        newPosition.z += heightOffset;
+                        newItem.transform.localPosition = newPosition;
+
+                        // apply custom or default rotation
+                        if (item.Element("rotation") != null)
+                        {
+                            Vector3 r;
+                            r.x = float.Parse(item.Element("rotation").Attribute("x").Value);
+                            r.y = float.Parse(item.Element("rotation").Attribute("y").Value);
+                            r.z = float.Parse(item.Element("rotation").Attribute("z").Value);
+                            newItem.transform.Rotate(r);
+                        }
+                        else
+                            newItem.transform.Rotate(90, 0, 0);
+
+                        // add second half of object's height and global item spacing for offsetting next objects
+                        heightOffset += height + verticalSpacing;
+
+                    }
 
                 }
-
             }
+ 
         }
     }
 
