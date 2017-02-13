@@ -7,23 +7,14 @@ using UnityEngine;
 
 public class StartupLoading : MonoBehaviour {
 
-    string prefabName = "brak";
-    GameObject newItem;
     public Vector3 startingOffset = new Vector3 { x = -4.062f, y = -0.9f, z = 2.512f };
     public float verticalSpacing = 0.05f;
 
-    struct Item
-    {
-        string Name;
-    }
-
-    void OnGUI()
-    {
-        //GUI.Box(new Rect(140, Screen.height - 50, Screen.width - 300, 120), prefabName);
-    }
-
     // Use this for initialization
     void Start () {
+
+        string prefabName = "brak";
+        GameObject newItem;
 
         XDocument xdoc = XDocument.Load("XML/Serwerownia.xml");
 
@@ -39,6 +30,12 @@ public class StartupLoading : MonoBehaviour {
 
             foreach (var item in items)
             {
+                if(item.Attribute("spacing") != null)
+                {
+                    float spacingOffset = float.Parse(item.Attribute("spacing").Value);
+                    heightOffset += spacingOffset;
+                }
+
                 prefabName = item.Value;
                 var prefabType = Resources.Load(prefabName);
 
@@ -63,7 +60,7 @@ public class StartupLoading : MonoBehaviour {
 
                     newItem.transform.position = newPosition;
 
-                    if(item.Element("rotation") != null)
+                    if (item.Element("rotation") != null)
                     {
                         Vector3 r;
                         r.x = float.Parse(item.Element("rotation").Attribute("x").Value);
@@ -77,6 +74,7 @@ public class StartupLoading : MonoBehaviour {
                     heightOffset += height + verticalSpacing;
 
                 }
+
             }
         }
     }

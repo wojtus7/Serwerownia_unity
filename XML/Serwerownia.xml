@@ -4,10 +4,11 @@
 
 <item>AS400<rotation x="90" y="180" z="0" /></item>
 <item>blade2</item>
+<item spacing="0.4"/>
 <item>AT_9000_28SP</item>
-<item>cs1708i</item>
-<item>poweredge1855<rotation x="90" y="180" z="0" /></item>
-<item>ActinaSolar</item>
+<item spacing="0.4">cs1708i</item>
+<!-- <item>poweredge1855<rotation x="90" y="180" z="0" /></item>
+<item>ActinaSolar</item> -->
 
 </cabinet>
 
