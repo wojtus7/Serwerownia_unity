@@ -4,11 +4,22 @@
 
 <item>blade1</item>
 <item>blade1</item>
-<item>poweredge1855<rotation x="90" y="180" z="0" /></item>
-<item spacing="-0.4">SPHEREON4500</item>
+<item>poweredge1855</item>
+<item>SPHEREON4500</item>
 <item>SPHEREON4500</item>
 <item>cs1708i</item>
 <item>ActinaSolar</item>
+
+</cabinet>
+
+<cabinet name="szafa_2">
+
+<item>PS3</item>
+<item>AT9000-24</item>
+<item>blade2</item>
+<item>blades3</item>
+<item>RS815</item>
+<item>hp2530-24</item>
 
 </cabinet>
 

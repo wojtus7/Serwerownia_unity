@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class StartupLoading : MonoBehaviour {
 
-    public Vector3 startingOffset = new Vector3 { x = -4.062f, y = -0.9f, z = 2.512f };
+    public Vector3 startingOffset = new Vector3 { x = -1.92f, y = 1.388f, z = 0.5f };
     public float verticalSpacing = 0.02f;
 
     // Use this for initialization
@@ -47,12 +47,12 @@ public class StartupLoading : MonoBehaviour {
                     newItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
 
                     // offset center of new object by half of its height + previous offset from other objects
-                    float height = newItem.GetComponent<Renderer>().bounds.extents.z;
+                    float height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
                     heightOffset += height;
 
                     // apply offset
-                    newPosition.y += heightOffset;
-                    newItem.transform.position = newPosition;
+                    newPosition.z += heightOffset;
+                    newItem.transform.localPosition = newPosition;
 
                     // apply custom or default rotation
                     if (item.Element("rotation") != null)
