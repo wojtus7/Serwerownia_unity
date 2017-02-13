@@ -70,6 +70,17 @@ ModelImporter:
     100124: SPHEREON4500
     100126: typ3_001
     100128: typ4_001
+    100130: AT9000-24
+    100132: blades3
+    100134: blades3_001
+    100136: hp2530
+    100138: PS3
+    100140: RMS
+    100142: RS815
+    100144: strikeX
+    100146: typ2_001
+    100148: typ2_002
+    100150: WYSE
     400000: AS400
     400002: bezpiecznik1_1
     400004: bezpiecznik1_2
@@ -135,6 +146,17 @@ ModelImporter:
     400124: SPHEREON4500
     400126: typ3_001
     400128: typ4_001
+    400130: AT9000-24
+    400132: blades3
+    400134: blades3_001
+    400136: hp2530
+    400138: PS3
+    400140: RMS
+    400142: RS815
+    400144: strikeX
+    400146: typ2_001
+    400148: typ2_002
+    400150: WYSE
     2300000: AS400
     2300002: bezpiecznik1_1
     2300004: bezpiecznik1_2
@@ -199,6 +221,17 @@ ModelImporter:
     2300122: SPHEREON4500
     2300124: typ3_001
     2300126: typ4_001
+    2300128: AT9000-24
+    2300130: blades3
+    2300132: blades3_001
+    2300134: hp2530
+    2300136: PS3
+    2300138: RMS
+    2300140: RS815
+    2300142: strikeX
+    2300144: typ2_001
+    2300146: typ2_002
+    2300148: WYSE
     3300000: AS400
     3300002: bezpiecznik1_1
     3300004: bezpiecznik1_2
@@ -263,6 +296,17 @@ ModelImporter:
     3300122: SPHEREON4500
     3300124: typ3_001
     3300126: typ4_001
+    3300128: AT9000-24
+    3300130: blades3
+    3300132: blades3_001
+    3300134: hp2530
+    3300136: PS3
+    3300138: RMS
+    3300140: RS815
+    3300142: strikeX
+    3300144: typ2_001
+    3300146: typ2_002
+    3300148: WYSE
     4300000: Cube_001
     4300002: Cube
     4300004: lampa3_001
@@ -327,6 +371,17 @@ ModelImporter:
     4300122: laptop
     4300124: cs1708i
     4300126: ActinaSolar
+    4300128: typ2_002
+    4300130: PS3
+    4300132: strikeX
+    4300134: AT9000-24
+    4300136: blades3_001
+    4300138: blades3
+    4300140: RS815
+    4300142: typ2_001
+    4300144: RMS
+    4300146: WYSE
+    4300148: hp2530
     7400000: Default Take
     9500000: //RootNode
   materials:
