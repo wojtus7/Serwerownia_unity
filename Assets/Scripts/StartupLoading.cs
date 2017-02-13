@@ -8,7 +8,7 @@ using UnityEngine;
 public class StartupLoading : MonoBehaviour {
 
     public Vector3 startingOffset = new Vector3 { x = -4.062f, y = -0.9f, z = 2.512f };
-    public float verticalSpacing = 0.05f;
+    public float verticalSpacing = 0.02f;
 
     // Use this for initialization
     void Start () {
@@ -30,6 +30,7 @@ public class StartupLoading : MonoBehaviour {
 
             foreach (var item in items)
             {
+                // check for custom offset
                 if(item.Attribute("spacing") != null)
                 {
                     float spacingOffset = float.Parse(item.Attribute("spacing").Value);
@@ -43,23 +44,17 @@ public class StartupLoading : MonoBehaviour {
 
                 if (prefabType != null)
                 {
-                    //newPosition = cabinetObject.transform.position;
-                    //newPosition.x -= cabinetObject.transform.lossyScale.x;
-                    //newPosition.z -= cabinetObject.transform.lossyScale.z;
-
                     newItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
 
+                    // offset center of new object by half of its height + previous offset from other objects
                     float height = newItem.GetComponent<Renderer>().bounds.extents.z;
-                    heightOffset += height; //* 2.0f;
-                    var debugext = newItem.GetComponent<Renderer>().bounds.extents;
-                    Debug.Log(String.Format("{0} > Extens x: {1}; Extens y: {2}; Extens z: {3}"
-                        , prefabName, debugext.x, debugext.y, debugext.z));
+                    heightOffset += height;
 
-                    //newPosition.y -= cabinetObject.GetComponent<Renderer>().bounds.center.y;
+                    // apply offset
                     newPosition.y += heightOffset;
-
                     newItem.transform.position = newPosition;
 
+                    // apply custom or default rotation
                     if (item.Element("rotation") != null)
                     {
                         Vector3 r;
@@ -71,6 +66,7 @@ public class StartupLoading : MonoBehaviour {
                     else
                         newItem.transform.Rotate(90, 0, 0);
 
+                    // add second half of object's height and global item spacing for offsetting next objects
                     heightOffset += height + verticalSpacing;
 
                 }

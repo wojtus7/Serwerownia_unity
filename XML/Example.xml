@@ -4,11 +4,11 @@
 
 <item>blade1</item>
 <item>blade1</item>
+<!-- <item>AS400<rotation x="90" y="180" z="0" /></item> -->
+<item>AT_9000_28SP</item>
+<item spacing="0.4">cs1708i</item>
 <item>poweredge1855<rotation x="90" y="180" z="0" /></item>
-<item spacing="-0.4">SPHEREON4500</item>
-<item>SPHEREON4500</item>
-<item>cs1708i</item>
-<item>ActinaSolar</item>
+<item spacing="-0.5">ActinaSolar</item>
 
 </cabinet>
 
