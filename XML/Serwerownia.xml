@@ -1,0 +1,15 @@
+<inventory>
+
+<cabinet name="szafa_1">
+
+<item>blade1</item>
+<item>blade1</item>
+<item>poweredge1855<rotation x="90" y="180" z="0" /></item>
+<item spacing="-0.4">SPHEREON4500</item>
+<item>SPHEREON4500</item>
+<item>cs1708i</item>
+<item>ActinaSolar</item>
+
+</cabinet>
+
+</inventory>
