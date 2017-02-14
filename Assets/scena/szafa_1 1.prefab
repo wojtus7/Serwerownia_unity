@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 4682809493143554}
   - component: {fileID: 33064792110856616}
   - component: {fileID: 23603928702746456}
+  - component: {fileID: 65344040746976006}
   m_Layer: 0
   m_Name: szafa_1 1
   m_TagString: Untagged
@@ -289,3 +290,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1064941889993664}
   m_Mesh: {fileID: 4300034, guid: d211c18b53069064684293882d6bd06a, type: 3}
+--- !u!65 &65344040746976006
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770131207979828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.827689, y: 3.0000246, z: 6.3467727}
+  m_Center: {x: -1.8633255, y: 1.3574613, z: 3.158641}
