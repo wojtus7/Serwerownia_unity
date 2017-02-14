@@ -9,12 +9,12 @@ public class PlayerActions : MonoBehaviour {
     bool isInCabinet = false;
     Camera tempCamera;
 
-    //FirstPersonController normalController;
+    PlayerController normalController;
     CabinetViewController cabinetController;
 
 	// Use this for initialization
 	void Start () {
-        //normalController = this.gameObject.GetComponent<FirstPersonController>();
+        normalController = this.GetComponent<PlayerController>();
     }
 	
 	// Update is called once per frame
@@ -38,7 +38,7 @@ public class PlayerActions : MonoBehaviour {
                         isInCabinet = true;
                         cabinetController = cabinet.GetComponentInChildren<CabinetViewController>();
                         this.GetComponent<PlayerController>().enabled = false;
-                        //SwitchControl(cabinetController, normalController);
+                        SwitchControl(cabinetController, normalController);
                     }
                 }
                 else
@@ -48,7 +48,7 @@ public class PlayerActions : MonoBehaviour {
                     this.GetComponentInChildren<Camera>().enabled = true;
                     isInCabinet = false;
                     this.GetComponent<PlayerController>().enabled = true;
-                    //SwitchControl(normalController, cabinetController);
+                    SwitchControl(normalController, cabinetController);
                 }
 
             }

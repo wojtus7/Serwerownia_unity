@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,7 +29,15 @@ public class CabinetProximityTrigger : MonoBehaviour
             {
                 pa.InCabinetProximity = numerSzafy;
             }
+            OpenDoor();
         }
+    }
+
+    private void OpenDoor()
+    {
+        var door = transform.Find("szafa_1_Drzwi");
+
+        door.transform.Rotate(0f, 0f, -90f);
     }
 
     void OnTriggerExit(Collider c)
@@ -39,10 +48,18 @@ public class CabinetProximityTrigger : MonoBehaviour
         {
             pa.InCabinetProximity = 0;
         }
+        CloseDoor();
     }
 
-	// Use this for initialization
-	void Start () {
+    private void CloseDoor()
+    {
+        var door = transform.Find("szafa_1_Drzwi");
+
+        door.transform.Rotate(0f, 0f, 90f);
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
