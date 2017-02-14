@@ -68,12 +68,12 @@ namespace CnControls
             // If the "Both" option was selected, non of these two checks will yield "true"
             if ((ControlMoveAxis & ControlMovementDirection.Horizontal) != 0)
             {
-				Debug.Log ("horizontal");
+				//Debug.Log ("horizontal");
                 _horizintalAxis.Value = eventData.delta.x;
             }
             if ((ControlMoveAxis & ControlMovementDirection.Vertical) != 0)
             {
-				Debug.Log ("vertical");
+				//Debug.Log ("vertical");
                 _verticalAxis.Value = eventData.delta.y;
             }
 
