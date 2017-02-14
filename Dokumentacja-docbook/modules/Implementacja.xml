@@ -2,16 +2,28 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
-  <title>Implementacja</title>
-
-  <section>
-    <title>Inwentaryzacja i dokumentacja fotograficzna serwerowni</title>
-
-    <para>lala</para>
-  </section>
-  <section>
-    <title>Utworzenie trójwymiarowego modelu serwerowni</title>
-
-    <para>lala</para>
-  </section>
+  <title>Wdrozenie wizualizacji</title>
+<para>Scenariusz wdrożenia projektu wizualizacji serwerowni na serwery Politechniki Krakowskiej</para>
+<title>Cel Wdrożenia</title>
+<para>
+Celem wdrożenia ninijeszego projektu jest umożliwienie wizualizacji wnętrza serwerowni przy użyciu ekranu dotykowego.
+</para>
+<section>
+<orderedlist>
+		<listitem>Implementacja wizualizacji na serwery PK będzie odbywała się na serwerze WWW Wydziału Mechanicznego PK
+			<itemizedlist>
+				<listitem>Wybór kierownika wdrożenia</listitem>
+				<listitem>Sporządzenie dokumentacji odbiorczej wdrożenia</listitem>
+				<listitem>Przeniesienie wymaganych plików na serwer docelowy</listitem>
+				<listitem>Sprawdzenie popraności wymagań sprzętowych i systemowych</listitem>
+				<listitem>Testy poprawności działania wizualizacji na docelowym ekranie dotykowym</listitem>
+				<listitem>Weryfikacja czułości dotyku w ekranie dotykowym</listitem>
+				<listitem>Ewentualna korekcja rozdzielczości wyświetlanego obrazu w ustawieniach uruchomieniowych symulacji</listitem>
+				<listitem>Definicja wnętrza szaf poprzez plik XML i test poprawnego wyświetlania elementów w szafach</listitem>
+				<listitem>Przeprowadzenie szkolenia z obsługi wizualizacji</listitem>
+				<listitem>Audyt poprawności wdrożenia</listitem>
+			</itemizedlist>			
+		</listitem>		
+	
+</orderedlist>	
 </chapter>

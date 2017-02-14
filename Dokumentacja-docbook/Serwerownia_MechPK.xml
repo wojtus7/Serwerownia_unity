@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 
@@ -10,15 +10,15 @@
 
     <authorgroup>
       <author>
-        <firstname>Imię1</firstname>
+        <firstname>Sławomir</firstname>
 
-        <surname>Nazwisko1</surname>
+        <surname>Polak</surname>
       </author>
 
       <author>
-        <firstname>Imię2</firstname>
+        <firstname>Jordan</firstname>
 
-        <surname>Nazwisko2</surname>
+        <surname>Podgórski</surname>
       </author>
 
       <corpauthor>41K8</corpauthor>
@@ -37,8 +37,6 @@
   <xi:include href="modules/Opis_projektu.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="modules/Implementacja.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="modules/Instrukcja_użytkownika.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="modules/Wdrożenie_projektu.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>

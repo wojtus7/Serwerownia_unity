@@ -2,43 +2,84 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
-  <title>Bibliografia</title>
-
   <section>
-    <title>Tytuł</title>
-
-    <para>lala</para>
-
-    <section>
-      <title>Sekcja 1.1</title>
-
-      <para>tekst</para>
-
-      <figure>
-        <title>Przykładowy obraz 1</title>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/piesel.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-    </section>
-
-    <section>
-      <title>Sekcja 1.2</title>
-
-      <para>tekst</para>
-
-      <figure>
-        <title>Przykładowy obraz 2</title>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/grumpy_cat.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-    </section>
+    <title>Bibliografia</title>
+	 <biblioentry id="1">
+         <author>
+            <firstname>Mike </firstname>
+            <surname>Geig</surname>
+          </author>
+          <title>Unity3d. Przewodnik projektanta gier </title>
+        <publisher>
+          <publishername>Helion, 2007</publishername>
+        </publisher>
+        <pagenums>s.24-44</pagenums>
+      </biblioentry>
+		 </bibliodiv>  
+		 <bibliodiv> 
+      <biblioentry id="2">
+        <authorgroup>
+          <author>
+            <firstname>Piotr</firstname>
+            <surname>Chlipalski</surname>
+          </author>
+        </authorgroup>
+		<title>Blender 2.69. Architektura i projektowanie</title>
+		<publisher>
+          <publishername>Helion 2014</publishername>
+        </publisher>
+      </biblioentry>
+    </bibliodiv>  
+	 <bibliodiv>
+<biblioentry id="3">
+        <authorgroup>
+          <author>
+            <firstname>Bogdan </firstname>
+            <surname>Bociek</surname>
+          </author>
+        </authorgroup>
+		<title>Blender. Podstawy projektowania</title>
+		<publisher>
+          <publishername>Helion 2011</publishername>
+        </publisher>
+      </biblioentry>
+    </bibliodiv>   	 
+    <bibliodiv>
+	<title>Strony internetowe</title>
+        <biblioentry id="4">
+        <title>Unity3D Tutorials</title>
+        <publisher>
+          <publishername>Unity 3d</publishername>
+        </publisher>
+	<para>URL:
+	    <ulink>
+	    https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player
+	    </ulink>
+	  </para>
+    	</biblioentry>
+		   <biblioentry id="5">
+        <title>Unity3D Dokumentacja</title>
+        <publisher>
+          <publishername>Unity 3d</publishername>
+        </publisher>
+	<para>URL:
+	    <ulink>
+	    https://unity3d.com/learn/documentation
+	    </ulink>
+	  </para>
+    	</biblioentry>
+		<biblioentry id="6">
+        <title>Bledner Dokumentacja</title>
+        <publisher>
+          <publishername> Blender</publishername>
+        </publisher>
+	<para>URL:
+	    <ulink>
+	    https://www.blender.org/manual/
+	    </ulink>
+	  </para>
+    	</biblioentry>
+	  </bibliodiv>
+	
   </section>
 </chapter>

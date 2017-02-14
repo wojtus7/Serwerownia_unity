@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
@@ -22,19 +22,89 @@
     dokumentację i jest darmowy do niekomercyjnego użytku. Z punktu widzenia
     projektu głównym zaletami była darmowość, popularność, dobra optymalizacja
     oraz możliwość tworzenia aplikacji działających w przeglądarkach
-    internetowych oraz na systemach Windows i Linux. Skrypty napisano w języku
-    C#.</para>
+    internetowych oraz na systemach Windows i Linux. Projekt wirtualnej serwerowni został stworzony na silniku Unity 3D w wersji 5.5. Wszystkie skrypty użyte w programie Unity3D napisano w języku
+    C#. Do stworzenia wszyskich modeli obiektów użyto oprogramowania Blender 2.78. W celu opracowania grafik i tektur został użyty program Gimp 2.</para>
   </section>
 
   <section>
     <title>Zaimplementowane rozwiązania</title>
 
-    <para>Struktura XML?</para>
+    <para>W celu definiowania zawartości poszczególnych szaf, został użyty plik konfiguracyjny w standardzie XML.
+  Plik XML zawiera w sobie główną gałąź "inventory" w której znajduje się cała konfiguracja. Do zdefiniowania poszczególnej szafy, użyto znacznika "cabinet", który jako zawiera atrybut "nazwa" definiujacy poszczególną szafe. Projekt przewiduje definiowanie 4 szaf, wiec bedą przyjmowane tylko i wylacznie zdefiniowane w pliku nazwy: "szafa_1","szafa_2","szafa_3","szafa_4"</para>
+<para> Definiowanie poszczegolnych obiektów w szafie, odbywa sie za pomoca wpisanie do elementu "item", edykiety zdefiniowanego w symulacji obiektu graficznego.</para>
+<para>Lista dostepnych urzadzen do konfiguracji szaf:</para>
+<listitem>"etykieta" - "nazwa urzadzenia":
+<itemizedlist>
+				
+<listitem>ActinaSolar - X 1 Actina Solar</listitem>
+<listitem>AT-8000S - Allied Telesis 8000S</listitem>
+<listitem>AT-8948 - Allied Telesis 8948</listitem>
+<listitem>AT-9424Ts - Allied Telesis 9424Ts </listitem>
+<listitem>AT-AT770S - Allied Telesis AT770S </listitem>
+<listitem>AT9000-24 - Allied Telesis 9000-24</listitem>
+<listitem>AT_9000_28SP - Allied Telesis 9000-28</listitem>
+<listitem>blade1 - HPE-BladeSystem1</listitem>
+<listitem>blade2 - HPE-BladeSystem</listitem>
+<listitem>blade3 - Blades - Supermicro</listitem>
+<listitem>cs1708i - CS1708i 8-port KVM</listitem>
+<listitem>hp2530 - HP 2530-24g</listitem> 
+<listitem>laptop - Aten Master View MAX CSI 708i</listitem>
+<listitem>PS3 - klaster obliczeniowy PS3</listitem>
+<listitem>quick6 - Fibrain Quick6-28</listitem>
+<listitem>strikeX - Aerocool XStrike</listitem> 
+<listitem>RMS -  Infratec RMS AD1</listitem>
+<listitem>RS815 - Synology RackStation RS815+</listitem>
+<listitem>SPHEREON4500 - SPHEREON 4500 MCDATA</listitem>
+<listitem>WYSE - WYSE (monitor)</listitem>
+<listitem>poweredge1855 - PowerEdge 1855</listitem>
+</itemizedlist>
+</listitem>
+
   </section>
 
   <section>
     <title>Projekt interfejsu dotykowego</title>
 
-    <para>dd</para>
+    <para>Interfejs dotykowy składa się z elementów pozwalających na poruszanie się w przestrzeni wirtualnej serwerowni i interakcje użytkownika z jej elementami. </para>
+    <para> Do zmiany położenia kamery w wirtualnej serwerowni użyty został wirtualna gałka, której odchylenie pozwala na rozpoczęcie przemieszczania kamery w wyznaczonym przez nas kierunku.</para>
+<figure>
+      <title>Zmiana położenia </title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="397" fileref="images/galka.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+ <para> Elementem pozwalającym na obrót kamery w wirtualnej serwerowni jest powierzchnia widocznego ekranu. W miejscu podglądu kamery na przygotowaną scene serwerowni został dodany panel pozwalający zmienić ustawienia kąta obrotu kamery wokół aktywnej pozycji, ustawionej za pomocą gałki kierunku. Obsługa obrotu kamery jest zbliżona do obsługi touchpada, pozwalając na przesuwanie widoku aktywnej kamery w żądanym kierunku, poprzez przesunięcie palcem po tym obszarze.</para>
+<figure>
+      <title>Obszar zmiany kamery</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="397" fileref="images/touchpad.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+ <para> W celu interakcji z obiektami znajdującymi się z w wirtualnej serwerwoni, dodany został pojedynczy przycisk, który wyzwala akcje obiektu. W celu otwarcia szafki nalezy podejść do dowolnych jej drzwi, co spowoduje wyświetlenie komunikatu o możliwości interakcji. </para>
+<figure>
+      <title>Otwieranie szaf</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="397" fileref="images/otwieranie.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+ <para> Po otwarciu danej szafy, kamera ustawiono jest na jej wnętrze, ukazując poszczególne elementy. W tym momencie, zmiana połozenia jest zablokowana, umożliwiając przegląd zawartości szafy poprzez zmiane widoku kamery w osi pionowej przy uzyciu gałki. W celu wyjścia z trybu podglądu, należy ponownie nacisnąć przycisk interakcji. </para>
+<figure>
+      <title>Otwieranie szaf</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="397" fileref="images/przeglad.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
   </section>
 </chapter>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
@@ -7,38 +7,42 @@
   <section>
     <title>Wymagania sprzętowe</title>
 
-    <para>lala</para>
+    <para>Do uruchomienia symulacji wirtualnej serwerowni opartym na silniku graficznym Unity3D, wymagany jest:</para>
+<itemizedlist>
+
+ <listitem>zestaw komputerowy z systemem Windows 7 SP1+, 8, 10; Mac OS X 10.8+. Windows XP oraz Windows Vista nie jest wspieranym systemem operacyjnym.</listitem>
+<listitem> karta graficzna zgodną z Directx 9.0c wraz ze wsparciem Shader Model 3.0.</listitem>
+<listitem> Procesor z obslugą instrukcji SSE2.</listitem>
+<listitem> Ilość dostępnej pamieci na dysku: 100 MB</listitem>
+</itemizedlist>
+<para> </para>
 
     <section>
       <title>Instalacja</title>
 
-      <para>tekst</para>
+      <para>Instalacja programu sprowadza się do przekopiowania plików oraz uruchomienie pliku start.exe </para>
 
       <figure>
-        <title>Przykładowy obraz 1</title>
+        <title>Plik uruchomieniowy</title>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/piesel.png"/>
+            <imagedata fileref="images/instalacja1.jpg"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+	<para>Po uruchomieniu programu, pojawi sie okno pozwające na dobór odpiedniej rozdzielczości oraz dostowowania efektów wizualnych symulacji. Po zdefinowaniu ustawień można przystąpić do uruchomienia symulacji serwerowni klikając przycisk "Play"</para>
+      <figure>
+        <title>Plik uruchomieniowy</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/instalacja2.jpg"/>
           </imageobject>
         </mediaobject>
       </figure>
     </section>
 
-    <section>
-      <title>Utrzymanie</title>
-
-      <para>tekst</para>
-
-      <figure>
-        <title>Przykładowy obraz 2</title>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/grumpy_cat.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
     </section>
   </section>
 </chapter>
