@@ -37,7 +37,7 @@ public class CabinetProximityTrigger : MonoBehaviour
     {
         var door = transform.Find("szafa_1_Drzwi");
 
-        door.transform.Rotate(0f, 0f, -90f);
+        door.transform.Rotate(0f, 0f, -100f);
     }
 
     void OnTriggerExit(Collider c)
@@ -55,16 +55,20 @@ public class CabinetProximityTrigger : MonoBehaviour
     {
         var door = transform.Find("szafa_1_Drzwi");
 
-        door.transform.Rotate(0f, 0f, 90f);
+        door.transform.Rotate(0f, 0f, 100f);
     }
 
     // Use this for initialization
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+        //if (Input.GetButtonDown("Open"))
+        //{
+
+        //}
+    }
 }

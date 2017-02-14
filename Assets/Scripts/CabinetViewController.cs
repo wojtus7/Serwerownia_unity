@@ -17,19 +17,25 @@ public class CabinetViewController : MonoBehaviour {
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        //controller.enabled = false;
         startingPosition = this.transform.position;
+        enabled = false;
+        GetComponent<Camera>().enabled = false;
     }
 
     void Update()
     {
-        moveDirection = new Vector3(0, CnInputManager.GetAxis("Vertical"), 0);
+        moveDirection = new Vector3(0f, CnInputManager.GetAxis("Vertical"), 0f);
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
 
-        // Apply gravity manually.
-        //moveDirection.y -= gravity * Time.deltaTime;
-        // Move Character Controller
-        controller.Move(moveDirection * Time.deltaTime);
+
+        //Debug.Log(transform.localPosition.z);
+        if (transform.localPosition.z < 5.0f && moveDirection.z > 0)
+            controller.Move(moveDirection * Time.deltaTime);
+        if (transform.localPosition.z > 1.5f && moveDirection.z < 0)
+            controller.Move(moveDirection * Time.deltaTime);
+            
     }
 
     void OnDisable()

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour {
 
-    public int InCabinetProximity = 0;
+    public int InCabinetProximity = 0; // nr szafki
     bool isInCabinet = false;
     Camera tempCamera;
 
@@ -35,10 +35,15 @@ public class PlayerActions : MonoBehaviour {
                         this.GetComponentInChildren<Camera>().enabled = false;
                         tempCamera = cabinetCamera;
                         tempCamera.enabled = true;
-                        isInCabinet = true;
+
+
+                        //var ccc = cabinetCamera.GetComponent<CharacterController>();
+                        //ccc.enabled = true;
+
                         cabinetController = cabinet.GetComponentInChildren<CabinetViewController>();
-                        this.GetComponent<PlayerController>().enabled = false;
                         SwitchControl(cabinetController, normalController);
+
+                        isInCabinet = true;
                     }
                 }
                 else
@@ -46,9 +51,12 @@ public class PlayerActions : MonoBehaviour {
                     tempCamera.enabled = false;
                     var cam = this.gameObject.GetComponentInChildren<Camera>();
                     this.GetComponentInChildren<Camera>().enabled = true;
-                    isInCabinet = false;
-                    this.GetComponent<PlayerController>().enabled = true;
+
+
+                    //this.GetComponent<CharacterController>().enabled = true;
                     SwitchControl(normalController, cabinetController);
+
+                    isInCabinet = false;
                 }
 
             }
