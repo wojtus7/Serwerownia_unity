@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter>
+  <title>Opis projektu</title>
+
+  <section>
+    <title>Wykorzystywane technologie</title>
+
+    <figure>
+      <title>Logo Unity</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="397" fileref="images/unity.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Unity jest wieloplatformowym silnikiem graficznym do tworzenia
+    aplikacji 2D i 3D. Posiada wbudowane środowisko deweloperskie, rozbudowaną
+    dokumentację i jest darmowy do niekomercyjnego użytku. Z punktu widzenia
+    projektu głównym zaletami była darmowość, popularność, dobra optymalizacja
+    oraz możliwość tworzenia aplikacji działających w przeglądarkach
+    internetowych oraz na systemach Windows i Linux. Skrypty napisano w języku
+    C#.</para>
+  </section>
+
+  <section>
+    <title>Zaimplementowane rozwiązania</title>
+
+    <para>Struktura XML?</para>
+  </section>
+
+  <section>
+    <title>Projekt interfejsu dotykowego</title>
+
+    <para>dd</para>
+  </section>
+</chapter>

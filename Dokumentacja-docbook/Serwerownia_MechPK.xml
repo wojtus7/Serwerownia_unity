@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+<book lang="pl">
+   <title>DOKUMENTACJA PROJEKTOWA</title>
+
+  <bookinfo>
+    <title>INTERAKTYWNA WIZUALIZACJA SERWEROWNI</title>
+
+    <authorgroup>
+      <author>
+        <firstname>Imię1</firstname>
+
+        <surname>Nazwisko1</surname>
+      </author>
+
+      <author>
+        <firstname>Imię2</firstname>
+
+        <surname>Nazwisko2</surname>
+      </author>
+
+      <corpauthor>41K8</corpauthor>
+
+      <corpauthor>Rok akademicki 2016/17</corpauthor>
+    </authorgroup>
+
+  </bookinfo>
+
+  <xi:include href="modules/Wprowadzenie.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Przegląd_stanu_obecnego.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Specyfikacja_wymagań.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Opis_projektu.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Implementacja.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Instrukcja_użytkownika.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Wdrożenie_projektu.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="modules/Bibliografia.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>           
+</book>

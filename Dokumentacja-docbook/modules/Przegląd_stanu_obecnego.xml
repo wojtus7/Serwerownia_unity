@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+  <chapter>
+    <title>Przegląd stanu obecnego</title>
+
+
+    <section>
+      <title>Istniejące rozwiazania</title>
+      <para>lala</para>
+    </section>
+
+    <section>
+      <title>Poprzedni projekt</title>
+
+      <para>Dostarczone pliki zawierają tylko pobieżną dokumentację oraz pliki instalacyjne systemu WordPress. Natomiast brakuje dokładnej dokumentacji technicznej oraz kluczowych plików projektu, takich jak przytoczony w opisie wdrożenia plik "BazaDanych.sql". </para>
+      <para>
+Z tego powodu nie ma obecnie możliwości przetestowania dostarczonego projektu.
+Dodatkowo według naszych prognoz, na wykorzystanym w projekcie silniku renderowania opartym o JavaScript trudno będzie uzyskać odpowiednią wydajność.
+</para>
+<para>
+W związku z powyższymi faktami, zdecydowano o utworzeniu nowego projektu od zera i ograniczeniu pierwotnego zakresu założeń projektowych.
+</para>
+</section>
+
+  </chapter>

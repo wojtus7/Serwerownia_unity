@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+  <chapter>
+    <title>Specyfikacja wymagań</title>
+
+    <section>
+      <title>Wymagania dotyczące funkcjonalności</title>
+
+      <para>lala</para>
+      <itemizedlist>
+        <listitem>
+          <para> poruszanie się po wirtualnej serwerowni
+          </para>
+                  </listitem>
+                  <listitem>
+          <para>możliwość "zaglądania" do poszczególnych szaf, w celu zapoznania się z ich zawartością
+          </para>
+                  </listitem>
+                  <listitem>
+          <para>możliwość wyświetlenia opisu urządzeń znajdujących się w serwerowni
+          </para>
+                  </listitem>
+                  <listitem>
+          <para>dodawanie nowych urządzeń do szaf
+          </para>
+                  </listitem>
+                  <listitem>
+          <para>obsługa interfejsu za pomocą ekranu dotykowego
+          </para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Wymagania dotyczące wydajności</title>
+
+      <para>lala</para>
+       <itemizedlist>
+        <listitem>
+          <para>płynne działanie na dedykowanym dla aplikacji ekranie dotykowym
+          </para>
+        </listitem>
+        <listitem>
+          <para>płynne działanie w interfejsie WWW na komputerze o rozsądnej konfiguracji sprzętowej
+          </para>
+        </listitem>
+      </itemizedlist>     
+    </section> 
+
+    <section>
+      <title>Diagramy wymagań</title>
+
+      <para>lala</para>
+    </section> 
+  </chapter>

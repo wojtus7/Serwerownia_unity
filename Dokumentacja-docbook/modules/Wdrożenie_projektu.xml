@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter>
+  <title>Wdrożenie projektu</title>
+
+  <section>
+    <title>Wymagania sprzętowe</title>
+
+    <para>lala</para>
+
+    <section>
+      <title>Instalacja</title>
+
+      <para>tekst</para>
+
+      <figure>
+        <title>Przykładowy obraz 1</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/piesel.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Utrzymanie</title>
+
+      <para>tekst</para>
+
+      <figure>
+        <title>Przykładowy obraz 2</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/grumpy_cat.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+  </section>
+</chapter>
