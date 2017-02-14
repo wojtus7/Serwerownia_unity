@@ -10,7 +10,7 @@ public class PlayerActions : MonoBehaviour {
     Camera tempCamera;
 
     //FirstPersonController normalController;
-    CabinetController cabinetController;
+    CabinetViewController cabinetController;
 
 	// Use this for initialization
 	void Start () {
@@ -32,19 +32,22 @@ public class PlayerActions : MonoBehaviour {
 
                     if (cabinetCamera != null)
                     {
-                        this.gameObject.GetComponentInChildren<Camera>().enabled = false;
+                        this.GetComponentInChildren<Camera>().enabled = false;
                         tempCamera = cabinetCamera;
                         tempCamera.enabled = true;
                         isInCabinet = true;
-                        cabinetController = cabinet.GetComponentInChildren<CabinetController>();
+                        cabinetController = cabinet.GetComponentInChildren<CabinetViewController>();
+                        this.GetComponent<PlayerController>().enabled = false;
                         //SwitchControl(cabinetController, normalController);
                     }
                 }
                 else
                 {
                     tempCamera.enabled = false;
-                    this.gameObject.GetComponentInChildren<Camera>().enabled = true;
+                    var cam = this.gameObject.GetComponentInChildren<Camera>();
+                    this.GetComponentInChildren<Camera>().enabled = true;
                     isInCabinet = false;
+                    this.GetComponent<PlayerController>().enabled = true;
                     //SwitchControl(normalController, cabinetController);
                 }
 

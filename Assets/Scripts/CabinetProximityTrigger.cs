@@ -22,7 +22,7 @@ public class CabinetProximityTrigger : MonoBehaviour
         if (c.gameObject.tag == "Player")
         {
             hasCollided = true;
-            labelText = "Wciśnij E aby zajrzeć do szafy.";
+            labelText = string.Format("Wciśnij E aby zajrzeć do szafy {0}.", numerSzafy);
             var pa = c.gameObject.GetComponent<PlayerActions>();
             if (pa != null)
             {

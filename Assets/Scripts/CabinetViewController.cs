@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CabinetController : MonoBehaviour {
+public class CabinetViewController : MonoBehaviour {
 
 
     public float speed = 6.0F;
