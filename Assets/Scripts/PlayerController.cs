@@ -6,7 +6,7 @@ using CnControls;
 public class PlayerController : MonoBehaviour
 {
     public float MovementSpeed = 5f;
-    public float RotationSpeed = 15f;
+    public float RotationSpeed = 0.5f;
 
     private Transform _mainCameraTransform;
     private Transform _transform;
@@ -21,27 +21,24 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        // camera
-        //var horizontalMovement = -CnInputManager.GetAxis("CameraHorizontal");
-        //var verticalMovement = CnInputManager.GetAxis("CameraVertical");
-        //_mainCameraTransform.Rotate(Vector3.up, horizontalMovement * Time.deltaTime * RotationSpeed);
-        //_mainCameraTransform.Rotate(Vector3.right, verticalMovement * Time.deltaTime * RotationSpeed);
-
-        //_transform.Rotate(Vector3.up, horizontalMovement * Time.deltaTime * RotationSpeed);
         RotateCamera();
 
         // movement
-        var inputVector = new Vector3(CnInputManager.GetAxis("Horizontal"), CnInputManager.GetAxis("Vertical"));
+        var inputVector = new Vector3(CnInputManager.GetAxis("Horizontal"), 0, CnInputManager.GetAxis("Vertical"));
         Vector3 movementVector = Vector3.zero;
 
         // If we have some input
         if (inputVector.sqrMagnitude > 0.001f)
         {
-            movementVector = _mainCameraTransform.TransformDirection(inputVector);
+            //Debug.Log("inputVector: " + inputVector);
+            movementVector = _transform.TransformDirection(inputVector);
+            
             movementVector.y = 0f;
             movementVector.Normalize();
             //_transform.forward = movementVector; // rotate towards move direction
+            //Debug.Log("Movement Vector: " + movementVector);
         }
+
 
         movementVector += Physics.gravity;
         _characterController.Move(movementVector * Time.deltaTime * MovementSpeed);
@@ -49,15 +46,11 @@ public class PlayerController : MonoBehaviour
     
     private void RotateCamera()
     {
-        float yRot = CnInputManager.GetAxis("CameraHorizontal");
-        float xRot = CnInputManager.GetAxis("CameraVertical");
+        float yRot = -CnInputManager.GetAxis("CameraHorizontal") * RotationSpeed;
+        float xRot = -CnInputManager.GetAxis("CameraVertical") * RotationSpeed;
 
-        //var m_CharacterTargetRot = _transform.localRotation;
-        //var m_CameraTargetRot = _mainCameraTransform.localRotation;
-        //m_CharacterTargetRot *= Quaternion.Euler(0f, yRot, 0f);
-        //m_CameraTargetRot *= Quaternion.Euler(-xRot, 0f, 0f);
 
-        transform.localRotation *= Quaternion.Euler(0f, yRot, 0f);
+        transform.localRotation *= Quaternion.Euler(0f, yRot, 0f) ;
         _mainCameraTransform.localRotation *= Quaternion.Euler(-xRot, 0f, 0f);
 
         //if (clampVerticalRotation)
