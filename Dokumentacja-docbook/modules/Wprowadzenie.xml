@@ -1,23 +1,31 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter>
+  <title>Wprowadzenie</title>
 
-  <chapter>
-    <title>Wprowadzenie</title>
+  <section>
+    <title>Cel i zakres projektu</title>
 
-    <section>
-      <title>Cel i zakres projektu</title>
+    <para>Celem projektu było przygotowanie interaktywnej wizualizacji
+    serwerowni na Wydziale Mechanicznym PK z wykorzystaniem ekranu dotykowego.
+    Końcowym efektem tego projektu będzie aplikacja dla systemu Windows.
+    Funkcjonalność aplikacji będzie polegała na zobrazowaniu rzeczywistej
+    serwerowni znajdującej się w budynku Instytutu Informatyki Stosowanej
+    Politechniki Krakowskiej Wydziału Mechanicznego. Użytkownik będzie mógł
+    zobaczyć szafę serwerową z zainstalowanym w niej sprzętem.Definiowanie
+    poszczególnych elementów w szafie odbywać się będzie na podstawie pliku
+    konfiguracyjnego w formacie XML. Użytkownik będzie mógł poruszać się
+    wirtualnie po serwerowni wchodząc w interakcje z jej obiektami.</para>
 
-      <para>Celem projektu było przygotowanie interaktywnej wizualizacji serwerowni na Wydziale Mechanicznym PK z wykorzystaniem ekranu dotykowego. Końcowym efektem tego projektu będzie aplikacja dla systemu Windows. Funkcjonalność aplikacji będzie polegała na zobrazowaniu rzeczywistej serwerowni znajdującej się w budynku Instytutu Informatyki Stosowanej Politechniki Krakowskiej Wydziału Mechanicznego. Użytkownik będzie mógł zobaczyć szafę serwerową z zainstalowanym w niej sprzętem.Definiowanie poszczególnych elementów w szafie odbywać się będzie na podstawie pliku konfiguracyjnego w formacie XML. Użytkownik będzie mógł poruszać się wirtualnie po serwerowni wchodząc w interakcje z jej obiektami.</para>
-<para>
-	<figure>
-        	<title>Widok otwartej szafy serwerowej</title>
-       		 <mediaobject>
-         		 <imageobject>
-            			<imagedata fileref="images/widok.jpg" scale="170"/>
-          		</imageobject>
-       		 </mediaobject>
-	</figure>
-</para>
-    </section>
-  </chapter>
+    <para><figure>
+        <title>Widok otwartej szafy serwerowej</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="680" fileref="images/panorama1.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure></para>
+  </section>
+</chapter>

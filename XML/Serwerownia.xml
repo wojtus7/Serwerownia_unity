@@ -38,8 +38,8 @@
 
 <cabinet name="szafa_4">
 
-<item>strikeX</item>
-<item>strikeX</item>
+<item>strikeX<rotation x="90" y="180" z="0" /></item>
+<item>strikeX<rotation x="90" y="180" z="0" /></item>
 
 </cabinet>
 

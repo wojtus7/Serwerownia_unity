@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CnControls;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityStandardAssets.Characters.FirstPerson;
@@ -13,7 +14,7 @@ public class PlayerActions : MonoBehaviour {
     PlayerController normalController;
     CabinetViewController cabinetController;
 
-    private GameObject[] szafki = new GameObject[4];
+    private GameObject[] szafki = new GameObject[5];
     private GameObject currentCabinet;
 
     // Use this for initialization
@@ -24,6 +25,7 @@ public class PlayerActions : MonoBehaviour {
         szafki[1] = GameObject.Find("szafa_" + 2);
         szafki[2] = GameObject.Find("szafa_" + 3);
         szafki[3] = GameObject.Find("szafa_" + 4);
+        szafki[4] = GameObject.Find("szafa_" + 5);
     }
 	
 	// Update is called once per frame
@@ -31,7 +33,7 @@ public class PlayerActions : MonoBehaviour {
 
         if (InCabinetProximity > 0)
         {
-            if (Input.GetButtonDown("Open"))
+            if (CnInputManager.GetButtonDown("Open"))
             {
                 if(!isInCabinetView)
                 {
