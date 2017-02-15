@@ -1962,7 +1962,7 @@ SphereCollider:
   m_GameObject: {fileID: 1147772871}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -3147,9 +3147,10 @@ GameObject:
   - component: {fileID: 1589229604}
   - component: {fileID: 1589229603}
   - component: {fileID: 1589229602}
+  - component: {fileID: 1589229606}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3241,6 +3242,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1589229600}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1589229606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1589229600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41aae0661a91d304fb4d38d6bda8831c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InCabinetProximity: 0
+  CabinetDoorNumber: 0
 --- !u!1001 &1638865103
 Prefab:
   m_ObjectHideFlags: 0

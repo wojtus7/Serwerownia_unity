@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 23123043903403494}
   - component: {fileID: 65647182756828694}
   m_Layer: 0
-  m_Name: szafa_2
+  m_Name: szafa_X_open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
