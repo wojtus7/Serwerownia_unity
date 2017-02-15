@@ -17,6 +17,9 @@ public class PlayerActions : MonoBehaviour {
     private GameObject[] szafki = new GameObject[5];
     private GameObject currentCabinet;
 
+    private GameObject glassDoor;
+    private bool glassDoorOpened = false;
+
     // Use this for initialization
     void Start () {
         normalController = this.GetComponent<PlayerController>();
@@ -26,25 +29,28 @@ public class PlayerActions : MonoBehaviour {
         szafki[2] = GameObject.Find("szafa_" + 3);
         szafki[3] = GameObject.Find("szafa_" + 4);
         szafki[4] = GameObject.Find("szafa_" + 5);
+
+        glassDoor = GameObject.Find("drzwi_szklane");
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (InCabinetProximity > 0)
         {
             if (CnInputManager.GetButtonDown("Open"))
             {
-                if(!isInCabinetView)
+                if (!isInCabinetView)
                 {
                     currentCabinet = szafki[InCabinetProximity - 1];
 
-                    if(CabinetDoorNumber == 1)
+                    if (CabinetDoorNumber == 1)
                     {
                         var currentCabinetDoor = currentCabinet.transform.Find("szafa_TriggerFront");
                         SwitchToCabinetView(currentCabinetDoor);
                     }
-                    else if(CabinetDoorNumber == 2)
+                    else if (CabinetDoorNumber == 2)
                     {
                         var currentCabinetDoor = currentCabinet.transform.Find("szafa_TriggerBack");
                         SwitchToCabinetView(currentCabinetDoor);
@@ -71,8 +77,26 @@ public class PlayerActions : MonoBehaviour {
 
             }
         }
-
-	}
+        else if (InCabinetProximity == -1)
+        {
+            if (CnInputManager.GetButtonDown("Open"))
+            {
+                var door = glassDoor.transform;
+                if (!glassDoorOpened)
+                {
+                    var dir = door.TransformDirection(new Vector3(-1f, 0f, -2.8f));
+                    door.Translate(dir);
+                    glassDoorOpened = true;
+                }  
+                else
+                {
+                    var dir = door.TransformDirection(new Vector3(1f, 0f, 2.8f));
+                    door.Translate(dir);
+                    glassDoorOpened = false;
+                }
+            }
+        }
+    }
 
     private void SwitchToCabinetView(Transform currentCabinetDoor)
     {
