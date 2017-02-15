@@ -1,47 +1,65 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter>
+  <title>Przegląd stanu obecnego</title>
 
-  <chapter>
-    <title>Przegląd stanu obecnego</title>
-<para>
-Obecnie na rynku dostępne są komercyjne oprogramowania do zewnętrznego monitorowania stanu i zasobów sprzętowych dużych serwerowni wykorzystywanych przez firmy, instytucje, ośrodki badawcze i naukowe. Oprogramowanie to pozwala na bardzo zaawansowane możliwości takie jak projektowanie, wizualizacje i zarządzenie infrastrukturą data center. Innowacją jest prezentowanie widoku w 3D. Oprogramowanie to wizualizuje schematy wcześniej zaprojektowanej serwerowni umożliwiając wyświetlanie informacji o urządzeniach takich jak: przełączniki, serwery, panele krosowe włącznie z rzeczywistymi krosowaniami. Dodatkowo możliwy jest monitoring stanu technicznego urządzeń, temperatury oraz ich status. Systemy te mają w posiadaniu zaawansowany panel administracyjny, z którego poziomu można konfigurować poszczególne szafy serwerowe.  Przykłady takich systemów to:  Itrach CPIM z wizualizacją 3D, ManageEngineRackBuilder Plus. 
-</para>
+  <para>Obecnie na rynku dostępne są komercyjne oprogramowania do zewnętrznego
+  monitorowania stanu i zasobów sprzętowych dużych serwerowni wykorzystywanych
+  przez firmy, instytucje, ośrodki badawcze i naukowe. Oprogramowanie to
+  pozwala na bardzo zaawansowane możliwości takie jak projektowanie,
+  wizualizacje i zarządzenie infrastrukturą data center. Innowacją jest
+  prezentowanie widoku w 3D. Oprogramowanie to wizualizuje schematy wcześniej
+  zaprojektowanej serwerowni umożliwiając wyświetlanie informacji o
+  urządzeniach takich jak: przełączniki, serwery, panele krosowe włącznie z
+  rzeczywistymi krosowaniami. Dodatkowo możliwy jest monitoring stanu
+  technicznego urządzeń, temperatury oraz ich status. Systemy te mają w
+  posiadaniu zaawansowany panel administracyjny, z którego poziomu można
+  konfigurować poszczególne szafy serwerowe. Przykłady takich systemów to:
+  Itrach CPIM z wizualizacją 3D, ManageEngineRackBuilder Plus.</para>
 
-<section>
-	<title>ManageEngine RackBuilder Plus </title>
-<para>
-ManageEngine RackBuilder Plus jest narzędziem, które pozwala na tworzenie wirtualnych raków serwerowych z zainstalowanymi w nich urządzeniami. Użytkownik może dodawać, modyfikować oraz usuwać urządzenia. Aplikacja pozwala monitorować temperaturę urządzeń. Po kliknięciu na wybrany element  wyświetlana jest informacja o sprzęcie oraz dodatkowe informacje o stanie urządzenia.
-</para>
+  <section>
+    <title>ManageEngine RackBuilder Plus</title>
 
-<para>
-	<figure>
-        	<title>Panel umożliwiający tworzenie szafy serwerowej</title>
-       		 <mediaobject>
-         		 <imageobject>
-            			<imagedata fileref="images/MERBP.png" scale="100"/>
-          		</imageobject>
-       		 </mediaobject>
-	</figure>
-</para>
+    <para>ManageEngine RackBuilder Plus jest narzędziem, które pozwala na
+    tworzenie wirtualnych raków serwerowych z zainstalowanymi w nich
+    urządzeniami. Użytkownik może dodawać, modyfikować oraz usuwać urządzenia.
+    Aplikacja pozwala monitorować temperaturę urządzeń. Po kliknięciu na
+    wybrany element wyświetlana jest informacja o sprzęcie oraz dodatkowe
+    informacje o stanie urządzenia.</para>
 
-</section>
+    <para><figure>
+        <title>Panel umożliwiający tworzenie szafy serwerowej</title>
 
-<section>
-	<title>ITRACS CPIM </title>
-<para>
-Kolejnym dobrym rozwiązaniem jest wspomniany program ITRACS CPIM z wizualizacją 3D. Jest to platforma, która dysponuje zaawansowanym panelem do zarządzania datacenter.  CPIM to nie tylko obrazy, ale również bardzo duża baza danych. Znajdują się w niej informacje o każdym urządzeniu i sprzęcie zainstalowanym w całej infrastrukturze. Można zasymulować zmianę położenia poszczególnych urządzeń. System potrafi wygenerować listę co należy krok po kroku zrobić, aby te zmiany miały miejsce. Platforma ITRACS CPIM umożliwia nie tylko zaprojektowanie serwerowni ale także zarządzanie istniejącą już infrastrukturą IT.</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="1016" fileref="images/MERBP.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure></para>
+  </section>
 
-<para>
-	<figure>
-        	<title>Zrzut ekranu z programu ITRACS CPIM</title>
-       		 <mediaobject>
-         		 <imageobject>
-            			<imagedata fileref="images/ITRACS.png" scale="100"/>
-          		</imageobject>
-       		 </mediaobject>
-	</figure>
-</para>
+  <section>
+    <title>ITRACS CPIM</title>
 
-</section>
-  </chapter>
+    <para>Kolejnym dobrym rozwiązaniem jest wspomniany program ITRACS CPIM z
+    wizualizacją 3D. Jest to platforma, która dysponuje zaawansowanym panelem
+    do zarządzania datacenter. CPIM to nie tylko obrazy, ale również bardzo
+    duża baza danych. Znajdują się w niej informacje o każdym urządzeniu i
+    sprzęcie zainstalowanym w całej infrastrukturze. Można zasymulować zmianę
+    położenia poszczególnych urządzeń. System potrafi wygenerować listę co
+    należy krok po kroku zrobić, aby te zmiany miały miejsce. Platforma ITRACS
+    CPIM umożliwia nie tylko zaprojektowanie serwerowni ale także zarządzanie
+    istniejącą już infrastrukturą IT.</para>
+
+    <para><figure>
+        <title>Zrzut ekranu z programu ITRACS CPIM</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="972" fileref="images/ITRACS.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure></para>
+  </section>
+</chapter>

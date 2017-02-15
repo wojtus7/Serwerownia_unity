@@ -2,30 +2,66 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
-  <title>Wdrozenie wizualizacji</title>
-<para>Scenariusz wdrożenia projektu wizualizacji serwerowni na serwery Politechniki Krakowskiej</para>
-<section>
-<title>Cel Wdrożenia</title>
-<para>
-Celem wdrożenia ninijeszego projektu jest umożliwienie wizualizacji wnętrza serwerowni przy użyciu ekranu dotykowego.
-</para>
+  <title>Wdrożenie wizualizacji</title>
 
-<orderedlist>
-		<listitem><para>Implementacja wizualizacji na serwery PK będzie odbywała się na serwerze WWW Wydziału Mechanicznego PK
-			<itemizedlist>
-				<listitem><para>Wybór kierownika wdrożenia</para></listitem>
-				<listitem><para>Sporządzenie dokumentacji odbiorczej wdrożenia</para></listitem>
-				<listitem><para>Przeniesienie wymaganych plików na serwer docelowy</para></listitem>
-				<listitem><para>Sprawdzenie popraności wymagań sprzętowych i systemowych</para></listitem>
-				<listitem><para>Testy poprawności działania wizualizacji na docelowym ekranie dotykowym</para></listitem>
-				<listitem><para>Weryfikacja czułości dotyku w ekranie dotykowym</para></listitem>
-				<listitem><para>Ewentualna korekcja rozdzielczości wyświetlanego obrazu w ustawieniach uruchomieniowych symulacji</para></listitem>
-				<listitem><para>Definicja wnętrza szaf poprzez plik XML i test poprawnego wyświetlania elementów w szafach</para></listitem>
-				<listitem><para>Przeprowadzenie szkolenia z obsługi wizualizacji</para></listitem>
-				<listitem><para>Audyt poprawności wdrożenia</para></listitem>
-			</itemizedlist>			
-		</para></listitem>		
-	
-</orderedlist>	
-</section>
+  <para>Scenariusz wdrożenia projektu wizualizacji serwerowni na serwery
+  Politechniki Krakowskiej</para>
+
+  <section>
+    <title>Cel Wdrożenia</title>
+
+    <para>Celem wdrożenia niniejszego projektu jest umożliwienie wizualizacji
+    wnętrza serwerowni przy użyciu ekranu dotykowego.</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Implementacja wizualizacji na serwery PK będzie odbywała się na
+        serwerze WWW Wydziału Mechanicznego PK <itemizedlist>
+            <listitem>
+              <para>Wybór kierownika wdrożenia</para>
+            </listitem>
+
+            <listitem>
+              <para>Sporządzenie dokumentacji odbiorczej wdrożenia</para>
+            </listitem>
+
+            <listitem>
+              <para>Przeniesienie wymaganych plików na serwer docelowy</para>
+            </listitem>
+
+            <listitem>
+              <para>Sprawdzenie poprawności wymagań sprzętowych i
+              systemowych</para>
+            </listitem>
+
+            <listitem>
+              <para>Testy poprawności działania wizualizacji na docelowym
+              ekranie dotykowym</para>
+            </listitem>
+
+            <listitem>
+              <para>Weryfikacja czułości dotyku w ekranie dotykowym</para>
+            </listitem>
+
+            <listitem>
+              <para>Ewentualna korekcja rozdzielczości wyświetlanego obrazu w
+              ustawieniach uruchomieniowych symulacji</para>
+            </listitem>
+
+            <listitem>
+              <para>Definicja wnętrza szaf poprzez plik XML i test poprawnego
+              wyświetlania elementów w szafach</para>
+            </listitem>
+
+            <listitem>
+              <para>Przeprowadzenie szkolenia z obsługi wizualizacji</para>
+            </listitem>
+
+            <listitem>
+              <para>Audyt poprawności wdrożenia</para>
+            </listitem>
+          </itemizedlist></para>
+      </listitem>
+    </orderedlist>
+  </section>
 </chapter>
