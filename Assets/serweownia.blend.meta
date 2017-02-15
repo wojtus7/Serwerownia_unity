@@ -87,6 +87,10 @@ ModelImporter:
     100158: AT-AR770S
     100160: PS3_001
     100162: quick6
+    100164: szafa_1_001
+    100166: szafa_1_002
+    100168: szafa_1_003
+    100170: szafa_1_004
     400000: AS400
     400002: bezpiecznik1_1
     400004: bezpiecznik1_2
@@ -169,6 +173,10 @@ ModelImporter:
     400158: AT-AR770S
     400160: PS3_001
     400162: quick6
+    400164: szafa_1_001
+    400166: szafa_1_002
+    400168: szafa_1_003
+    400170: szafa_1_004
     2300000: AS400
     2300002: bezpiecznik1_1
     2300004: bezpiecznik1_2
@@ -250,6 +258,10 @@ ModelImporter:
     2300156: AT-AR770S
     2300158: PS3_001
     2300160: quick6
+    2300162: szafa_1_001
+    2300164: szafa_1_002
+    2300166: szafa_1_003
+    2300168: szafa_1_004
     3300000: AS400
     3300002: bezpiecznik1_1
     3300004: bezpiecznik1_2
@@ -331,6 +343,10 @@ ModelImporter:
     3300156: AT-AR770S
     3300158: PS3_001
     3300160: quick6
+    3300162: szafa_1_001
+    3300164: szafa_1_002
+    3300166: szafa_1_003
+    3300168: szafa_1_004
     4300000: Cube_001
     4300002: Cube
     4300004: lampa3_001
@@ -412,6 +428,10 @@ ModelImporter:
     4300156: AT-9424Ts
     4300158: quick6
     4300160: PS3_001
+    4300162: szafa_1_004
+    4300164: szafa_1_003
+    4300166: szafa_1_002
+    4300168: szafa_1_001
     7400000: Default Take
     9500000: //RootNode
   materials:
