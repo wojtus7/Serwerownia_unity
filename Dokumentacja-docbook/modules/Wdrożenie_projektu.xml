@@ -16,7 +16,7 @@
 <listitem> Ilość dostępnej pamieci na dysku: 100 MB</listitem>
 </itemizedlist>
 <para> </para>
-
+    </section>
     <section>
       <title>Instalacja</title>
 
@@ -42,7 +42,4 @@
         </mediaobject>
       </figure>
     </section>
-
-    </section>
-  </section>
 </chapter>
