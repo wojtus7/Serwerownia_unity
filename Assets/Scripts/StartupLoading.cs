@@ -37,7 +37,7 @@ public class StartupLoading : MonoBehaviour {
                     if (item.Attribute("type") != null)
                     {
                             var pName = item.Attribute("type").Value;
-                            var pType = Resources.Load(pName);
+                            var pType = Resources.Load(pName, typeof(GameObject));
 
                             var newIt = Instantiate(pType, cabinetObject.transform) as GameObject;
 
@@ -45,7 +45,11 @@ public class StartupLoading : MonoBehaviour {
                         Debug.Log(path);
                             var tex = new WWW(path);
 
+                        var mat = Resources.Load(pName, typeof(Material));
+                        newIt.GetComponent<Renderer>().material = new Material((Material)mat);
                             newIt.GetComponent<Renderer>().material.mainTexture = tex.texture;
+                        //newIt.GetComponent<Renderer>().
+
 
 
                         continue;
