@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter>
+  <title>Plan projektu</title>
+
+  <section>
+    <title>Wymagane zasoby/Zebranie wymagań</title>
+
+
+    <para>Konieczność pozyskania: (w sekcjach albo punktory): spis i informacje na temat urządzeń,  tekstury urządzeń lub zdjęcia/pliki graficzne, które można przekształcić na tekstury, trójwymiarowe modele pomieszczenia i jego elementów oraz urzadzeń</para>
+
+    
+    </section>
+
+<section> <title>Plan/harmonogram działań </title>
+<para>(tu by mogl byc ewentualnie taki harmonogram projektu jak w MS Project, gdzie niektore zadania moga sie zaczac dopiero po rozpoczeciu innych itd</para>
+<para>Plan (daty?-raczej nie): 1. Przeprowadzenie inwentaryzacji 2. Wykonanie zdjęć poglądowych pomieszczenie oraz dokładnych zdjęć urządzeń wymagających utworzennia tekstury 3. Określenie wymiarów pomiesczenia, szaf i urządzeń 4. Wykonanie modelu pomieszczenia 5. Zaimportowanie modelu do silnika aplikacji oraz zaimplementowanie podstawowej interakcji 6. Wykonanie modeli urządzeń 7. Teksturowanie urządzeń 8. Projektowanie i skalowanie sceny przedstawiającej serwerownię w aplikacji 9. Dostosowyanie ustawien renderowania 10. Podstawowy interefjs uzytkownika 11. Opracowanie systemu pozwalającego na konfigurowanie zawartosci szafek 12. Dopracowanie interfejsu użytkownika i testy aplikacji 13. Implementacja poprawek i dodatkowych opcji interakcji 14. Optymalizacja 15. Wdrozenie projektu</para>
+</section>
+</chapter>

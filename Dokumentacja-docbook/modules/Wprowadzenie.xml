@@ -19,7 +19,7 @@
     wirtualnie po serwerowni wchodząc w interakcje z jej obiektami.</para>
 
     <para><figure>
-        <title>Widok na serwerownię</title>
+        <title>Przeniesc? Widok na serwerownię</title>
 
         <mediaobject>
           <imageobject>
@@ -27,5 +27,11 @@
           </imageobject>
         </mediaobject>
       </figure></para>
+  </section>
+
+  <section> <title>Korzyści z projektu</title>
+  <para>
+    Stworzenie aplikacji, która pozwalałby na wirtualną eksploracją serwerowni .... korzysci dydaktyczne, lepsze zarządzanie inwentarzem, łatwy dostęp do informacji o urządzeniach ("ściąga/spis" urządzeń?)....
+  </para>
   </section>
 </chapter>

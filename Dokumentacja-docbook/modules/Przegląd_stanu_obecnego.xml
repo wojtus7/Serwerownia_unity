@@ -4,6 +4,17 @@
 <chapter>
   <title>Przegląd stanu obecnego</title>
 
+  <section>
+    <title>Serwerownia na Wydziale Mechanicznym PL</title>
+    <para>
+      Serwerownia jest pomieszczeniem, które ze względów bezpieczeństwa....
+      -------------niedostępne, nie powinno się zakłócać..., ważne
+      "nie powinno byc duzego ruchu"
+    </para>
+  </section>
+
+<section> <title>Istniejące rozwiązania dotyczące wizualizacji pomieszczeń serwerowych</title>
+
   <para>Obecnie na rynku dostępne są komercyjne oprogramowania do zewnętrznego
   monitorowania stanu i zasobów sprzętowych dużych serwerowni wykorzystywanych
   przez firmy, instytucje, ośrodki badawcze i naukowe. Oprogramowanie to
@@ -62,4 +73,6 @@
         </mediaobject>
       </figure></para>
   </section>
+</section>
+
 </chapter>

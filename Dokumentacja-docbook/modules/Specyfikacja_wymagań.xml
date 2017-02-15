@@ -5,6 +5,14 @@
   <chapter>
     <title>Specyfikacja wymagań</title>
 
+
+
+
+<section> <title>Przypadki użycia</title>
+<para>Diaaaaaaaaaaaaaaaaaaaaagram + lista</para>
+</section>
+
+
     <section>
       <title>Wymagania dotyczące funkcjonalności</title>
 
@@ -44,5 +52,4 @@
         </listitem>
       </itemizedlist>     
     </section> 
-
   </chapter>
