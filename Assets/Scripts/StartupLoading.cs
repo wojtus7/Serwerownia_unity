@@ -33,6 +33,24 @@ public class StartupLoading : MonoBehaviour {
 
                 foreach (var item in items)
                 {
+
+                    if (item.Attribute("type") != null)
+                    {
+                            var pName = item.Attribute("type").Value;
+                            var pType = Resources.Load(pName);
+
+                            var newIt = Instantiate(pType, cabinetObject.transform) as GameObject;
+
+                            var path = @"file://" + Application.dataPath + item.Value;
+                        Debug.Log(path);
+                            var tex = new WWW(path);
+
+                            newIt.GetComponent<Renderer>().material.mainTexture = tex.texture;
+
+
+                        continue;
+                    }
+
                     // check for custom offset
                     if (item.Attribute("spacing") != null)
                     {
