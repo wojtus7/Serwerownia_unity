@@ -4,26 +4,27 @@
 <chapter>
   <title>Wdrozenie wizualizacji</title>
 <para>Scenariusz wdrożenia projektu wizualizacji serwerowni na serwery Politechniki Krakowskiej</para>
+<section>
 <title>Cel Wdrożenia</title>
 <para>
 Celem wdrożenia ninijeszego projektu jest umożliwienie wizualizacji wnętrza serwerowni przy użyciu ekranu dotykowego.
 </para>
-<section>
+
 <orderedlist>
-		<listitem>Implementacja wizualizacji na serwery PK będzie odbywała się na serwerze WWW Wydziału Mechanicznego PK
+		<listitem><para>Implementacja wizualizacji na serwery PK będzie odbywała się na serwerze WWW Wydziału Mechanicznego PK
 			<itemizedlist>
-				<listitem>Wybór kierownika wdrożenia</listitem>
-				<listitem>Sporządzenie dokumentacji odbiorczej wdrożenia</listitem>
-				<listitem>Przeniesienie wymaganych plików na serwer docelowy</listitem>
-				<listitem>Sprawdzenie popraności wymagań sprzętowych i systemowych</listitem>
-				<listitem>Testy poprawności działania wizualizacji na docelowym ekranie dotykowym</listitem>
-				<listitem>Weryfikacja czułości dotyku w ekranie dotykowym</listitem>
-				<listitem>Ewentualna korekcja rozdzielczości wyświetlanego obrazu w ustawieniach uruchomieniowych symulacji</listitem>
-				<listitem>Definicja wnętrza szaf poprzez plik XML i test poprawnego wyświetlania elementów w szafach</listitem>
-				<listitem>Przeprowadzenie szkolenia z obsługi wizualizacji</listitem>
-				<listitem>Audyt poprawności wdrożenia</listitem>
+				<listitem><para>Wybór kierownika wdrożenia</para></listitem>
+				<listitem><para>Sporządzenie dokumentacji odbiorczej wdrożenia</para></listitem>
+				<listitem><para>Przeniesienie wymaganych plików na serwer docelowy</para></listitem>
+				<listitem><para>Sprawdzenie popraności wymagań sprzętowych i systemowych</para></listitem>
+				<listitem><para>Testy poprawności działania wizualizacji na docelowym ekranie dotykowym</para></listitem>
+				<listitem><para>Weryfikacja czułości dotyku w ekranie dotykowym</para></listitem>
+				<listitem><para>Ewentualna korekcja rozdzielczości wyświetlanego obrazu w ustawieniach uruchomieniowych symulacji</para></listitem>
+				<listitem><para>Definicja wnętrza szaf poprzez plik XML i test poprawnego wyświetlania elementów w szafach</para></listitem>
+				<listitem><para>Przeprowadzenie szkolenia z obsługi wizualizacji</para></listitem>
+				<listitem><para>Audyt poprawności wdrożenia</para></listitem>
 			</itemizedlist>			
-		</listitem>		
+		</para></listitem>		
 	
 </orderedlist>	
 </section>

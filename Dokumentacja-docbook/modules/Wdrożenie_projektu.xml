@@ -10,10 +10,10 @@
     <para>Do uruchomienia symulacji wirtualnej serwerowni opartym na silniku graficznym Unity3D, wymagany jest:</para>
 <itemizedlist>
 
- <listitem>zestaw komputerowy z systemem Windows 7 SP1+, 8, 10; Mac OS X 10.8+. Windows XP oraz Windows Vista nie jest wspieranym systemem operacyjnym.</listitem>
-<listitem> karta graficzna zgodną z Directx 9.0c wraz ze wsparciem Shader Model 3.0.</listitem>
-<listitem> Procesor z obslugą instrukcji SSE2.</listitem>
-<listitem> Ilość dostępnej pamieci na dysku: 100 MB</listitem>
+ <listitem><para>zestaw komputerowy z systemem Windows 7 SP1+, 8, 10; Mac OS X 10.8+. Windows XP oraz Windows Vista nie jest wspieranym systemem operacyjnym.</para></listitem>
+<listitem><para> karta graficzna zgodną z Directx 9.0c wraz ze wsparciem Shader Model 3.0.</para></listitem>
+<listitem><para> Procesor z obslugą instrukcji SSE2.</para></listitem>
+<listitem><para> Ilość dostępnej pamieci na dysku: 100 MB</para></listitem>
 </itemizedlist>
 <para> </para>
     </section>

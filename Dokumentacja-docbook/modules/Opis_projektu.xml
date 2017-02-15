@@ -50,49 +50,46 @@
 
     <para>Lista dostepnych urzadzen do konfiguracji szaf:</para>
 
-    <listitem>"etykieta" - "nazwa urzadzenia": <itemizedlist>
-        <listitem>ActinaSolar - X 1 Actina Solar</listitem>
+    <para>"etykieta" - "nazwa urzadzenia":</para>
+      <itemizedlist>
+        <listitem><para>ActinaSolar - X 1 Actina Solar</para></listitem>
+        <listitem><para>AT-8000S - Allied Telesis 8000S</para></listitem>
+        <listitem><para>AT-8948 - Allied Telesis 8948</para></listitem>
+        <listitem><para>AT-9424Ts - Allied Telesis 9424Ts</para></listitem>
+        <listitem><para>AT-AT770S - Allied Telesis AT770S</para></listitem>
 
-        <listitem>AT-8000S - Allied Telesis 8000S</listitem>
+        <listitem><para>AT9000-24 - Allied Telesis 9000-24</para></listitem>
 
-        <listitem>AT-8948 - Allied Telesis 8948</listitem>
+        <listitem><para>AT_9000_28SP - Allied Telesis 9000-28</para></listitem>
 
-        <listitem>AT-9424Ts - Allied Telesis 9424Ts</listitem>
+        <listitem><para>blade1 - HPE-BladeSystem1</para></listitem>
 
-        <listitem>AT-AT770S - Allied Telesis AT770S</listitem>
+        <listitem><para>blade2 - HPE-BladeSystem</para></listitem>
 
-        <listitem>AT9000-24 - Allied Telesis 9000-24</listitem>
+        <listitem><para>blade3 - Blades - Supermicro</para></listitem>
 
-        <listitem>AT_9000_28SP - Allied Telesis 9000-28</listitem>
+        <listitem><para>cs1708i - CS1708i 8-port KVM</para></listitem>
 
-        <listitem>blade1 - HPE-BladeSystem1</listitem>
+        <listitem><para>hp2530 - HP 2530-24g</para></listitem>
 
-        <listitem>blade2 - HPE-BladeSystem</listitem>
+        <listitem><para>laptop - Aten Master View MAX CSI 708i</para></listitem>
 
-        <listitem>blade3 - Blades - Supermicro</listitem>
+        <listitem><para>PS3 - klaster obliczeniowy PS3</para></listitem>
 
-        <listitem>cs1708i - CS1708i 8-port KVM</listitem>
+        <listitem><para>quick6 - Fibrain Quick6-28</para></listitem>
 
-        <listitem>hp2530 - HP 2530-24g</listitem>
+        <listitem><para>strikeX - Aerocool XStrike</para></listitem>
 
-        <listitem>laptop - Aten Master View MAX CSI 708i</listitem>
+        <listitem><para>RMS - Infratec RMS AD1</para></listitem>
 
-        <listitem>PS3 - klaster obliczeniowy PS3</listitem>
+        <listitem><para>RS815 - Synology RackStation RS815+</para></listitem>
 
-        <listitem>quick6 - Fibrain Quick6-28</listitem>
+        <listitem><para>SPHEREON4500 - SPHEREON 4500 MCDATA</para></listitem>
 
-        <listitem>strikeX - Aerocool XStrike</listitem>
+        <listitem><para>WYSE - WYSE (monitor)</para></listitem>
 
-        <listitem>RMS - Infratec RMS AD1</listitem>
-
-        <listitem>RS815 - Synology RackStation RS815+</listitem>
-
-        <listitem>SPHEREON4500 - SPHEREON 4500 MCDATA</listitem>
-
-        <listitem>WYSE - WYSE (monitor)</listitem>
-
-        <listitem>poweredge1855 - PowerEdge 1855</listitem>
-      </itemizedlist></listitem>
+        <listitem><para>poweredge1855 - PowerEdge 1855</para></listitem>
+      </itemizedlist>
   </section>
 
   <section>

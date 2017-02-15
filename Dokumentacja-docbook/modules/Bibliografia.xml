@@ -2,12 +2,14 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
-  <section>
-    <title>Bibliografia</title>
-	<bibliodiv>  
-	 <biblioentry id="1">
+      <title>Bibliografia</title>
+        <para></para>
+      <bibliography>
+
+  <bibliodiv>  <title>Literatura</title>
+   <biblioentry>
          <author>
-            <firstname>Mike </firstname>
+            <firstname>Mike</firstname>
             <surname>Geig</surname>
           </author>
           <title>Unity3d. Przewodnik projektanta gier </title>
@@ -16,71 +18,73 @@
         </publisher>
         <pagenums>s.24-44</pagenums>
       </biblioentry>
-		 </bibliodiv>  
-		 <bibliodiv> 
-      <biblioentry id="2">
+     <biblioentry>
         <authorgroup>
           <author>
             <firstname>Piotr</firstname>
             <surname>Chlipalski</surname>
           </author>
         </authorgroup>
-		<title>Blender 2.69. Architektura i projektowanie</title>
-		<publisher>
+    <title>Blender 2.69. Architektura i projektowanie</title>
+    <publisher>
           <publishername>Helion 2014</publishername>
         </publisher>
       </biblioentry>
-    </bibliodiv>  
-	 <bibliodiv>
-<biblioentry id="3">
+
+<biblioentry>
         <authorgroup>
           <author>
             <firstname>Bogdan </firstname>
             <surname>Bociek</surname>
           </author>
         </authorgroup>
-		<title>Blender. Podstawy projektowania</title>
-		<publisher>
+    <title>Blender. Podstawy projektowania</title>
+    <publisher>
           <publishername>Helion 2011</publishername>
         </publisher>
       </biblioentry>
-    </bibliodiv>   	 
-    <bibliodiv>
-	<title>Strony internetowe</title>
-        <biblioentry id="4">
+
+    </bibliodiv>     
+
+  <bibliodiv>
+      <title>Strony internetowe</title>
+
+        <biblioentry>
         <title>Unity3D Tutorials</title>
         <publisher>
           <publishername>Unity 3d</publishername>
         </publisher>
-	<para>URL:
-	    <ulink>
-	    https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player
-	    </ulink>
-	  </para>
-    	</biblioentry>
-		   <biblioentry id="5">
+  <title>URL:
+      <ulink url="https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player">
+      https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player
+      </ulink>
+    </title>
+
+      </biblioentry>
+       <biblioentry>
         <title>Unity3D Dokumentacja</title>
         <publisher>
           <publishername>Unity 3d</publishername>
         </publisher>
-	<para>URL:
-	    <ulink>
-	    https://unity3d.com/learn/documentation
-	    </ulink>
-	  </para>
-    	</biblioentry>
-		<biblioentry id="6">
+  <title>URL:
+      <ulink url="https://unity3d.com/learn/documentation">
+      https://unity3d.com/learn/documentation
+      </ulink>
+    </title>
+      </biblioentry>
+
+    <biblioentry>
         <title>Bledner Dokumentacja</title>
         <publisher>
           <publishername> Blender</publishername>
         </publisher>
-	<para>URL:
-	    <ulink>
-	    https://www.blender.org/manual/
-	    </ulink>
-	  </para>
-    	</biblioentry>
-	  </bibliodiv>
-	
-  </section>
+  <title>URL:
+      <ulink url="https://www.blender.org/manual/">
+      https://www.blender.org/manual/
+      </ulink>
+    </title>
+      </biblioentry>
+
+    </bibliodiv>
+</bibliography>
 </chapter>
