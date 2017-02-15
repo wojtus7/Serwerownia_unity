@@ -26,15 +26,23 @@ public class CabinetViewController : MonoBehaviour {
     void Update()
     {
         moveDirection = new Vector3(0f, CnInputManager.GetAxis("Vertical"), 0f);
-        moveDirection = transform.TransformDirection(moveDirection);
-        moveDirection *= speed;
 
+
+        if (
+            (transform.localPosition.z < 5.0f && moveDirection.y > 0 ) ||
+            (transform.localPosition.z > 1.5f && moveDirection.y < 0)
+            )
+        {
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+            controller.Move(moveDirection * Time.deltaTime);
+        }
 
         //Debug.Log(transform.localPosition.z);
-        if (transform.localPosition.z < 5.0f && moveDirection.z > 0)
-            controller.Move(moveDirection * Time.deltaTime);
-        if (transform.localPosition.z > 1.5f && moveDirection.z < 0)
-            controller.Move(moveDirection * Time.deltaTime);
+        //if (transform.localPosition.z < 5.0f && moveDirection.z > 0)
+        //    controller.Move(moveDirection * Time.deltaTime);
+        //if (transform.localPosition.z > 1.5f && moveDirection.z < 0)
+        //    controller.Move(moveDirection * Time.deltaTime);
             
     }
 

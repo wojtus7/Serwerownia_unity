@@ -6,15 +6,24 @@ using UnityEngine;
 public class PlayerActions : MonoBehaviour {
 
     public int InCabinetProximity = 0; // nr szafki
-    bool isInCabinet = false;
+    public int CabinetDoorNumber = 0; // 1 - przednie, 2 - tylne
+    bool isInCabinetView = false;
     Camera tempCamera;
 
     PlayerController normalController;
     CabinetViewController cabinetController;
 
-	// Use this for initialization
-	void Start () {
+    private GameObject[] szafki = new GameObject[4];
+    private GameObject currentCabinet;
+
+    // Use this for initialization
+    void Start () {
         normalController = this.GetComponent<PlayerController>();
+
+        szafki[0] = GameObject.Find("szafa_" + 1);
+        szafki[1] = GameObject.Find("szafa_" + 2);
+        szafki[2] = GameObject.Find("szafa_" + 3);
+        szafki[3] = GameObject.Find("szafa_" + 4);
     }
 	
 	// Update is called once per frame
@@ -24,39 +33,38 @@ public class PlayerActions : MonoBehaviour {
         {
             if (Input.GetButtonDown("Open"))
             {
-                if(!isInCabinet)
+                if(!isInCabinetView)
                 {
-                    var cabinet = GameObject.Find("szafa_" + InCabinetProximity);
+                    currentCabinet = szafki[InCabinetProximity - 1];
 
-                    var cabinetCamera = cabinet.GetComponentInChildren<Camera>();
-
-                    if (cabinetCamera != null)
+                    if(CabinetDoorNumber == 1)
                     {
-                        this.GetComponentInChildren<Camera>().enabled = false;
-                        tempCamera = cabinetCamera;
-                        tempCamera.enabled = true;
-
-
-                        //var ccc = cabinetCamera.GetComponent<CharacterController>();
-                        //ccc.enabled = true;
-
-                        cabinetController = cabinet.GetComponentInChildren<CabinetViewController>();
-                        SwitchControl(cabinetController, normalController);
-
-                        isInCabinet = true;
+                        var currentCabinetDoor = currentCabinet.transform.Find("szafa_TriggerFront");
+                        SwitchToCabinetView(currentCabinetDoor);
                     }
+                    else if(CabinetDoorNumber == 2)
+                    {
+                        var currentCabinetDoor = currentCabinet.transform.Find("szafa_TriggerBack");
+                        SwitchToCabinetView(currentCabinetDoor);
+                    }
+
                 }
                 else
                 {
+                    //zamykanie
+                    OpenDoor(CabinetDoorNumber, false);
+
+                    // zmiana kamery
                     tempCamera.enabled = false;
                     var cam = this.gameObject.GetComponentInChildren<Camera>();
                     this.GetComponentInChildren<Camera>().enabled = true;
 
+                    // wlaczenie coliddera
+                    this.GetComponent<CharacterController>().enabled = true;
 
-                    //this.GetComponent<CharacterController>().enabled = true;
                     SwitchControl(normalController, cabinetController);
 
-                    isInCabinet = false;
+                    isInCabinetView = false;
                 }
 
             }
@@ -64,9 +72,68 @@ public class PlayerActions : MonoBehaviour {
 
 	}
 
+    private void SwitchToCabinetView(Transform currentCabinetDoor)
+    {
+        //otwieranie
+        OpenDoor(CabinetDoorNumber, true);
+
+        //zmiana kamery
+        var cabinetCamera = currentCabinetDoor.GetComponentInChildren<Camera>();
+        this.GetComponentInChildren<Camera>().enabled = false;
+        tempCamera = cabinetCamera;
+        tempCamera.enabled = true;
+
+
+        // wylaczenie collidera
+        GetComponent<CharacterController>().enabled = false;
+
+        // zmiana inputu
+        cabinetController = currentCabinetDoor.GetComponentInChildren<CabinetViewController>();
+        SwitchControl(cabinetController, normalController);
+
+        isInCabinetView = true;
+    }
+
+    private void SwitchToNormalView()
+    {
+
+    }
+
     private void SwitchControl(MonoBehaviour inputToEnable, MonoBehaviour inputToDisable)
     {
         inputToDisable.enabled = false;
         inputToEnable.enabled = true;
+    }
+
+    private void OpenDoor(int doorNumber, bool open)
+    {
+        if (doorNumber == 1)
+        {
+            var door = currentCabinet.transform.Find("szafa_1_Drzwi");
+            if (open)
+                door.transform.Rotate(0f, 0f, -100f);
+            else
+                door.transform.Rotate(0f, 0f, 100f);
+        }
+        else if (doorNumber == 2)
+        {
+            var doorL = currentCabinet.transform.Find("szafa_1_D_L");
+            var doorP = currentCabinet.transform.Find("szafa_1_D_P");
+
+            if (open)
+            {
+                doorL.transform.Rotate(0f, 0f, -100f);
+                doorP.transform.Rotate(0f, 0f, -100f);
+            }   
+            else
+            {
+                doorL.transform.Rotate(0f, 0f, 100f);
+                doorP.transform.Rotate(0f, 0f, -100f);
+            }
+
+        }
+       
+
+
     }
 }

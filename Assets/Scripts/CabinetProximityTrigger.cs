@@ -6,6 +6,7 @@ using UnityEngine;
 public class CabinetProximityTrigger : MonoBehaviour
 {
     public int numerSzafy = 1;
+    public int numerDrzwi = 1; //1 - przod; 2 - tyl
 
     bool hasCollided = false;
     string labelText = "";
@@ -28,16 +29,10 @@ public class CabinetProximityTrigger : MonoBehaviour
             if (pa != null)
             {
                 pa.InCabinetProximity = numerSzafy;
+                pa.CabinetDoorNumber = numerDrzwi;
             }
-            OpenDoor();
+            //OpenDoor(true);
         }
-    }
-
-    private void OpenDoor()
-    {
-        var door = transform.Find("szafa_1_Drzwi");
-
-        door.transform.Rotate(0f, 0f, -100f);
     }
 
     void OnTriggerExit(Collider c)
@@ -47,15 +42,19 @@ public class CabinetProximityTrigger : MonoBehaviour
         if (pa != null)
         {
             pa.InCabinetProximity = 0;
+            pa.CabinetDoorNumber = 0;
         }
-        CloseDoor();
+        //OpenDoor(false);
     }
 
-    private void CloseDoor()
+    private void OpenDoor(bool open)
     {
         var door = transform.Find("szafa_1_Drzwi");
 
-        door.transform.Rotate(0f, 0f, 100f);
+        if(open)
+            door.transform.Rotate(0f, 0f, -100f);
+        else
+            door.transform.Rotate(0f, 0f, 100f);
     }
 
     // Use this for initialization
