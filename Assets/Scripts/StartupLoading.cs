@@ -8,7 +8,7 @@ using UnityEngine;
 public class StartupLoading : MonoBehaviour {
 
     public Vector3 startingOffset = new Vector3 { x = -1.92f, y = 1.388f, z = 0.5f };
-    public float verticalSpacing = 0.02f;
+    public float verticalSpacing = 0.00f;
 
     // Use this for initialization
     void Start () {
@@ -33,21 +33,43 @@ public class StartupLoading : MonoBehaviour {
 
                 foreach (var item in items)
                 {
+
+
+
                     // check for custom offset
                     if (item.Attribute("spacing") != null)
                     {
                         float spacingOffset = float.Parse(item.Attribute("spacing").Value);
-                        heightOffset += spacingOffset;
+                        heightOffset += spacingOffset * 0.1345f;
                     }
 
                     prefabName = item.Value;
-                    var prefabType = Resources.Load(prefabName);
+                    var prefabType = Resources.Load(prefabName, typeof(GameObject));
 
                     var newPosition = startingOffset;
 
                     if (prefabType != null)
                     {
                         newItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
+
+                        if (item.Attribute("texture") != null)
+                        {
+                            //var pName = item.Attribute("type").Value;
+                            //var pType = Resources.Load(pName, typeof(GameObject));
+
+                            //var newIt = Instantiate(pType, cabinetObject.transform) as GameObject;
+
+
+                            //var path = @"file://" + Application.dataPath + item.Attribute("texture").Value;
+                            var path = @"file://" + item.Attribute("texture").Value;
+                            //Debug.Log(path);
+                            var tex = new WWW(path);
+
+                            var mat = Resources.Load(prefabName, typeof(Material));
+                            newItem.GetComponent<Renderer>().material = new Material((Material)mat);
+                            newItem.GetComponent<Renderer>().material.mainTexture = tex.texture;
+                        }
+
 
                         // offset center of new object by half of its height + previous offset from other objects
                         float height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
