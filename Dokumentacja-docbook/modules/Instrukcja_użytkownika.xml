@@ -7,15 +7,6 @@
   <section>
     <title>Interfejs użytkownika</title>
 
-    <para>lal</para>
-
-    <section>
-      <title/>
-
-      <para/>
-    </section>
-  </section>
-
   <section>
     <title>Poruszanie się w wirtualnej serwerowni</title>
 
@@ -92,4 +83,133 @@
 
     <para>Zsdasdads</para>
   </section>
+</section>
+
+<section> <title>Definiowanie zawartości szaf</title>
+<para>Urządzenia w szafach można rozmieścić za pomocą pliku "Serwerownia.xml" znajdującego się w folderze "XML" w głównym folderze programu.</para>
+
+    <para>W celu definiowania zawartości poszczególnych szaf, został użyty
+    plik konfiguracyjny w standardzie XML. Plik XML zawiera w sobie główną
+    gałąź "inventory" w której znajduje się cała konfiguracja. Do
+    zdefiniowania poszczególnej szafy, użyto znacznika "cabinet", który jako
+    zawiera atrybut "nazwa" definiujący poszczególną szafę. Projekt przewiduje
+    definiowanie 5 szaf, wiec będą przyjmowane tylko i wyłącznie zdefiniowane
+    w pliku nazwy: "szafa_1","szafa_2","szafa_3","szafa_4", "szafa_5".</para>
+
+    <para>Definiowanie poszczególnych obiektów w szafie, odbywa sie za pomocą
+    wpisanie do elementu "item", etykiety zdefiniowanego w symulacji obiektu
+    graficznego.</para>
+
+    <figure>
+      <title>Przykładowy plik XML definiujący dwie szafę</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/przykladowy_kod.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>Istnieje także możliwość definiowania wolnej przestrzeni między
+    urządzeniami poprzez utworzenie pustego elementu z atrybutem "spacing",
+    który przyjmuje wartości liczby zmiennoprzecinkowej (zalecane wartości:
+    0.5-3.0).</para>
+
+    <para>Lista dostepnych urzadzen do konfiguracji szaf:</para>
+
+    <para>"etykieta" - "nazwa urzadzenia":</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>ActinaSolar - X 1 Actina Solar</para>
+      </listitem>
+
+      <listitem>
+        <para>AT-8000S - Allied Telesis 8000S</para>
+      </listitem>
+
+      <listitem>
+        <para>AT-8948 - Allied Telesis 8948</para>
+      </listitem>
+
+      <listitem>
+        <para>AT-9424Ts - Allied Telesis 9424Ts</para>
+      </listitem>
+
+      <listitem>
+        <para>AT-AT770S - Allied Telesis AT770S</para>
+      </listitem>
+
+      <listitem>
+        <para>AT9000-24 - Allied Telesis 9000-24</para>
+      </listitem>
+
+      <listitem>
+        <para>AT_9000_28SP - Allied Telesis 9000-28</para>
+      </listitem>
+
+      <listitem>
+        <para>blade1 - HPE-BladeSystem1</para>
+      </listitem>
+
+      <listitem>
+        <para>blade2 - HPE-BladeSystem</para>
+      </listitem>
+
+      <listitem>
+        <para>blade3 - Blades - Supermicro</para>
+      </listitem>
+
+      <listitem>
+        <para>cs1708i - CS1708i 8-port KVM</para>
+      </listitem>
+
+      <listitem>
+        <para>hp2530 - HP 2530-24g</para>
+      </listitem>
+
+      <listitem>
+        <para>laptop - Aten Master View MAX CSI 708i</para>
+      </listitem>
+
+      <listitem>
+        <para>PS3 - klaster obliczeniowy PS3</para>
+      </listitem>
+
+      <listitem>
+        <para>quick6 - Fibrain Quick6-28</para>
+      </listitem>
+
+      <listitem>
+        <para>strikeX - Aerocool XStrike</para>
+      </listitem>
+
+      <listitem>
+        <para>RMS - Infratec RMS AD1</para>
+      </listitem>
+
+      <listitem>
+        <para>RS815 - Synology RackStation RS815+</para>
+      </listitem>
+
+      <listitem>
+        <para>SPHEREON4500 - SPHEREON 4500 MCDATA</para>
+      </listitem>
+
+      <listitem>
+        <para>WYSE - WYSE (monitor)</para>
+      </listitem>
+
+      <listitem>
+        <para>poweredge1855 - PowerEdge 1855</para>
+      </listitem>
+    </itemizedlist>
+
+
+    <section><title>Dodawanie urządzeń z teksturami użytkownika</title>
+    <para>typ1 - 1 U .. typ4 - 4U</para>
+</section>
+	</section>
+
+
 </chapter>

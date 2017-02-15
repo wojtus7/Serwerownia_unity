@@ -44,125 +44,73 @@
   <section>
     <title>Zaimplementowane rozwiązania</title>
 
-    <para>W celu definiowania zawartości poszczególnych szaf, został użyty
-    plik konfiguracyjny w standardzie XML. Plik XML zawiera w sobie główną
-    gałąź "inventory" w której znajduje się cała konfiguracja. Do
-    zdefiniowania poszczególnej szafy, użyto znacznika "cabinet", który jako
-    zawiera atrybut "nazwa" definiujący poszczególną szafę. Projekt przewiduje
-    definiowanie 5 szaf, wiec będą przyjmowane tylko i wyłącznie zdefiniowane
-    w pliku nazwy: "szafa_1","szafa_2","szafa_3","szafa_4", "szafa_5".</para>
+    <section>
+      <title>Plik konfiguracji zawartości szaf</title>
 
-    <para>Definiowanie poszczególnych obiektów w szafie, odbywa sie za pomocą
-    wpisanie do elementu "item", etykiety zdefiniowanego w symulacji obiektu
-    graficznego.</para>
+      <para>W celu możliwości łatwego zmieniania zawartości szaf w serwerowni,
+      zdecydowano o przechowywaniu informacji o ułożeniu urządzeń w
+      zewnętrznym pliku XML. Plik ten jest parsowany podczas uruchomienia
+      aplikacji w celu zapełnienia szafek odpowiednimi obiektami. Plik musi
+      znajdować się w katalogu XML i posiadać nazwę Serwerownia.xml.</para>
 
-    <figure>
-      <title>Przykładowy plik XML definiujący dwie szafę</title>
+      <para>Struktura znaczników przedstawia się następująco:</para>
 
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/przykladowy_kod.jpg"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
+      <itemizedlist>
+        <listitem>
+          <para><code>&lt;inventory&gt;&lt;/inventory&gt;</code> Nadrzędny
+          element (root), wszystkie pozostałe znaczniku muszą znajdować
+          wewnątrz niego</para>
+        </listitem>
 
-    <para>Istnieje także możliwość definiowania wolnej przestrzeni między
-    urządzeniami poprzez utworzenie pustego elementu z atrybutem "spacing",
-    który przyjmuje wartości liczby zmiennoprzecinkowej (zalecane wartości:
-    0.5-3.0).</para>
+        <listitem>
+          <para><code>&lt;cabinet&gt;&lt;/cabinet&gt;</code> Element
+          definiujący zawartość pojedynczej szafy. Musi znajdować się wewnątrz
+          elementu <code>inventory</code></para>
 
-    <para>Lista dostepnych urzadzen do konfiguracji szaf:</para>
+          <itemizedlist>
+            <listitem>
+              <para><code>name</code> (Wymagany, tekst) Atrybut identyfikujący
+              daną szafę.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
 
-    <para>"etykieta" - "nazwa urzadzenia":</para>
+        <listitem>
+          <para><code>&lt;item&gt;&lt;/item&gt;</code> Element opisujący
+          pojedyncze urządzenie wewnątrz szafy. Musi znajdować się wewnątrz
+          elementu <code>cabinet</code></para>
 
-    <itemizedlist>
-      <listitem>
-        <para>ActinaSolar - X 1 Actina Solar</para>
-      </listitem>
+          <itemizedlist>
+            <listitem>
+              <para><code>texture</code> (Opcjonalny, tekst) Atrybut ze
+              ścieżką do pliku zawierającego teksturę dla urządzenia.</para>
+            </listitem>
 
-      <listitem>
-        <para>AT-8000S - Allied Telesis 8000S</para>
-      </listitem>
+            <listitem>
+              <para><code>spacing</code> (Opcjonalny, liczba) Atrybut
+              określający wielkość dodatkowego odstępu jaki powinien wystąpić
+              między tym, a kolejnym urządzeniem. Jednostką jest U.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
 
-      <listitem>
-        <para>AT-8948 - Allied Telesis 8948</para>
-      </listitem>
+      <para>Element <code>cabinet</code> może zawierać wyłącznie 0 lub więcej
+      elementów <code>item</code>. Zawartość elementów typu <code>item</code>
+      może być pusta (do łatwego definiowania odstępów) lub zawierać jedną z
+      dostępnych nazw urządzeń/typów obiektów. Pierwszy element <code>item</code> jest urządzeniem położonym
+      najniżej w szafie.</para>
 
-      <listitem>
-        <para>AT-9424Ts - Allied Telesis 9424Ts</para>
-      </listitem>
 
-      <listitem>
-        <para>AT-AT770S - Allied Telesis AT770S</para>
-      </listitem>
+      <para>Dokładną instrukcję konfigurowania zawartości szafek, wraz z listą
+      dostępnych wartości można znaleźć w rozdziale Instrukcja
+      użytkownika.</para>
+    </section>
 
-      <listitem>
-        <para>AT9000-24 - Allied Telesis 9000-24</para>
-      </listitem>
+    <section>
+      <title>Projekt interfejsu dotykowego</title>
 
-      <listitem>
-        <para>AT_9000_28SP - Allied Telesis 9000-28</para>
-      </listitem>
-
-      <listitem>
-        <para>blade1 - HPE-BladeSystem1</para>
-      </listitem>
-
-      <listitem>
-        <para>blade2 - HPE-BladeSystem</para>
-      </listitem>
-
-      <listitem>
-        <para>blade3 - Blades - Supermicro</para>
-      </listitem>
-
-      <listitem>
-        <para>cs1708i - CS1708i 8-port KVM</para>
-      </listitem>
-
-      <listitem>
-        <para>hp2530 - HP 2530-24g</para>
-      </listitem>
-
-      <listitem>
-        <para>laptop - Aten Master View MAX CSI 708i</para>
-      </listitem>
-
-      <listitem>
-        <para>PS3 - klaster obliczeniowy PS3</para>
-      </listitem>
-
-      <listitem>
-        <para>quick6 - Fibrain Quick6-28</para>
-      </listitem>
-
-      <listitem>
-        <para>strikeX - Aerocool XStrike</para>
-      </listitem>
-
-      <listitem>
-        <para>RMS - Infratec RMS AD1</para>
-      </listitem>
-
-      <listitem>
-        <para>RS815 - Synology RackStation RS815+</para>
-      </listitem>
-
-      <listitem>
-        <para>SPHEREON4500 - SPHEREON 4500 MCDATA</para>
-      </listitem>
-
-      <listitem>
-        <para>WYSE - WYSE (monitor)</para>
-      </listitem>
-
-      <listitem>
-        <para>poweredge1855 - PowerEdge 1855</para>
-      </listitem>
-    </itemizedlist>
-  </section>
-
-  <section>
-     <title>Projekt interfejsu dotykowego</title>
+      <para>Interfejs podobny do Google StreetView.</para>
+    </section>
   </section>
 </chapter>
