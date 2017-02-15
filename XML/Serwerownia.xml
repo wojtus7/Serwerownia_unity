@@ -4,8 +4,23 @@
 
 <cabinet name="szafa_2">
 
-<item type="typ3">/Tex/9000-24.png</item>
+<item>cs1708i</item>
+<item>ActinaSolar</item>
+<item texture="D:\Projekty\GitHub\Serwerownia_unity\Assets\Tex\9000-24.png">typ4</item>
+<item texture="D:\Projekty\GitHub\Serwerownia_unity\Assets\Tex\AT-8000S.jpg">typ3</item>
+<item texture="D:\Projekty\GitHub\Serwerownia_unity\Assets\Tex\AT8948.jpg">typ2</item>
+<item texture="D:\Projekty\GitHub\Serwerownia_unity\Assets\Tex\blades.jpg">typ1</item>
 
+<item>ActinaSolar</item>
+<item texture="D:\Projekty\GitHub\Serwerownia_unity\Assets\Tex\9000-24.png">typ3</item>
+
+</cabinet>
+
+<cabinet name="szafa_1">
+
+<item>cs1708i</item>
+<item spacing="40"></item>
+<item>ActinaSolar</item>
 
 </cabinet>
 
