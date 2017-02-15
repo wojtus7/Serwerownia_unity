@@ -6,73 +6,225 @@
 
   <section>
     <title>Serwerownia na Wydziale Mechanicznym PL</title>
-    <para>
-      Serwerownia jest pomieszczeniem, które ze względów bezpieczeństwa....
-      -------------niedostępne, nie powinno się zakłócać..., ważne
-      "nie powinno byc duzego ruchu"
+
+    <para>Serwerownia jest pomieszczeniem, które ze względów bezpieczeństwa,
+    ograniczony został dostęp do osób nieuprawnionych. Krytyczna
+    infrastruktura telekomunikacyjna, zapewniająca ciągłość działania usług
+    teleinformatycznych dla Wydziału Mechanicznego wymaga nadzoru i kontroli
+    dostępu dla osób trzecich. Tylko wydzielone osoby,pełniące funkcje
+    administratorskie mają fizyczny dostęp do pomieszczenia serwerowni. Z
+    racji jednak, że dla zastosowanych w niech rozwiązaniach technicznych,
+    budowa jak i poszczególne jej komponenty, stanowią atrakcyjne źródło
+    wiedzy dla studentów, powstał projekt budowy wirtualnej serwerowni.
+    Projekt ten pozwala na zapoznanie się z niedostępnym wnętrzem serwerowni
+    jak i jej komponentami, poprzez zwiedzanie wykreowanej symulacji
+    serwerowni, będącą jej odzwierciedleniem w wirtualnej rzeczywistości.
     </para>
   </section>
 
-<section> <title>Istniejące rozwiązania dotyczące wizualizacji pomieszczeń serwerowych</title>
-
-  <para>Obecnie na rynku dostępne są komercyjne oprogramowania do zewnętrznego
-  monitorowania stanu i zasobów sprzętowych dużych serwerowni wykorzystywanych
-  przez firmy, instytucje, ośrodki badawcze i naukowe. Oprogramowanie to
-  pozwala na bardzo zaawansowane możliwości takie jak projektowanie,
-  wizualizacje i zarządzenie infrastrukturą data center. Innowacją jest
-  prezentowanie widoku w 3D. Oprogramowanie to wizualizuje schematy wcześniej
-  zaprojektowanej serwerowni umożliwiając wyświetlanie informacji o
-  urządzeniach takich jak: przełączniki, serwery, panele krosowe włącznie z
-  rzeczywistymi krosowaniami. Dodatkowo możliwy jest monitoring stanu
-  technicznego urządzeń, temperatury oraz ich status. Systemy te mają w
-  posiadaniu zaawansowany panel administracyjny, z którego poziomu można
-  konfigurować poszczególne szafy serwerowe. Przykłady takich systemów to:
-  Itrach CPIM z wizualizacją 3D, ManageEngineRackBuilder Plus.</para>
-
   <section>
-    <title>ManageEngine RackBuilder Plus</title>
+    <title>Istniejące rozwiązania dotyczące wizualizacji pomieszczeń
+    serwerowych</title>
 
-    <para>ManageEngine RackBuilder Plus jest narzędziem, które pozwala na
-    tworzenie wirtualnych raków serwerowych z zainstalowanymi w nich
-    urządzeniami. Użytkownik może dodawać, modyfikować oraz usuwać urządzenia.
-    Aplikacja pozwala monitorować temperaturę urządzeń. Po kliknięciu na
-    wybrany element wyświetlana jest informacja o sprzęcie oraz dodatkowe
-    informacje o stanie urządzenia.</para>
+    <para>Obecnie na rynku coraz bardziej stają sie dostępne komercyjne
+    oprogramowania do zewnętrznego monitorowania stanu zasobów dużych
+    serwerowni wykorzystywanych przez firmy i instytucje ze względnu na
+    istotność przetwarzanych w nich danych.Oprogramowanie tego typu pozwala na
+    zaawansowane możliwości kreacji i dostarniacza informacji o wirtualnych
+    serwerowniach, będących odzwierciedleniem już istniejących w prawdziwym
+    świecie. Oprogramowanie to przedstawia schematy wcześniej zaprojektowanej
+    serwerowni umożliwiając wyświetlanie informacji o statusach urządzeniach i
+    ich konfiguracjach. Dodatkowo możliwy jest monitoring stanu technicznego
+    urządzeń w tym temperatury. Systemy te mają w posiadaniu zaawansowany
+    panel administracyjny, z którego poziomu można konfigurować poszczególne
+    szafy serwerowe i dashbordy przedstawiające aktualny status serwerowni.
+    Przykładem aktualnych rozwiązań takich systemów są :
+    ManageEngineRackBuilder Plus,Datacenter Visualizer czy ITRACS CPIM.</para>
 
-    <para><figure>
-        <title>Panel umożliwiający tworzenie szafy serwerowej</title>
+    <section>
+      <title>ManageEngine RackBuilder Plus</title>
 
-        <mediaobject>
-          <imageobject>
-            <imagedata contentwidth="1016" fileref="images/MERBP.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure></para>
+      <para>ManageEngine RackBuilder Plus to oprogramowanie do wizualizacji
+      centrum danych, które umożliwia stworzenie wirtualnego odwzorowania
+      serwerowni i szaf rackowych w 3D oraz zarządzać przestrzenią i
+      możliwościami dla lepszej wydajności. Dynamiczny widok 3D prezentuję na
+      żywo stan zdrowia urządzeń w każdej szafie rackowej. Wszelkie usterki
+      lub problemy są sygnalizowane za pomocą kodów kolorów i klikając na
+      wybrane urządzenia można dostać się do szczegółów konkretnego
+      urządzenia.</para>
+
+      <para>Głównymi funkcjonalnościami tego oprogramowania jest:</para>
+
+      <para/>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Centrum danych</emphasis> w 3D
+          RackBuilder Plus pozwala na tworzenie realistycznych szaf rackowych
+          w serwerowni 3D.Można dostosować rozmiary pomieszczenia serwerowni
+          do własnych potrzeb.Tak zbudowany widok centrum danych może być
+          wyświetlany na ekranie NOC monitorowanego 24×7.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Proste tworzenie szaf rackowych
+          </emphasis>RackBuilder Plus pozwala na tworzenie wirtualnej makiety
+          swoich szaf z urządzeniami wbudowanymi w daną szafę rackową.
+          Budowniczego szafy rackowej jest bardzo proste i odbywa się za
+          pomocą metody drag&amp;drop.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Zarządzanie energią</emphasis> System
+          stale monitoruje temperaturę zasilania i urządzeń w centrum danych
+          oraz pomaga zidentyfikować PUE i DCIE utworzonego centrum danych.
+          Zapewnia również opcje przypisania polityk energetycznych do
+          urządzeń i decyduje o ilości energii, która jest do nich
+          dostarczona.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Monitorowanie urządzeń w czasie
+          rzeczywistym </emphasis>Monitoring dostępności pozwala na monitoring
+          i wizualizację stanu zdrowia urządzeń w czasie rzeczywistym.
+          Wszelkie usterki lub alarmy są podświetlone na urządzeniach za
+          pomocą kolorów. Klikając na niesprawne urządzenia można przejść do
+          analizy wydajności urządzenia i zidentyfikować daną usterkę.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Zarządzanie pojemnością</emphasis>
+          RackBuilder Plus oferuje szczegółową wiedzę na temat wolnego miejsca
+          w każdej szafie rackowej lub centrum danych oraz liczby urządzeń
+          podłączonych do każdej szafy. Informacja ta pozwala na prognozowanie
+          ilości wolnego miejsca w centrum danych i ewentualnych potrzeb na
+          przyszłość.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Alarmowanie </emphasis>System pozwala na
+          monitorowanie stanu wszystkich odkrytych urządzeń w systemie i w
+          przypadku wystąpienia alarmu wyświetla odpowiedni komunikat o
+          błędzie.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para/>
+
+      <para><figure>
+          <title>Interfejs RackBuilder Plus</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata contentwidth="582" fileref="images/MWT.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure></para>
+    </section>
+
+    <section>
+       
+
+      <title>Datacenter Visualizer (uDCV)</title>
+
+       Datacenter Visualizer (uDCV) jest platformą firmy uinnova pozwalająca na integracje danych i wizualiacje serwerowni,która pozwala użytkownikom na przedstawienie informacji o komponentach serwerowni, sieciach, magazynów danych, serwerach, systemach operacyjnych, wirtualnych maszynach czy aplikacjach uruchomionych na nich. 
+
+      <para>
+        <figure>
+          <title>Zrzut ekranu z programu Datacenter Visualizer</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata contentwidth="500" fileref="images/uinova.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </para>
+
+       
+
+      <para/>
+
+       Platforma uDCV pozwana użytkownikom na stworzenie jednego zintegrowanej widoku wizualizacji 3D serwerowni dla wszystkich pracowników IT. Rozwiązanie to pozwala narzucać ograniczenia informacji i dostepności poszczególnych danych dla różnych oddziałów firmy. Głównymi zaletami uDCV są następujące funkcjonalności: 
+
+      <itemizedlist>
+        <listitem>Wizualizacja lokacji i fizycznych zasobów, wraz zmożliwością
+        rozbudowanej wyszukiwarki</listitem>
+
+        <listitem>Duża lista predefiniowanych obiektów.</listitem>
+
+        <listitem>Assety zintegrowane z przydzieloną im konfiguracją i
+        systemem powiadomień.</listitem>
+
+        <listitem>Wizualizacja połączeń telekomunikacyjnych i
+        elektrycznych</listitem>
+
+        <listitem>Wizualizacja warunków w serwerowni: rozkład temperatury i
+        wilgotności powietrza</listitem>
+      </itemizedlist>
+
+       
+
+      <para>
+        <figure>
+          <title>Datacenter Visualizer - podzial na poziomy</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata contentwidth="500" fileref="images/uinova2.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </para>
+
+       
+
+      <para/>
+
+       
+
+      <para/>
+
+       
+    </section>
+
+    <section>
+      <title>ITRACS CPIM</title>
+
+      <para>CPIM (Converged Physical Infrastructure Management) – to
+      oprogramowanie ułatwiające zarządzanie infrastrukturą Data
+      Center.</para>
+
+      <para>CPIM jest platformą dzięki której można zaprojektować i zarządzać
+      infrastrukturą IT. Jest to nowoczesne narzędzie, dające zupełnie nowe
+      możliwości osobom zajmującym się zarządzaniem Data Center. </para>
+
+      <para> CPIM to również bardzo duża baza danych. Znajdują się w niej
+      informacje o każdym urządzeniu i sprzęcie zainstalowanym w całej
+      infrastrukturze danej firmy. Możliwe jest zasymulowanie zmiany położenia
+      poszczególnych urządzeń, co pozwala na zaplanowanie migracji urządzeń.
+      </para>
+
+      <para>System potrafi wygenerować listę co należy krok po kroku zrobić,
+      aby te zmiany miały miejsce. </para>
+
+      <para>Platforma ITRACS CPIM umożliwia nie tylko zaprojektowanie
+      serwerowni ale także zarządzanie istniejącą już infrastrukturą
+      IT.</para>
+
+      <para><figure>
+          <title>Zrzut ekranu z programu ITRACS CPIM</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata contentwidth="500" fileref="images/ITRACS.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure></para>
+
+      <para/>
+
+      <para/>
+    </section>
   </section>
-
-  <section>
-    <title>ITRACS CPIM</title>
-
-    <para>Kolejnym dobrym rozwiązaniem jest wspomniany program ITRACS CPIM z
-    wizualizacją 3D. Jest to platforma, która dysponuje zaawansowanym panelem
-    do zarządzania datacenter. CPIM to nie tylko obrazy, ale również bardzo
-    duża baza danych. Znajdują się w niej informacje o każdym urządzeniu i
-    sprzęcie zainstalowanym w całej infrastrukturze. Można zasymulować zmianę
-    położenia poszczególnych urządzeń. System potrafi wygenerować listę co
-    należy krok po kroku zrobić, aby te zmiany miały miejsce. Platforma ITRACS
-    CPIM umożliwia nie tylko zaprojektowanie serwerowni ale także zarządzanie
-    istniejącą już infrastrukturą IT.</para>
-
-    <para><figure>
-        <title>Zrzut ekranu z programu ITRACS CPIM</title>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata contentwidth="972" fileref="images/ITRACS.png"/>
-          </imageobject>
-        </mediaobject>
-      </figure></para>
-  </section>
-</section>
-
 </chapter>
