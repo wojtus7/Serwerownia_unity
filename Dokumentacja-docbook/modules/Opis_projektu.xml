@@ -66,6 +66,11 @@
       </mediaobject>
     </figure>
 
+    <para>Istnieje także możliwość definiowania wolnej przestrzeni między
+    urządzeniami poprzez utworzenie pustego elementu z atrybutem "spacing",
+    który przyjmuje wartości liczby zmiennoprzecinkowej (zalecane wartości:
+    0.5-3.0).</para>
+
     <para>Lista dostepnych urzadzen do konfiguracji szaf:</para>
 
     <para>"etykieta" - "nazwa urzadzenia":</para>

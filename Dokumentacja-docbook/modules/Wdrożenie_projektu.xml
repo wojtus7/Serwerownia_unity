@@ -38,7 +38,9 @@
     <title>Instalacja</title>
 
     <para>Instalacja programu sprowadza się do przekopiowania plików oraz
-    uruchomienie pliku start.exe</para>
+    uruchomienie pliku start.exe. Zawartość szafek definiuje się w pliku
+    Serwerownia.xml, który należy utworzyć w folderze o nazwie "XML",
+    znajdującym się w tym samym folderze co plik .exe.</para>
 
     <figure>
       <title>Plik uruchomieniowy</title>
