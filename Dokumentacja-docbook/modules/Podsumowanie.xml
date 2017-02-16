@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter>
+  <title>Podsumowanie</title>
+
+  <para>Udało się zaimplementować większość z założonych funkcjonalności. Aplikacja jest wydajna i stabilna. Poniżej przedstawiono porównanie wizualicazcji z rzeczywistą serwerownią</para>
+
+      <para><figure>
+        <title>Widok na serwerownię</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="680" fileref="images/panorama1.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure></para>
+</chapter>

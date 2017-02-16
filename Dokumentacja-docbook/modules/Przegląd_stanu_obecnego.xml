@@ -53,9 +53,7 @@
       wybrane urządzenia można dostać się do szczegółów konkretnego
       urządzenia.</para>
 
-      <para>Głównymi funkcjonalnościami tego oprogramowania jest:</para>
-
-      <para/>
+      <para>Głównymi funkcjonalnościami tego oprogramowania jest:
 
       <itemizedlist>
         <listitem>
@@ -109,7 +107,7 @@
         </listitem>
       </itemizedlist>
 
-      <para/>
+      </para>
 
       <para><figure>
           <title>Interfejs RackBuilder Plus</title>
@@ -127,8 +125,9 @@
 
       <title>Datacenter Visualizer (uDCV)</title>
 
+<para>
        Datacenter Visualizer (uDCV) jest platformą firmy uinnova pozwalająca na integracje danych i wizualiacje serwerowni,która pozwala użytkownikom na przedstawienie informacji o komponentach serwerowni, sieciach, magazynów danych, serwerach, systemach operacyjnych, wirtualnych maszynach czy aplikacjach uruchomionych na nich. 
-
+</para>
       <para>
         <figure>
           <title>Zrzut ekranu z programu Datacenter Visualizer</title>
@@ -143,24 +142,25 @@
 
        
 
-      <para/>
+      <para>
 
        Platforma uDCV pozwana użytkownikom na stworzenie jednego zintegrowanej widoku wizualizacji 3D serwerowni dla wszystkich pracowników IT. Rozwiązanie to pozwala narzucać ograniczenia informacji i dostepności poszczególnych danych dla różnych oddziałów firmy. Głównymi zaletami uDCV są następujące funkcjonalności: 
+       </para>
 
       <itemizedlist>
-        <listitem>Wizualizacja lokacji i fizycznych zasobów, wraz zmożliwością
-        rozbudowanej wyszukiwarki</listitem>
+        <listitem><para>Wizualizacja lokacji i fizycznych zasobów, wraz zmożliwością
+        rozbudowanej wyszukiwarki</para></listitem>
 
-        <listitem>Duża lista predefiniowanych obiektów.</listitem>
+        <listitem><para>Duża lista predefiniowanych obiektów.</para></listitem>
 
-        <listitem>Assety zintegrowane z przydzieloną im konfiguracją i
-        systemem powiadomień.</listitem>
+        <listitem><para>Assety zintegrowane z przydzieloną im konfiguracją i
+        systemem powiadomień.</para></listitem>
 
-        <listitem>Wizualizacja połączeń telekomunikacyjnych i
-        elektrycznych</listitem>
+        <listitem><para>Wizualizacja połączeń telekomunikacyjnych i
+        elektrycznych</para></listitem>
 
-        <listitem>Wizualizacja warunków w serwerowni: rozkład temperatury i
-        wilgotności powietrza</listitem>
+        <listitem><para>Wizualizacja warunków w serwerowni: rozkład temperatury i
+        wilgotności powietrza</para></listitem>
       </itemizedlist>
 
        
@@ -179,11 +179,8 @@
 
        
 
-      <para/>
 
-       
 
-      <para/>
 
        
     </section>

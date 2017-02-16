@@ -38,12 +38,12 @@
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="modules/Opis_projektu.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  <xi:include href="modules/Implementacja.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="modules/Instrukcja_użytkownika.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
  <xi:include href="modules/Wdrożenie_projektu.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ <xi:include href="modules/Podsumowanie.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>            
   <xi:include href="modules/Bibliografia.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>           
 </book>

@@ -21,7 +21,7 @@
 
       <listitem>
         <para>trójwymiarowe modele pomieszczenia, jego elementów oraz
-        urzadzeń</para>
+        urządzeń</para>
       </listitem>
     </itemizedlist>
   </section>
@@ -38,11 +38,11 @@
 
       <listitem>
         <para>Wykonanie zdjęć poglądowych pomieszczenie oraz dokładnych zdjęć
-        urządzeń wymagających utworzennia tekstury</para>
+        urządzeń wymagających utworzenia tekstury</para>
       </listitem>
 
       <listitem>
-        <para>Określenie wymiarów pomiesczenia, szaf i urządzeń</para>
+        <para>Określenie wymiarów pomieszczenia, szaf i urządzeń</para>
       </listitem>
 
       <listitem>
@@ -68,15 +68,15 @@
       </listitem>
 
       <listitem>
-        <para>Dostosowyanie ustawien renderowania</para>
+        <para>Dostosowywanie ustawień renderowania</para>
       </listitem>
 
       <listitem>
-        <para>Podstawowy interefjs uzytkownika</para>
+        <para>Podstawowy interfejs użytkownika</para>
       </listitem>
 
       <listitem>
-        <para>Opracowanie systemu pozwalającego na konfigurowanie zawartosci
+        <para>Opracowanie systemu pozwalającego na konfigurowanie zawartości
         szafek</para>
       </listitem>
 
@@ -92,6 +92,7 @@
         <para>Optymalizacja</para>
       </listitem>
     </orderedlist>
+
   </section>
 
   <section>
@@ -106,62 +107,61 @@
 
     <itemizedlist>
       <listitem>
-         Stworznie reprezentacji instniejącej serwerownia wraz z jej obecnymi obiektami 
+         <para>Stworzenie reprezentacji istniejącej serwerownia wraz z jej obecnymi obiektami</para>
       </listitem>
 
       <listitem>
-         Odwzorowanie istniejących elementów szaf w serwerowni 
+         <para>Odwzorowanie istniejących elementów szaf w serwerowni </para>
       </listitem>
 
       <listitem>
-         OStworzenie systemu konfiguracji zasobów poszczególnych szaf. 
+        <para>OStworzenie systemu konfiguracji zasobów poszczególnych szaf. </para>
       </listitem>
     </itemizedlist>
 
-    <para><emphasis role="bold">SHOULD</emphasis>: <itemizedlist>
+    <para><emphasis role="bold">SHOULD</emphasis>:</para> <itemizedlist>
         <listitem>
-           Poruszanie się po wirtualnej serwerowni i zmiana widoku kamery. 
+           <para>Poruszanie się po wirtualnej serwerowni i zmiana widoku kamery. </para>
         </listitem>
 
         <listitem>
-           Przystosowanie interfejsu do dowolnego ekranu dotykowego. 
+           <para>Przystosowanie interfejsu do dowolnego ekranu dotykowego. </para>
         </listitem>
-      </itemizedlist></para>
+      </itemizedlist>
 
-    <para><emphasis role="bold">COULD</emphasis>: <itemizedlist>
+    <para><emphasis role="bold">COULD</emphasis>:</para> <itemizedlist>
         <listitem>
-           Interfejs otwierania i zamykania drzwi do poszczgólnych szaf 
-        </listitem>
-
-        <listitem>
-           Stworzenie skryptu widoku pozwalający na przeglądanie szaf w serwerowni. 
+          <para> Interfejs otwierania i zamykania drzwi do poszczególnych szaf </para>
         </listitem>
 
         <listitem>
-           Możliwość definiowania nowych obiektów na podstawie ich rozmiaru i nadawnie im tektur, nieznajdującej się w stworzonej liście obiektów. 
+           <para>Stworzenie skryptu widoku pozwalający na przeglądanie szaf w serwerowni. </para>
         </listitem>
-      </itemizedlist></para>
+
+        <listitem>
+           <para>Możliwość definiowania nowych obiektów na podstawie ich rozmiaru i nadawanie im tektur, nieznajdującej się w stworzonej liście obiektów. </para>
+        </listitem>
+      </itemizedlist>
 
     <para><emphasis role="bold">WO</emphasis><emphasis
-    role="bold">N</emphasis><emphasis role="bold">’T</emphasis>: <itemizedlist>
+    role="bold">N</emphasis><emphasis role="bold">’T</emphasis>:</para> <itemizedlist>
         <listitem>
-           Dodanie animacji tekstur obiektów 
+           <para>Dodanie animacji tekstur obiektów </para>
         </listitem>
 
         <listitem>
-           Dodanie efektów dzwiękowych obiektów 
+          <para> Dodanie efektów dźwiękowych obiektów </para>
         </listitem>
 
         <listitem>
-           Dodanie interakcji uruchamiania poszczegolnych systemow w szafie 
+          <para> Dodanie interakcji uruchamiania poszczególnych systemow w szafie </para>
         </listitem>
 
         <listitem>
-           Dodanie inforamcji o stanie poszczególnych urzadzen. 
+          <para> Dodanie informacji o stanie poszczególnych uradzeń. </para>
         </listitem>
-      </itemizedlist></para>
+      </itemizedlist>
 
-    <para/>
 
     <para>Legenda charakterystyki MoSCoW:</para>
 
@@ -172,11 +172,11 @@
     priorytecie, która powinna być zawarta w rozwiązaniu, jeżeli jest to
     możliwe.</emphasis></para>
 
-    <para> <emphasis> C – COULD (może być): Opisuje wymaganie, które jest
+    <para><emphasis> C – COULD (może być): Opisuje wymaganie, które jest
     postrzegane jako pożądane, ale niekonieczne. Zostanie ono zawarte, jeżeli
     pozwolą na to czas i zasoby.</emphasis></para>
 
-    <para> <emphasis> W – WON’T (nie będzie): Reprezentuje wymaganie, które –
+    <para><emphasis> W – WON’T (nie będzie): Reprezentuje wymaganie, które –
     za zgodą interesariuszy – nie będzie implementowane w danym wydaniu, ale
     może być rozpatrzone w przyszłości.</emphasis></para>
   </section>
