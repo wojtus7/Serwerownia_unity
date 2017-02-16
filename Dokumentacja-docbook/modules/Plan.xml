@@ -7,14 +7,177 @@
   <section>
     <title>Wymagane zasoby/Zebranie wymagań</title>
 
+    <para>Konieczność pozyskania następujących zasobów:</para>
 
-    <para>Konieczność pozyskania: (w sekcjach albo punktory): spis i informacje na temat urządzeń,  tekstury urządzeń lub zdjęcia/pliki graficzne, które można przekształcić na tekstury, trójwymiarowe modele pomieszczenia i jego elementów oraz urzadzeń</para>
+    <itemizedlist>
+      <listitem>
+        <para>spis i informacje na temat urządzeń</para>
+      </listitem>
 
-    
-    </section>
+      <listitem>
+        <para>tekstury urządzeń lub zdjęcia/pliki graficzne które można
+        przekształcić na tekstury</para>
+      </listitem>
 
-<section> <title>Plan/harmonogram działań </title>
-<para>(tu by mogl byc ewentualnie taki harmonogram projektu jak w MS Project, gdzie niektore zadania moga sie zaczac dopiero po rozpoczeciu innych itd</para>
-<para>Plan (daty?-raczej nie): 1. Przeprowadzenie inwentaryzacji 2. Wykonanie zdjęć poglądowych pomieszczenie oraz dokładnych zdjęć urządzeń wymagających utworzennia tekstury 3. Określenie wymiarów pomiesczenia, szaf i urządzeń 4. Wykonanie modelu pomieszczenia 5. Zaimportowanie modelu do silnika aplikacji oraz zaimplementowanie podstawowej interakcji 6. Wykonanie modeli urządzeń 7. Teksturowanie urządzeń 8. Projektowanie i skalowanie sceny przedstawiającej serwerownię w aplikacji 9. Dostosowyanie ustawien renderowania 10. Podstawowy interefjs uzytkownika 11. Opracowanie systemu pozwalającego na konfigurowanie zawartosci szafek 12. Dopracowanie interfejsu użytkownika i testy aplikacji 13. Implementacja poprawek i dodatkowych opcji interakcji 14. Optymalizacja 15. Wdrozenie projektu</para>
-</section>
+      <listitem>
+        <para>trójwymiarowe modele pomieszczenia, jego elementów oraz
+        urzadzeń</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>Plan/harmonogram działań</title>
+
+    <para>Plan :</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Przeprowadzenie inwentaryzacji</para>
+      </listitem>
+
+      <listitem>
+        <para>Wykonanie zdjęć poglądowych pomieszczenie oraz dokładnych zdjęć
+        urządzeń wymagających utworzennia tekstury</para>
+      </listitem>
+
+      <listitem>
+        <para>Określenie wymiarów pomiesczenia, szaf i urządzeń</para>
+      </listitem>
+
+      <listitem>
+        <para>Wykonanie modelu pomieszczenia</para>
+      </listitem>
+
+      <listitem>
+        <para>Zaimportowanie modelu do silnika aplikacji oraz
+        zaimplementowanie podstawowej interakcji</para>
+      </listitem>
+
+      <listitem>
+        <para>Wykonanie modeli urządzeń</para>
+      </listitem>
+
+      <listitem>
+        <para>Teksturowanie urządzeń</para>
+      </listitem>
+
+      <listitem>
+        <para>Projektowanie i skalowanie sceny przedstawiającej serwerownię w
+        aplikacji</para>
+      </listitem>
+
+      <listitem>
+        <para>Dostosowyanie ustawien renderowania</para>
+      </listitem>
+
+      <listitem>
+        <para>Podstawowy interefjs uzytkownika</para>
+      </listitem>
+
+      <listitem>
+        <para>Opracowanie systemu pozwalającego na konfigurowanie zawartosci
+        szafek</para>
+      </listitem>
+
+      <listitem>
+        <para>Dopracowanie interfejsu użytkownika i testy aplikacji</para>
+      </listitem>
+
+      <listitem>
+        <para>Implementacja poprawek i dodatkowych opcji interakcji</para>
+      </listitem>
+
+      <listitem>
+        <para>Optymalizacja</para>
+      </listitem>
+    </orderedlist>
+  </section>
+
+  <section>
+    <title>Metoda MoSCoW</title>
+
+    <para>Metoda MoSCoW <emphasis>(Must, Should, Could, Won’t) </emphasis>
+    świetnie nadaje się do szybkiego nadawania priorytetów dla kolejności
+    wykonania listy zadań w projekcie, co pozwala na skupieniu uwagi na
+    istotnych fundamentach projektu.</para>
+
+    <para><emphasis role="bold">MUST</emphasis>:</para>
+
+    <itemizedlist>
+      <listitem>
+         Stworznie reprezentacji instniejącej serwerownia wraz z jej obecnymi obiektami 
+      </listitem>
+
+      <listitem>
+         Odwzorowanie istniejących elementów szaf w serwerowni 
+      </listitem>
+
+      <listitem>
+         OStworzenie systemu konfiguracji zasobów poszczególnych szaf. 
+      </listitem>
+    </itemizedlist>
+
+    <para><emphasis role="bold">SHOULD</emphasis>: <itemizedlist>
+        <listitem>
+           Poruszanie się po wirtualnej serwerowni i zmiana widoku kamery. 
+        </listitem>
+
+        <listitem>
+           Przystosowanie interfejsu do dowolnego ekranu dotykowego. 
+        </listitem>
+      </itemizedlist></para>
+
+    <para><emphasis role="bold">COULD</emphasis>: <itemizedlist>
+        <listitem>
+           Interfejs otwierania i zamykania drzwi do poszczgólnych szaf 
+        </listitem>
+
+        <listitem>
+           Stworzenie skryptu widoku pozwalający na przeglądanie szaf w serwerowni. 
+        </listitem>
+
+        <listitem>
+           Możliwość definiowania nowych obiektów na podstawie ich rozmiaru i nadawnie im tektur, nieznajdującej się w stworzonej liście obiektów. 
+        </listitem>
+      </itemizedlist></para>
+
+    <para><emphasis role="bold">WO</emphasis><emphasis
+    role="bold">N</emphasis><emphasis role="bold">’T</emphasis>: <itemizedlist>
+        <listitem>
+           Dodanie animacji tekstur obiektów 
+        </listitem>
+
+        <listitem>
+           Dodanie efektów dzwiękowych obiektów 
+        </listitem>
+
+        <listitem>
+           Dodanie interakcji uruchamiania poszczegolnych systemow w szafie 
+        </listitem>
+
+        <listitem>
+           Dodanie inforamcji o stanie poszczególnych urzadzen. 
+        </listitem>
+      </itemizedlist></para>
+
+    <para/>
+
+    <para>Legenda charakterystyki MoSCoW:</para>
+
+    <para><emphasis> M – MUST (musi być): Opisuje wymaganie, które musi być
+    spełnione w końcowym, finalnym rozwiązaniu.</emphasis></para>
+
+    <para><emphasis> S – SHOULD (powinien być): Reprezentuje pozycję o wysokim
+    priorytecie, która powinna być zawarta w rozwiązaniu, jeżeli jest to
+    możliwe.</emphasis></para>
+
+    <para> <emphasis> C – COULD (może być): Opisuje wymaganie, które jest
+    postrzegane jako pożądane, ale niekonieczne. Zostanie ono zawarte, jeżeli
+    pozwolą na to czas i zasoby.</emphasis></para>
+
+    <para> <emphasis> W – WON’T (nie będzie): Reprezentuje wymaganie, które –
+    za zgodą interesariuszy – nie będzie implementowane w danym wydaniu, ale
+    może być rozpatrzone w przyszłości.</emphasis></para>
+  </section>
 </chapter>
