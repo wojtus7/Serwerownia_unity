@@ -130,7 +130,22 @@
     <section>
       <title>Projekt interfejsu dotykowego</title>
 
-      <para>Interfejs podobny do Google StreetView.</para>
+      <para>Interfejs został przystosowany do obsługi ekranu dotykowego,
+      zapewniając konfort korzystania z jego elementów do interakcji
+      użytkownika z symulacją wirtualnej serwerowni.</para>
+
+      <para>Zmiana widoku kamery została zaimplementowana w podobny do Google
+      StreetView, co pozwala użytkownikowi na intuicyjne rozglądanie się po
+      serwerowni i zmiane kierunku patrzenia kamery poprzez przesunięciem
+      ekranu palcem.</para>
+
+      <para>W celu konfortowego korzystania z interfejsu, gałka umożliwiająca
+      chodzenie i przycisk interakcji zostały umieszczone po przeciwnych
+      skrajnych części ekranu. Rzomieszczenie takie pozwala również na
+      możliwość korzystania z dwóch rąk jednocześnie: jedną do sterowania
+      połeżeniem kamery w przestrzeni wirtualnej serwerowni, drugą w celu
+      zmiany kierunku patrzenia kamery i wchodzenia w interakcje z
+      otoczeniem.</para>
     </section>
   </section>
 </chapter>
