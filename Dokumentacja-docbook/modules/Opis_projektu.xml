@@ -27,7 +27,7 @@
     skrypty użyte w programie Unity3D napisano w języku C#.</para>
 
     <figure>
-      <title>Logo Blender</title>
+      <title>Logo programu Blender</title>
 
       <mediaobject>
         <imageobject>
@@ -37,7 +37,26 @@
     </figure>
 
     <para>Do stworzenia wszystkich modeli obiektów użyto oprogramowania
-    Blender 2.78. W celu opracowania grafik i tektur został użyty program Gimp
+    Blender 2.78. Jest to program pozwalający na modelowanie i randowanie
+    obazów oraz animacji trójwymiarowym o nietypowym interfejsie użytkownika.
+    Wszechstronność tego rozwiązania pozwala użytkownikowi na tworzenie
+    prezentacji interaktywnych, symulacji czy gier na własnym silniku
+    graficznycm. Blender pozwala na szeroki zakres narzędzi do edycji i
+    modyfikacji obiektów 3D bazujących na siatkach(mesh), powierzchniach NURBS
+    czy krzywych Beziera.</para>
+
+    <figure>
+      <title>Logo programu Gimp 2</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/gimp.jpg"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>W celu opracowania grafik i tektur na stworzone wczesniej obiekty,
+    został użyty darmowy program do edycji grafik wektorowych i rastrowej Gimp
     2.</para>
   </section>
 
@@ -98,9 +117,8 @@
       <para>Element <code>cabinet</code> może zawierać wyłącznie 0 lub więcej
       elementów <code>item</code>. Zawartość elementów typu <code>item</code>
       może być pusta (do łatwego definiowania odstępów) lub zawierać jedną z
-      dostępnych nazw urządzeń/typów obiektów. Pierwszy element <code>item</code> jest urządzeniem położonym
-      najniżej w szafie.</para>
-
+      dostępnych nazw urządzeń/typów obiektów. Pierwszy element
+      <code>item</code> jest urządzeniem położonym najniżej w szafie.</para>
 
       <para>Dokładną instrukcję konfigurowania zawartości szafek, wraz z listą
       dostępnych wartości można znaleźć w rozdziale Instrukcja
