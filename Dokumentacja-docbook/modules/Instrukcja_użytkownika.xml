@@ -7,86 +7,90 @@
   <section>
     <title>Interfejs użytkownika</title>
 
-  <section>
-    <title>Poruszanie się w wirtualnej serwerowni</title>
+    <section>
+      <title>Poruszanie się w wirtualnej serwerowni</title>
 
-    <para>Interfejs dotykowy składa się z elementów pozwalających na
-    poruszanie się w przestrzeni wirtualnej serwerowni i interakcje
-    użytkownika z jej elementami.</para>
+      <para>Interfejs dotykowy składa się z elementów pozwalających na
+      poruszanie się w przestrzeni wirtualnej serwerowni i interakcje
+      użytkownika z jej elementami.</para>
 
-    <para>Do zmiany położenia kamery w wirtualnej serwerowni użyty został
-    wirtualna gałka, której odchylenie pozwala na rozpoczęcie przemieszczania
-    kamery w wyznaczonym przez nas kierunku.</para>
+      <para>Do zmiany położenia kamery w wirtualnej serwerowni użyty został
+      wirtualna gałka, której odchylenie pozwala na rozpoczęcie
+      przemieszczania kamery w wyznaczonym przez nas kierunku.</para>
 
-    <figure>
-      <title>Zmiana położenia</title>
+      <figure>
+        <title>Zmiana położenia</title>
 
-      <mediaobject>
-        <imageobject>
-          <imagedata contentwidth="397" fileref="images/galka.jpg"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="397" fileref="images/galka.jpg"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
 
-    <para>Elementem pozwalającym na obrót kamery w wirtualnej serwerowni jest
-    powierzchnia widocznego ekranu. W miejscu podglądu kamery na przygotowaną
-    scenę serwerowni został dodany panel pozwalający zmienić ustawienia kąta
-    obrotu kamery wokół aktywnej pozycji, ustawionej za pomocą gałki kierunku.
-    Obsługa obrotu kamery jest zbliżona do obsługi touchpada, pozwalając na
-    przesuwanie widoku aktywnej kamery w żądanym kierunku, poprzez
-    przesunięcie palcem po tym obszarze.</para>
+      <para>Elementem pozwalającym na obrót kamery w wirtualnej serwerowni
+      jest powierzchnia widocznego ekranu. W miejscu podglądu kamery na
+      przygotowaną scenę serwerowni został dodany panel pozwalający zmienić
+      ustawienia kąta obrotu kamery wokół aktywnej pozycji, ustawionej za
+      pomocą gałki kierunku. Obsługa obrotu kamery jest zbliżona do obsługi
+      touchpada, pozwalając na przesuwanie widoku aktywnej kamery w żądanym
+      kierunku, poprzez przesunięcie palcem po tym obszarze.</para>
 
-    <figure>
-      <title>Obszar zmiany kamery</title>
+      <figure>
+        <title>Obszar zmiany kamery</title>
 
-      <mediaobject>
-        <imageobject>
-          <imagedata contentwidth="397" fileref="images/touchpad.jpg"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="397" fileref="images/touchpad.jpg"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
 
-    <para>W celu interakcji z obiektami znajdującymi się z w wirtualnej
-    serwerowni, dodany został pojedynczy przycisk, który wyzwala akcje
-    obiektu. W celu otwarcia szafki należy podejść do dowolnych jej drzwi, co
-    spowoduje wyświetlenie komunikatu o możliwości interakcji.</para>
+      <para>W celu interakcji z obiektami znajdującymi się z w wirtualnej
+      serwerowni, dodany został pojedynczy przycisk, który wyzwala akcje
+      obiektu. W celu otwarcia szafki należy podejść do dowolnych jej drzwi,
+      co spowoduje wyświetlenie komunikatu o możliwości interakcji.</para>
 
-    <figure>
-      <title>Otwieranie szaf</title>
+      <figure>
+        <title>Otwieranie szaf</title>
 
-      <mediaobject>
-        <imageobject>
-          <imagedata contentwidth="397" fileref="images/otwieranie.png"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="397" fileref="images/otwieranie.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
 
-    <para>Po otwarciu danej szafy, kamera ustawiono jest na jej wnętrze,
-    ukazując poszczególne elementy. W tym momencie, zmiana położenia jest
-    zablokowana, umożliwiając przegląd zawartości szafy poprzez zmianę widoku
-    kamery w osi pionowej przy użyciu gałki. W celu wyjścia z trybu podglądu,
-    należy ponownie nacisnąć przycisk interakcji.</para>
+      <para>Po otwarciu danej szafy, kamera ustawiono jest na jej wnętrze,
+      ukazując poszczególne elementy. W tym momencie, zmiana położenia jest
+      zablokowana, umożliwiając przegląd zawartości szafy poprzez zmianę
+      widoku kamery w osi pionowej przy użyciu gałki. W celu wyjścia z trybu
+      podglądu, należy ponownie nacisnąć przycisk interakcji.</para>
 
-    <figure>
-      <title>Otwieranie szaf</title>
+      <figure>
+        <title>Otwieranie szaf</title>
 
-      <mediaobject>
-        <imageobject>
-          <imagedata contentwidth="397" fileref="images/przeglad.png"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="397" fileref="images/przeglad.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>Oglądanie zawartości szaf</title>
+
+      <para>Zsdasdads</para>
+    </section>
   </section>
 
   <section>
-    <title>Oglądanie zawartości szaf</title>
+    <title>Definiowanie zawartości szaf</title>
 
-    <para>Zsdasdads</para>
-  </section>
-</section>
-
-<section> <title>Definiowanie zawartości szaf</title>
-<para>Urządzenia w szafach można rozmieścić za pomocą pliku "Serwerownia.xml" znajdującego się w folderze "XML" w głównym folderze programu.</para>
+    <para>Urządzenia w szafach można rozmieścić za pomocą pliku
+    "Serwerownia.xml" znajdującego się w folderze "XML" w głównym folderze
+    programu.</para>
 
     <para>W celu definiowania zawartości poszczególnych szaf, został użyty
     plik konfiguracyjny w standardzie XML. Plik XML zawiera w sobie główną
@@ -205,11 +209,90 @@
       </listitem>
     </itemizedlist>
 
+    <section>
+      <title>Dodawanie urządzeń z teksturami użytkownika</title>
 
-    <section><title>Dodawanie urządzeń z teksturami użytkownika</title>
-    <para>typ1 - 1 U .. typ4 - 4U</para>
-</section>
-	</section>
+      <para>Istnieje możliwość zdefiniowania nowego urzadzenia w szafie
+      serwerowni. W tym celu należy przygotować odpowiednią grafikę składającą
+      się z tekstury przedniego i tylnego panelu urządzenia, wg zamieszczonej
+      poniżej ilustracji:</para>
 
+      <figure>
+        <title>Szablon tektury nowego obiektu</title>
 
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="397" fileref="images/szablon.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Prezentowany szablon może posłużyć do stworzenia nowej tekstury
+      obiektu. Odpowiednio zdefiniowana siatka UV nałoży stworzoną grafikę
+      odpowiednio na przednią i tylną ściane wybranego przez nas szablonu
+      obiektu urządzenia. Stworzona grafika powinna zachowywać proporcje
+      szablonu i nie wykraczać poza zdefiniowany obszar poszczególnych tekstur
+      w celu poprawengo mapowania tekstury na obiekt.</para>
+
+      <para>Formatem akceptowanym przez program jest format JPG.</para>
+
+      <para>Podczas definicji nowego obiektu, mamy możliwość wyboru jego
+      rozmiaru jego reprezentacji w szafie. </para>
+
+      <para>Do wyboru mamy szablony urządzeń o grubości od 1U do 4U
+      oznaczonych odpowiednio stosowną etykietą " typ1, typ2..":</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>"typ1" - obiekt o grubości 1 U</para>
+        </listitem>
+
+        <listitem>
+          <para>"typ2" - obiekt o grubości 2 U</para>
+        </listitem>
+
+        <listitem>
+          <para>"typ3" - obiekt o grubości 3 U</para>
+        </listitem>
+
+        <listitem>
+          <para>"typ4" - obiekt o grubości 4 U</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Liczba przy nazwie typu musi znajdować się z zakresu od 1 do
+      4.</para>
+
+      <para>Standardowym rozmiarem maksymalnym szafy jest 42 U i nie należy
+      przekraczać tej wartości podczas definiowania nowych obiektów.</para>
+
+      <para>W celu dodania nowego obiektu definiujemy go w następujący
+      sposób:</para>
+
+      <figure>
+        <title>Definiowanie nowego elementu</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata contentwidth="397" fileref="images/nowyelement.jpg"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para><emphasis>gdzie:</emphasis></para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis><code>texture</code></emphasis> - to atrybut ze
+          ścieżką do pliku zawierającego teksturę dla nowo zdefiniowanego
+          urządzenia w formacie JPG.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis>"typ1"</emphasis>- wybrany szablon nowego obiektu o
+          rozwiarze 1 U</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </section>
 </chapter>
