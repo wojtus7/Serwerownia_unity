@@ -15,7 +15,14 @@
   <section>
     <title>Przypadki użycia</title>
 
-    <para>Diaaaaaaaaaagram + lista</para>
+<figure>
+<title>Diagram przypadków użycia</title>
+    <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="498" fileref="images/UCD.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
   </section>
 
   <section>

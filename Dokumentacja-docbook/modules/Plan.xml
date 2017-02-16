@@ -5,7 +5,7 @@
   <title>Plan projektu</title>
 
   <section>
-    <title>Wymagane zasoby/Zebranie wymagań</title>
+    <title>Zebranie wymagań</title>
 
     <para>Konieczność pozyskania następujących zasobów:</para>
 
@@ -27,7 +27,7 @@
   </section>
 
   <section>
-    <title>Plan/harmonogram działań</title>
+    <title>Plan działań</title>
 
     <para>Plan :</para>
 
@@ -92,7 +92,6 @@
         <para>Optymalizacja</para>
       </listitem>
     </orderedlist>
-
   </section>
 
   <section>
@@ -107,61 +106,74 @@
 
     <itemizedlist>
       <listitem>
-         <para>Stworzenie reprezentacji istniejącej serwerownia wraz z jej obecnymi obiektami</para>
+        <para>Stworzenie reprezentacji istniejącej serwerownia wraz z jej
+        obecnymi obiektami</para>
       </listitem>
 
       <listitem>
-         <para>Odwzorowanie istniejących elementów szaf w serwerowni </para>
+        <para>Odwzorowanie istniejących elementów szaf w serwerowni</para>
       </listitem>
 
       <listitem>
-        <para>OStworzenie systemu konfiguracji zasobów poszczególnych szaf. </para>
+        <para>OStworzenie systemu konfiguracji zasobów poszczególnych
+        szaf.</para>
       </listitem>
     </itemizedlist>
 
-    <para><emphasis role="bold">SHOULD</emphasis>:</para> <itemizedlist>
-        <listitem>
-           <para>Poruszanie się po wirtualnej serwerowni i zmiana widoku kamery. </para>
-        </listitem>
+    <para><emphasis role="bold">SHOULD</emphasis>:</para>
 
-        <listitem>
-           <para>Przystosowanie interfejsu do dowolnego ekranu dotykowego. </para>
-        </listitem>
-      </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Poruszanie się po wirtualnej serwerowni i zmiana widoku
+        kamery.</para>
+      </listitem>
 
-    <para><emphasis role="bold">COULD</emphasis>:</para> <itemizedlist>
-        <listitem>
-          <para> Interfejs otwierania i zamykania drzwi do poszczególnych szaf </para>
-        </listitem>
+      <listitem>
+        <para>Przystosowanie interfejsu do dowolnego ekranu dotykowego.</para>
+      </listitem>
+    </itemizedlist>
 
-        <listitem>
-           <para>Stworzenie skryptu widoku pozwalający na przeglądanie szaf w serwerowni. </para>
-        </listitem>
+    <para><emphasis role="bold">COULD</emphasis>:</para>
 
-        <listitem>
-           <para>Możliwość definiowania nowych obiektów na podstawie ich rozmiaru i nadawanie im tektur, nieznajdującej się w stworzonej liście obiektów. </para>
-        </listitem>
-      </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Interfejs otwierania i zamykania drzwi do poszczególnych
+        szaf</para>
+      </listitem>
+
+      <listitem>
+        <para>Stworzenie skryptu widoku pozwalający na przeglądanie szaf w
+        serwerowni.</para>
+      </listitem>
+
+      <listitem>
+        <para>Możliwość definiowania nowych obiektów na podstawie ich rozmiaru
+        i nadawanie im tektur, nieznajdującej się w stworzonej liście
+        obiektów.</para>
+      </listitem>
+    </itemizedlist>
 
     <para><emphasis role="bold">WO</emphasis><emphasis
-    role="bold">N</emphasis><emphasis role="bold">’T</emphasis>:</para> <itemizedlist>
-        <listitem>
-           <para>Dodanie animacji tekstur obiektów </para>
-        </listitem>
+    role="bold">N</emphasis><emphasis role="bold">’T</emphasis>:</para>
 
-        <listitem>
-          <para> Dodanie efektów dźwiękowych obiektów </para>
-        </listitem>
+    <itemizedlist>
+      <listitem>
+        <para>Dodanie animacji tekstur obiektów</para>
+      </listitem>
 
-        <listitem>
-          <para> Dodanie interakcji uruchamiania poszczególnych systemow w szafie </para>
-        </listitem>
+      <listitem>
+        <para>Dodanie efektów dźwiękowych obiektów</para>
+      </listitem>
 
-        <listitem>
-          <para> Dodanie informacji o stanie poszczególnych uradzeń. </para>
-        </listitem>
-      </itemizedlist>
+      <listitem>
+        <para>Dodanie interakcji uruchamiania poszczególnych systemow w
+        szafie</para>
+      </listitem>
 
+      <listitem>
+        <para>Dodanie informacji o stanie poszczególnych uradzeń.</para>
+      </listitem>
+    </itemizedlist>
 
     <para>Legenda charakterystyki MoSCoW:</para>
 
