@@ -18,8 +18,8 @@
     wiedzy dla studentów, powstał projekt budowy wirtualnej serwerowni.
     Projekt ten pozwala na zapoznanie się z niedostępnym wnętrzem serwerowni
     jak i jej komponentami, poprzez zwiedzanie wykreowanej symulacji
-    serwerowni, będącą jej odzwierciedleniem w wirtualnej rzeczywistości.
-    </para>
+    serwerowni, będącą jej odzwierciedleniem w wirtualnej
+    rzeczywistości.</para>
   </section>
 
   <section>
@@ -54,60 +54,58 @@
       urządzenia.</para>
 
       <para>Głównymi funkcjonalnościami tego oprogramowania jest:
-
       <itemizedlist>
-        <listitem>
-          <para><emphasis role="bold">Centrum danych</emphasis> w 3D
-          RackBuilder Plus pozwala na tworzenie realistycznych szaf rackowych
-          w serwerowni 3D.Można dostosować rozmiary pomieszczenia serwerowni
-          do własnych potrzeb.Tak zbudowany widok centrum danych może być
-          wyświetlany na ekranie NOC monitorowanego 24×7.</para>
-        </listitem>
+          <listitem>
+            <para><emphasis role="bold">Centrum danych</emphasis> w 3D
+            RackBuilder Plus pozwala na tworzenie realistycznych szaf
+            rackowych w serwerowni 3D.Można dostosować rozmiary pomieszczenia
+            serwerowni do własnych potrzeb.Tak zbudowany widok centrum danych
+            może być wyświetlany na ekranie NOC monitorowanego 24×7.</para>
+          </listitem>
 
-        <listitem>
-          <para><emphasis role="bold">Proste tworzenie szaf rackowych
-          </emphasis>RackBuilder Plus pozwala na tworzenie wirtualnej makiety
-          swoich szaf z urządzeniami wbudowanymi w daną szafę rackową.
-          Budowniczego szafy rackowej jest bardzo proste i odbywa się za
-          pomocą metody drag&amp;drop.</para>
-        </listitem>
+          <listitem>
+            <para><emphasis role="bold">Proste tworzenie szaf rackowych
+            </emphasis>RackBuilder Plus pozwala na tworzenie wirtualnej
+            makiety swoich szaf z urządzeniami wbudowanymi w daną szafę
+            rackową. Budowniczego szafy rackowej jest bardzo proste i odbywa
+            się za pomocą metody drag&amp;drop.</para>
+          </listitem>
 
-        <listitem>
-          <para><emphasis role="bold">Zarządzanie energią</emphasis> System
-          stale monitoruje temperaturę zasilania i urządzeń w centrum danych
-          oraz pomaga zidentyfikować PUE i DCIE utworzonego centrum danych.
-          Zapewnia również opcje przypisania polityk energetycznych do
-          urządzeń i decyduje o ilości energii, która jest do nich
-          dostarczona.</para>
-        </listitem>
+          <listitem>
+            <para><emphasis role="bold">Zarządzanie energią</emphasis> System
+            stale monitoruje temperaturę zasilania i urządzeń w centrum danych
+            oraz pomaga zidentyfikować PUE i DCIE utworzonego centrum danych.
+            Zapewnia również opcje przypisania polityk energetycznych do
+            urządzeń i decyduje o ilości energii, która jest do nich
+            dostarczona.</para>
+          </listitem>
 
-        <listitem>
-          <para><emphasis role="bold">Monitorowanie urządzeń w czasie
-          rzeczywistym </emphasis>Monitoring dostępności pozwala na monitoring
-          i wizualizację stanu zdrowia urządzeń w czasie rzeczywistym.
-          Wszelkie usterki lub alarmy są podświetlone na urządzeniach za
-          pomocą kolorów. Klikając na niesprawne urządzenia można przejść do
-          analizy wydajności urządzenia i zidentyfikować daną usterkę.</para>
-        </listitem>
+          <listitem>
+            <para><emphasis role="bold">Monitorowanie urządzeń w czasie
+            rzeczywistym </emphasis>Monitoring dostępności pozwala na
+            monitoring i wizualizację stanu zdrowia urządzeń w czasie
+            rzeczywistym. Wszelkie usterki lub alarmy są podświetlone na
+            urządzeniach za pomocą kolorów. Klikając na niesprawne urządzenia
+            można przejść do analizy wydajności urządzenia i zidentyfikować
+            daną usterkę.</para>
+          </listitem>
 
-        <listitem>
-          <para><emphasis role="bold">Zarządzanie pojemnością</emphasis>
-          RackBuilder Plus oferuje szczegółową wiedzę na temat wolnego miejsca
-          w każdej szafie rackowej lub centrum danych oraz liczby urządzeń
-          podłączonych do każdej szafy. Informacja ta pozwala na prognozowanie
-          ilości wolnego miejsca w centrum danych i ewentualnych potrzeb na
-          przyszłość.</para>
-        </listitem>
+          <listitem>
+            <para><emphasis role="bold">Zarządzanie pojemnością</emphasis>
+            RackBuilder Plus oferuje szczegółową wiedzę na temat wolnego
+            miejsca w każdej szafie rackowej lub centrum danych oraz liczby
+            urządzeń podłączonych do każdej szafy. Informacja ta pozwala na
+            prognozowanie ilości wolnego miejsca w centrum danych i
+            ewentualnych potrzeb na przyszłość.</para>
+          </listitem>
 
-        <listitem>
-          <para><emphasis role="bold">Alarmowanie </emphasis>System pozwala na
-          monitorowanie stanu wszystkich odkrytych urządzeń w systemie i w
-          przypadku wystąpienia alarmu wyświetla odpowiedni komunikat o
-          błędzie.</para>
-        </listitem>
-      </itemizedlist>
-
-      </para>
+          <listitem>
+            <para><emphasis role="bold">Alarmowanie </emphasis>System pozwala
+            na monitorowanie stanu wszystkich odkrytych urządzeń w systemie i
+            w przypadku wystąpienia alarmu wyświetla odpowiedni komunikat o
+            błędzie.</para>
+          </listitem>
+        </itemizedlist></para>
 
       <para><figure>
           <title>Interfejs RackBuilder Plus</title>
@@ -121,15 +119,15 @@
     </section>
 
     <section>
-       
-
       <title>Datacenter Visualizer (uDCV)</title>
 
-<para>
-       Datacenter Visualizer (uDCV) jest platformą firmy uinnova pozwalająca na integracje danych i wizualiacje serwerowni,która pozwala użytkownikom na przedstawienie informacji o komponentach serwerowni, sieciach, magazynów danych, serwerach, systemach operacyjnych, wirtualnych maszynach czy aplikacjach uruchomionych na nich. 
-</para>
-      <para>
-        <figure>
+      <para>Datacenter Visualizer (uDCV) jest platformą firmy uinnova
+      pozwalająca na integracje danych i wizualiacje serwerowni,która pozwala
+      użytkownikom na przedstawienie informacji o komponentach serwerowni,
+      sieciach, magazynów danych, serwerach, systemach operacyjnych,
+      wirtualnych maszynach czy aplikacjach uruchomionych na nich.</para>
+
+      <para><figure>
           <title>Zrzut ekranu z programu Datacenter Visualizer</title>
 
           <mediaobject>
@@ -137,36 +135,41 @@
               <imagedata contentwidth="500" fileref="images/uinova.jpg"/>
             </imageobject>
           </mediaobject>
-        </figure>
-      </para>
+        </figure></para>
 
-       
-
-      <para>
-
-       Platforma uDCV pozwana użytkownikom na stworzenie jednego zintegrowanej widoku wizualizacji 3D serwerowni dla wszystkich pracowników IT. Rozwiązanie to pozwala narzucać ograniczenia informacji i dostepności poszczególnych danych dla różnych oddziałów firmy. Głównymi zaletami uDCV są następujące funkcjonalności: 
-       </para>
+      <para>Platforma uDCV pozwana użytkownikom na stworzenie jednego
+      zintegrowanej widoku wizualizacji 3D serwerowni dla wszystkich
+      pracowników IT. Rozwiązanie to pozwala narzucać ograniczenia informacji
+      i dostepności poszczególnych danych dla różnych oddziałów firmy.
+      Głównymi zaletami uDCV są następujące funkcjonalności:</para>
 
       <itemizedlist>
-        <listitem><para>Wizualizacja lokacji i fizycznych zasobów, wraz zmożliwością
-        rozbudowanej wyszukiwarki</para></listitem>
+        <listitem>
+          <para>Wizualizacja lokacji i fizycznych zasobów, wraz zmożliwością
+          rozbudowanej wyszukiwarki</para>
+        </listitem>
 
-        <listitem><para>Duża lista predefiniowanych obiektów.</para></listitem>
+        <listitem>
+          <para>Duża lista predefiniowanych obiektów.</para>
+        </listitem>
 
-        <listitem><para>Assety zintegrowane z przydzieloną im konfiguracją i
-        systemem powiadomień.</para></listitem>
+        <listitem>
+          <para>Assety zintegrowane z przydzieloną im konfiguracją i systemem
+          powiadomień.</para>
+        </listitem>
 
-        <listitem><para>Wizualizacja połączeń telekomunikacyjnych i
-        elektrycznych</para></listitem>
+        <listitem>
+          <para>Wizualizacja połączeń telekomunikacyjnych i
+          elektrycznych</para>
+        </listitem>
 
-        <listitem><para>Wizualizacja warunków w serwerowni: rozkład temperatury i
-        wilgotności powietrza</para></listitem>
+        <listitem>
+          <para>Wizualizacja warunków w serwerowni: rozkład temperatury i
+          wilgotności powietrza</para>
+        </listitem>
       </itemizedlist>
 
-       
-
-      <para>
-        <figure>
+      <para><figure>
           <title>Datacenter Visualizer - podzial na poziomy</title>
 
           <mediaobject>
@@ -174,15 +177,7 @@
               <imagedata contentwidth="500" fileref="images/uinova2.jpg"/>
             </imageobject>
           </mediaobject>
-        </figure>
-      </para>
-
-       
-
-
-
-
-       
+        </figure></para>
     </section>
 
     <section>
@@ -194,16 +189,16 @@
 
       <para>CPIM jest platformą dzięki której można zaprojektować i zarządzać
       infrastrukturą IT. Jest to nowoczesne narzędzie, dające zupełnie nowe
-      możliwości osobom zajmującym się zarządzaniem Data Center. </para>
+      możliwości osobom zajmującym się zarządzaniem Data Center.</para>
 
-      <para> CPIM to również bardzo duża baza danych. Znajdują się w niej
+      <para>CPIM to również bardzo duża baza danych. Znajdują się w niej
       informacje o każdym urządzeniu i sprzęcie zainstalowanym w całej
       infrastrukturze danej firmy. Możliwe jest zasymulowanie zmiany położenia
-      poszczególnych urządzeń, co pozwala na zaplanowanie migracji urządzeń.
-      </para>
+      poszczególnych urządzeń, co pozwala na zaplanowanie migracji
+      urządzeń.</para>
 
       <para>System potrafi wygenerować listę co należy krok po kroku zrobić,
-      aby te zmiany miały miejsce. </para>
+      aby te zmiany miały miejsce.</para>
 
       <para>Platforma ITRACS CPIM umożliwia nie tylko zaprojektowanie
       serwerowni ale także zarządzanie istniejącą już infrastrukturą
@@ -223,5 +218,26 @@
 
       <para/>
     </section>
+  </section>
+
+  <section>
+    <title>Projekt wirtualnej serwerowni realizowany w r.a. 2015/216</title>
+
+    <para>Niniejszy projekt nie jest pierwszą próba zrealizowania omawianego
+    zagadnienia na tym wydziale. W roku akademickim 2015/216 czteroosobowa
+    grupa studentów, stworzyła podobny projekt - opartą o interfejs webowy
+    aplikację pozwalającą na poruszanie się po wirtualnej serwerowni. Jednak
+    obecnie, ze względu na brak zarówno kodu źródłowego, jak i zachowanej
+    działającej wersji programu, nie ma możliwości jej przetestowania.</para>
+
+    <figure>
+      <title>Zrzut ekranu z poprzedniego projektu</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata contentwidth="500" fileref="images/Explorer.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
   </section>
 </chapter>

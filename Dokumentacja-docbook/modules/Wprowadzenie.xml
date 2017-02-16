@@ -17,13 +17,19 @@
     poszczególnych elementów w szafie odbywać się będzie na podstawie pliku
     konfiguracyjnego w formacie XML. Użytkownik będzie mógł poruszać się
     wirtualnie po serwerowni wchodząc w interakcje z jej obiektami.</para>
-
-
   </section>
 
-  <section> <title>Korzyści z projektu</title>
-  <para>
-    Stworzenie aplikacji, która pozwalałby na wirtualną eksploracją serwerowni .... korzysci dydaktyczne, lepsze zarządzanie inwentarzem, łatwy dostęp do informacji o urządzeniach ("ściąga/spis" urządzeń?)....
-  </para>
+  <section>
+    <title>Korzyści z projektu</title>
+
+    <para>Stworzenie aplikacji, która udostępnia wirtualną eksploracją
+    serwerowni dla szerszego grona odbiorców pozwoliłoby na lepsze zarządzanie
+    inwentarzem, łatwiejszy dostęp do informacji o urządzeniach (interaktywny
+    "spis" urządzeń), a także potencjał na opracowanie w przyszłości bardziej
+    zaawansowanego systemu monitorowania stanu tego ważnego pomieszczenia.
+    Dodatkowo, projekt ten może przynieść liczne korzyści pod względem
+    dydaktyki, dla studentów zainteresowanych tematyką zarządzania systemami
+    sieciowymi. Wirtualne środowisko umożliwia zapoznanie się ze sprzętem, bez
+    zwiększania zagrożenia dla niezawodności i bezpieczeństwa systemu.</para>
   </section>
 </chapter>
