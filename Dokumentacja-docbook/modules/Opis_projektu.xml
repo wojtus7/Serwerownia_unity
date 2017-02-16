@@ -108,7 +108,9 @@
             <listitem>
               <para><code>spacing</code> (Opcjonalny, liczba) Atrybut
               określający wielkość dodatkowego odstępu jaki powinien wystąpić
-              między tym, a kolejnym urządzeniem. Jednostką jest U.</para>
+              między tym, a kolejnym urządzeniem. Jednostką jest standardowa
+              wysokość pojedynczego elementu w szafie okraślany jednostką
+              1U.</para>
             </listitem>
           </itemizedlist>
         </listitem>
