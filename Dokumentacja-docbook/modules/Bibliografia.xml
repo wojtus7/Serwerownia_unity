@@ -2,89 +2,100 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter>
-      <title>Bibliografia</title>
-        <para></para>
-      <bibliography>
+  <title>Bibliografia</title>
 
-  <bibliodiv>  <title>Literatura</title>
-   <biblioentry>
-         <author>
-            <firstname>Mike</firstname>
-            <surname>Geig</surname>
-          </author>
-          <title>Unity3d. Przewodnik projektanta gier </title>
+  <para/>
+
+  <bibliography>
+    <bibliodiv>
+      <title>Literatura</title>
+
+      <biblioentry>
+        <author>
+          <firstname>Mike</firstname>
+
+          <surname>Geig</surname>
+        </author>
+
+        <title>Unity3d. Przewodnik projektanta gier</title>
+
         <publisher>
           <publishername>Helion, 2007</publishername>
         </publisher>
-        <pagenums>s.24-44</pagenums>
       </biblioentry>
-     <biblioentry>
+
+      <biblioentry>
         <authorgroup>
           <author>
             <firstname>Piotr</firstname>
+
             <surname>Chlipalski</surname>
           </author>
         </authorgroup>
-    <title>Blender 2.69. Architektura i projektowanie</title>
-    <publisher>
+
+        <title>Blender 2.69. Architektura i projektowanie</title>
+
+        <publisher>
           <publishername>Helion 2014</publishername>
         </publisher>
       </biblioentry>
 
-<biblioentry>
+      <biblioentry>
         <authorgroup>
           <author>
-            <firstname>Bogdan </firstname>
+            <firstname>Bogdan</firstname>
+
             <surname>Bociek</surname>
           </author>
         </authorgroup>
-    <title>Blender. Podstawy projektowania</title>
-    <publisher>
+
+        <title>Blender. Podstawy projektowania</title>
+
+        <publisher>
           <publishername>Helion 2011</publishername>
         </publisher>
       </biblioentry>
+    </bibliodiv>
 
-    </bibliodiv>     
-
-  <bibliodiv>
+    <bibliodiv>
       <title>Strony internetowe</title>
 
-        <biblioentry>
+      <biblioentry>
         <title>Unity3D Tutorials</title>
-        <publisher>
-          <publishername>Unity 3d</publishername>
-        </publisher>
-  <title>URL:
-      <ulink url="https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player">
-      https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player
-      </ulink>
-    </title>
 
+        <title>URL: <ulink
+        url="https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player">
+        https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/moving-player
+        </ulink></title>
       </biblioentry>
-       <biblioentry>
+
+      <biblioentry>
         <title>Unity3D Dokumentacja</title>
-        <publisher>
-          <publishername>Unity 3d</publishername>
-        </publisher>
-  <title>URL:
-      <ulink url="https://unity3d.com/learn/documentation">
-      https://unity3d.com/learn/documentation
-      </ulink>
-    </title>
+
+        <title>URL: <ulink url="https://unity3d.com/learn/documentation">
+        https://unity3d.com/learn/documentation </ulink></title>
       </biblioentry>
 
-    <biblioentry>
+      <biblioentry>
+        <title>ITRACS CPIM</title>
+
+        <title>URL: <ulink
+        url="https://www.blender.org/manual/">http://itracs.lanster.com/rozwiazania-cpim/</ulink></title>
+      </biblioentry>
+
+      <biblioentry>
+        <title>ManageEngine</title>
+
+        <title>URL: <ulink url="https://www.blender.org/manual/">
+        https://www.manageengine.com/network-monitoring/</ulink></title>
+      </biblioentry>
+
+      <biblioentry>
         <title>Bledner Dokumentacja</title>
-        <publisher>
-          <publishername> Blender</publishername>
-        </publisher>
-  <title>URL:
-      <ulink url="https://www.blender.org/manual/">
-      https://www.blender.org/manual/
-      </ulink>
-    </title>
-      </biblioentry>
 
+        <title>URL: <ulink url="https://www.blender.org/manual/">
+        https://www.blender.org/manual/ </ulink></title>
+      </biblioentry>
     </bibliodiv>
-</bibliography>
+  </bibliography>
 </chapter>
