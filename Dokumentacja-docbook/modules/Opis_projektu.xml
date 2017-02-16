@@ -37,11 +37,11 @@
     </figure>
 
     <para>Do stworzenia wszystkich modeli obiektów użyto oprogramowania
-    Blender 2.78. Jest to program pozwalający na modelowanie i randowanie
-    obazów oraz animacji trójwymiarowym o nietypowym interfejsie użytkownika.
+    Blender 2.78. Jest to program pozwalający na modelowanie i renderowanie
+    obrazów oraz animacji trójwymiarowym o nietypowym interfejsie użytkownika.
     Wszechstronność tego rozwiązania pozwala użytkownikowi na tworzenie
     prezentacji interaktywnych, symulacji czy gier na własnym silniku
-    graficznycm. Blender pozwala na szeroki zakres narzędzi do edycji i
+    graficznym. Blender pozwala na szeroki zakres narzędzi do edycji i
     modyfikacji obiektów 3D bazujących na siatkach(mesh), powierzchniach NURBS
     czy krzywych Beziera.</para>
 
@@ -55,7 +55,7 @@
       </mediaobject>
     </figure>
 
-    <para>W celu opracowania grafik i tektur na stworzone wczesniej obiekty,
+    <para>W celu opracowania grafik i tektur na stworzone wcześniej obiekty,
     został użyty darmowy program do edycji grafik wektorowych i rastrowej Gimp
     2.</para>
   </section>
@@ -109,7 +109,7 @@
               <para><code>spacing</code> (Opcjonalny, liczba) Atrybut
               określający wielkość dodatkowego odstępu jaki powinien wystąpić
               między tym, a kolejnym urządzeniem. Jednostką jest standardowa
-              wysokość pojedynczego elementu w szafie okraślany jednostką
+              wysokość pojedynczego elementu w szafie określany jednostką
               1U.</para>
             </listitem>
           </itemizedlist>
@@ -131,19 +131,19 @@
       <title>Projekt interfejsu dotykowego</title>
 
       <para>Interfejs został przystosowany do obsługi ekranu dotykowego,
-      zapewniając konfort korzystania z jego elementów do interakcji
+      zapewniając komfort korzystania z jego elementów do interakcji
       użytkownika z symulacją wirtualnej serwerowni.</para>
 
       <para>Zmiana widoku kamery została zaimplementowana w podobny do Google
       StreetView, co pozwala użytkownikowi na intuicyjne rozglądanie się po
-      serwerowni i zmiane kierunku patrzenia kamery poprzez przesunięciem
+      serwerowni i zmianę kierunku patrzenia kamery poprzez przesunięciem
       ekranu palcem.</para>
 
-      <para>W celu konfortowego korzystania z interfejsu, gałka umożliwiająca
+      <para>W celu komfortowego korzystania z interfejsu, gałka umożliwiająca
       chodzenie i przycisk interakcji zostały umieszczone po przeciwnych
-      skrajnych części ekranu. Rzomieszczenie takie pozwala również na
+      skrajnych części ekranu. Rozmieszczenie takie pozwala również na
       możliwość korzystania z dwóch rąk jednocześnie: jedną do sterowania
-      połeżeniem kamery w przestrzeni wirtualnej serwerowni, drugą w celu
+      położeniem kamery w przestrzeni wirtualnej serwerowni, drugą w celu
       zmiany kierunku patrzenia kamery i wchodzenia w interakcje z
       otoczeniem.</para>
     </section>

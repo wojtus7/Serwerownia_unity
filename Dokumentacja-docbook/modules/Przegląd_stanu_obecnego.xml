@@ -5,7 +5,7 @@
   <title>Przegląd stanu obecnego</title>
 
   <section>
-    <title>Serwerownia na Wydziale Mechanicznym PL</title>
+    <title>Serwerownia na Wydziale Mechanicznym PK</title>
 
     <para>Serwerownia jest pomieszczeniem, które ze względów bezpieczeństwa,
     ograniczony został dostęp do osób nieuprawnionych. Krytyczna
@@ -28,9 +28,9 @@
 
     <para>Obecnie na rynku coraz bardziej stają sie dostępne komercyjne
     oprogramowania do zewnętrznego monitorowania stanu zasobów dużych
-    serwerowni wykorzystywanych przez firmy i instytucje ze względnu na
+    serwerowni wykorzystywanych przez firmy i instytucje ze względu na
     istotność przetwarzanych w nich danych.Oprogramowanie tego typu pozwala na
-    zaawansowane możliwości kreacji i dostarniacza informacji o wirtualnych
+    zaawansowane możliwości kreacji i dostarcza informacji o wirtualnych
     serwerowniach, będących odzwierciedleniem już istniejących w prawdziwym
     świecie. Oprogramowanie to przedstawia schematy wcześniej zaprojektowanej
     serwerowni umożliwiając wyświetlanie informacji o statusach urządzeniach i
@@ -140,12 +140,12 @@
       <para>Platforma uDCV pozwana użytkownikom na stworzenie jednego
       zintegrowanej widoku wizualizacji 3D serwerowni dla wszystkich
       pracowników IT. Rozwiązanie to pozwala narzucać ograniczenia informacji
-      i dostepności poszczególnych danych dla różnych oddziałów firmy.
+      i dostępności poszczególnych danych dla różnych oddziałów firmy.
       Głównymi zaletami uDCV są następujące funkcjonalności:</para>
 
       <itemizedlist>
         <listitem>
-          <para>Wizualizacja lokacji i fizycznych zasobów, wraz zmożliwością
+          <para>Wizualizacja lokacji i fizycznych zasobów, wraz z możliwością
           rozbudowanej wyszukiwarki</para>
         </listitem>
 
