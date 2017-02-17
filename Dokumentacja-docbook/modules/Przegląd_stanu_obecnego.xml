@@ -214,11 +214,30 @@
           </mediaobject>
         </figure></para>
 
-      <para/>
-
-      <para/>
     </section>
+
+
+    <section> <title>Podsumowanie analizy</title>
+    <para>
+      Przedstawione powyższe rozwiązania posiadają ewidentne zalety i nowatorskie
+rozwiązania dla sprawniejszego prowadzenia i monitoringu struktury teleinformatycznej. Skala
+kontroli nad danymi strukturami sieci teleinformatycznej przystosowana jest do wdrożenia
+przez duże firmy, mające rozbudowane rozwiązania serwerowe. Koszt tych rozwiązań jest
+również przygotowany dla rozmiaru firmy.
+</para>
+<para>
+Aparat kontroli zdarzeniowej czy system akceptacji zmian w konfiguracjach, dla
+mniejszych przedsiębiorstw czy osób nadzorujących prace pojedynczej serwerowni
+składających się z do kilku osób nie jest wymagany i może utrudniać zarządzanie pojedynczą
+serwerownią.
+</para>
+<para>
+Po analizie rozwiązań dostępnych na rynku, można stwierdzić że brak jest systemów
+przeznaczonych do obsługi przez mniejsze instytucje nadzorujących prace serwerowni poprzez
+wizualizacje jej obiektów w symulacji.
+    </para>
   </section>
+</section>
 
   <section>
     <title>Projekt wirtualnej serwerowni realizowany w r.a. 2015/216</title>
