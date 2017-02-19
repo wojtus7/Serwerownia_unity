@@ -15,9 +15,10 @@
   <section>
     <title>Przypadki użycia</title>
 
-<figure>
-<title>Diagram przypadków użycia</title>
-    <mediaobject>
+    <figure>
+      <title>Diagram przypadków użycia</title>
+
+      <mediaobject>
         <imageobject>
           <imagedata contentwidth="498" fileref="images/UCD.png"/>
         </imageobject>
@@ -26,7 +27,14 @@
   </section>
 
   <section>
-    <title>Wymagania dotyczące funkcjonalności</title>
+    <title>Analiza FURBS</title>
+
+    <para>Specyfikacja wymagań dla systemu wirtualizacji serwerowni została
+    przeprowadzona według modelu klasyfikowania funkcjonalnych i
+    niefunkcjonalnych wymagań FURPS+.</para>
+
+    <para><emphasis role="bold">Funkcjonalność (ang.
+    Functionality):</emphasis></para>
 
     <itemizedlist>
       <listitem>
@@ -47,12 +55,73 @@
         dotykowego</para>
       </listitem>
     </itemizedlist>
-  </section>
 
-  <section>
-    <title>Wymagania dotyczące wydajności</title>
+    <para><emphasis role="bold">Użyteczność (ang.
+    Usability):</emphasis></para>
 
     <itemizedlist>
+      <listitem>
+        <para>ergonomia – system powinien zostać przystosowany do korzystania
+        z niego za pomocą ekranu dotykowego, poprzez odpowiednie rozstawienie
+        elementów interfejsu</para>
+      </listitem>
+
+      <listitem>
+        <para>ergonomia –wygodne korzystanie z interfejsu użytkownika za
+        pomocą dwóch rąk</para>
+      </listitem>
+
+      <listitem>
+        <para>łatwość instalacji i uruchomienia – proces instalacyjny powinien
+        być prosty i zrozumiały dla użytkownika końcowego;</para>
+      </listitem>
+
+      <listitem>
+        <para>łatwość instalacji i uruchomienia -program uruchamia się
+        automatycznie po wybraniu pliku .exe z nazwą programu.</para>
+      </listitem>
+
+      <listitem>
+        <para>niezależność działania systemu od istniejących konfiguracji
+        ustawień graficznych systemu</para>
+      </listitem>
+    </itemizedlist>
+
+    <para><emphasis role="bold">Niezawodność (ang.
+    Reliability):</emphasis></para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Dokładność – system powinien wiernie odzwierciedlać rzeczywiste
+        obiekty fizyczne</para>
+      </listitem>
+
+      <listitem>
+        <para>Dokładność – konfiguracja elementów szaf powinna należycie
+        odzwierciedlać elementy znajduącje się w jej wnętrzu, skonfigurowanie
+        przez zewnętrzny plik XML</para>
+      </listitem>
+
+      <listitem>
+        <para>Możliwość poprawnego uruchomienia na zdefiniowanych sprzęcie
+        składającym się z kart graficznej od różnych producentów</para>
+      </listitem>
+    </itemizedlist>
+
+    <para><emphasis role="bold">Wydajność (ang.
+    Performance):</emphasis></para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Czas odpowiedzi - czas zwłoki odpowiedzi systemu na żądanie
+        zmiany kierunku kamery powinno być znikome dla użytkownika</para>
+      </listitem>
+
+      <listitem>
+        <para>Czas uruchamiania – system wizualizacji serwerowni uruchamia się
+        w czasie nie dłuższym niż 30 sekund.</para>
+      </listitem>
+
       <listitem>
         <para>płynne działanie na dedykowanym dla aplikacji ekranie
         dotykowym</para>
