@@ -8,6 +8,8 @@ using UnityEngine;
 public class StartupLoading : MonoBehaviour {
 
     public Vector3 startingOffset = new Vector3 { x = -1.92f, y = 1.388f, z = 0.5f };
+    public Vector3 scaleChange = new Vector3 { x = -1.92f, y = 1.388f, z = 0.5f };
+
     public float verticalSpacing = 0.00f;
 
     // Use this for initialization
@@ -90,6 +92,13 @@ public class StartupLoading : MonoBehaviour {
                         }
                         else
                             newItem.transform.Rotate(90, 0, 0);
+
+                        if (item.Element("scale") != null)
+                        {
+                            Vector3 newScale = newItem.transform.localScale;
+                            newScale.x *= float.Parse(item.Element("scale").Attribute("length").Value);
+                            newItem.transform.localScale = newScale;
+                        }
 
                         // add second half of object's height and global item spacing for offsetting next objects
                         heightOffset += height + verticalSpacing;

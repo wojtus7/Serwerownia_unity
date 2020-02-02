@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
 //using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerActions : MonoBehaviour {
@@ -17,6 +18,7 @@ public class PlayerActions : MonoBehaviour {
     private GameObject[] szafki = new GameObject[5];
     private GameObject currentCabinet;
     private GameObject currentOpenCabinet;
+    private bool beingHandled = false;
 
     private GameObject glassDoor;
     private bool glassDoorOpened = false;
@@ -65,17 +67,9 @@ public class PlayerActions : MonoBehaviour {
                     //zamykanie
                     currentCabinet = null;
 
-                    // zmiana kamery
-                    tempCamera.enabled = false;
-                    var cam = this.gameObject.GetComponentInChildren<Camera>();
-                    this.GetComponentInChildren<Camera>().enabled = true;
+                    StartCoroutine( HandleIt() );
 
-                    // wlaczenie coliddera
-                    this.GetComponent<CharacterController>().enabled = true;
-
-                    SwitchControl(normalController, cabinetController);
-
-                    isInCabinetView = false;
+ 
                 }
 
             }
@@ -97,6 +91,24 @@ public class PlayerActions : MonoBehaviour {
         }
         MoveDoors(glassDoorOpened);
         MoveServerDoors();
+    }
+
+    private IEnumerator HandleIt()
+    {
+        beingHandled = true;
+        yield return new WaitForSeconds( 0.8f );
+            // zmiana kamery
+        tempCamera.enabled = false;
+        var cam = this.gameObject.GetComponentInChildren<Camera>();
+        this.GetComponentInChildren<Camera>().enabled = true;
+
+        // wlaczenie coliddera
+        this.GetComponent<CharacterController>().enabled = true;
+
+        SwitchControl(normalController, cabinetController);
+
+        isInCabinetView = false;   
+        beingHandled = false;
     }
 
     private void SwitchToCabinetView(Transform currentCabinetDoor)

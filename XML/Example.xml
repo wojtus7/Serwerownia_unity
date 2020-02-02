@@ -4,11 +4,64 @@
 
 <item>blade1</item>
 <item>blade1</item>
-<!-- <item>AS400<rotation x="90" y="180" z="0" /></item> -->
-<item>AT_9000_28SP</item>
-<item spacing="0.4">cs1708i</item>
-<item>poweredge1855<rotation x="90" y="180" z="0" /></item>
-<item spacing="-0.5">ActinaSolar</item>
+<item>poweredge1855</item>
+<item>SPHEREON4500</item>
+<item>SPHEREON4500</item>
+<item>cs1708i</item>
+<item>ActinaSolar</item>
+
+</cabinet>
+
+
+<cabinet name="szafa_2">
+
+<item spacing="2.6"></item>
+<item>WYSE</item>
+<item>RMS</item>
+<item>RMS</item>
+
+
+</cabinet>
+
+<cabinet name="szafa_3">
+
+<item>PS3</item>
+<item spacing="0.2"></item>
+<item>PS3</item>
+<item>AT9000-24</item>
+<item>blade2</item>
+<item>blades3</item>
+<item spacing="0.3"></item>
+<item>RS815</item>
+<item>hp2530-24</item>
+
+</cabinet>
+
+<cabinet name="szafa_4">
+
+<item>strikeX<rotation x="90" y="180" z="0" /></item>
+<item>strikeX<rotation x="90" y="180" z="0" /></item>
+
+</cabinet>
+
+<cabinet name="szafa_5">
+
+<item>quick6</item>
+<item>quick6</item>
+<item>quick6</item>
+<item>AT-8000S</item>
+<item>quick6</item>
+<item>quick6</item>
+<item>quick6</item>
+<item>AT-8000S</item>
+<item>AT-8000S</item>
+<item>quick6</item>
+<item>quick6</item>
+<item>AT-AR770S</item>
+<item>AT-9424Ts</item>
+<item>AT-8948</item>
+<item>quick6</item>
+
 
 </cabinet>
 
