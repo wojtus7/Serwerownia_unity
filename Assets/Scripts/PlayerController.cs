@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float MinimumY = -60F;
     public float MaximumY = 60F;
     float RotationY = 0F;
-
     private Transform _mainCameraTransform;
     private Transform _transform;
     private CharacterController _characterController;
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour
         movementVector += Physics.gravity;
         _characterController.Move(movementVector * Time.deltaTime * MovementSpeed);
     }
-    
+
     private void RotateCamera()
     {
         float xRot = CnInputManager.GetAxis("CameraHorizontal") * RotationSpeedX;
