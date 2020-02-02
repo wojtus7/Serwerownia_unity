@@ -23,6 +23,10 @@ public class CabinetProximityTrigger : MonoBehaviour
     {
         if (c.gameObject.tag == "Player")
         {
+            var material = GameObject.Find($"szafa_{numerSzafy}/szafa_1_Drzwi").GetComponent<Renderer>().material;
+            var color = GameObject.Find($"szafa_{numerSzafy}/szafa_1_Drzwi").GetComponent<Renderer>().material.color;
+            color.a -= 0.3f;
+            material.color = color;
             hasCollided = true;
             labelText = string.Format("Wciśnij przycisk aby zajrzeć do szafy {0}.", numerSzafy);
             var pa = c.gameObject.GetComponent<PlayerActions>();
@@ -37,6 +41,10 @@ public class CabinetProximityTrigger : MonoBehaviour
 
     void OnTriggerExit(Collider c)
     {
+        var material = GameObject.Find($"szafa_{numerSzafy}/szafa_1_Drzwi").GetComponent<Renderer>().material;
+        var color = GameObject.Find($"szafa_{numerSzafy}/szafa_1_Drzwi").GetComponent<Renderer>().material.color;
+        color.a = 0.8313725f;
+        material.color = color;
         hasCollided = false;
         var pa = c.gameObject.GetComponent<PlayerActions>();
         if (pa != null)
