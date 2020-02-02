@@ -5,8 +5,8 @@ using CnControls;
 public class PlayerController : MonoBehaviour
 {
     public float MovementSpeed = 4f;
-    public float RotationSpeedX = 0.03f;
-    public float RotationSpeedY = 0.05f;
+    public float RotationSpeedX = 0.3f;
+    public float RotationSpeedY = 0.5f;
     public float MinimumY = -60F;
     public float MaximumY = 60F;
     float RotationY = 0F;
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         float xRot = CnInputManager.GetAxis("CameraHorizontal") * RotationSpeedX;
         RotationY -= CnInputManager.GetAxis("CameraVertical") * RotationSpeedY;
         RotationY = Mathf.Clamp(RotationY, MinimumY, MaximumY);
-        transform.localRotation *= Quaternion.Euler(0f, -xRot, 0f) ;
-        _mainCameraTransform.localEulerAngles = new Vector3(-RotationY, transform.localEulerAngles.y, 0);
+        _transform.localRotation *= Quaternion.Euler(0f, -xRot, 0f) ;
+        _mainCameraTransform.localEulerAngles = new Vector3(-RotationY, _mainCameraTransform.localEulerAngles.y, 0);
     }
 }
