@@ -66,15 +66,15 @@ public class PlayerActions : MonoBehaviour {
                     
                     currentCabinet = null;
 
-                    // // zmiana kamery
-                    // tempCamera.enabled = false;
-                    // var cam = this.gameObject.GetComponentInChildren<Camera>();
-                    // this.GetComponentInChildren<Camera>().enabled = true;
+                    // zmiana kamery
+                    tempCamera.enabled = false;
+                    var cam = this.gameObject.GetComponentInChildren<Camera>();
+                    this.GetComponentInChildren<Camera>().enabled = true;
 
-                    // // wlaczenie coliddera
-                    // this.GetComponent<CharacterController>().enabled = true;
+                    // wlaczenie coliddera
+                    this.GetComponent<CharacterController>().enabled = true;
 
-                    // SwitchControl(normalController, cabinetController);
+                    SwitchControl(normalController, cabinetController);
 
                     isInCabinetView = false;
                 }
@@ -105,19 +105,19 @@ public class PlayerActions : MonoBehaviour {
         //otwieranie
         OpenDoor(CabinetDoorNumber, true);
 
-        // //zmiana kamery
-        // var cabinetCamera = currentCabinetDoor.GetComponentInChildren<Camera>();
-        // this.GetComponentInChildren<Camera>().enabled = false;
-        // tempCamera = cabinetCamera;
-        // tempCamera.enabled = true;
+        //zmiana kamery
+        var cabinetCamera = currentCabinetDoor.GetComponentInChildren<Camera>();
+        this.GetComponentInChildren<Camera>().enabled = false;
+        tempCamera = cabinetCamera;
+        tempCamera.enabled = true;
 
 
-        // // wylaczenie collidera
-        // GetComponent<CharacterController>().enabled = false;
+        // wylaczenie collidera
+        GetComponent<CharacterController>().enabled = false;
 
-        // // zmiana inputu
-        // cabinetController = currentCabinetDoor.GetComponentInChildren<CabinetViewController>();
-        // SwitchControl(cabinetController, normalController);
+        // zmiana inputu
+        cabinetController = currentCabinetDoor.GetComponentInChildren<CabinetViewController>();
+        SwitchControl(cabinetController, normalController);
 
         isInCabinetView = true;
     }
