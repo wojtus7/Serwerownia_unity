@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using CnControls;
 
-
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    public float MovementSpeed = 5f;
-    public float RotationSpeed = 0.5f;
+    public float MovementSpeed = 4f;
+    public float RotationSpeedX = 0.03f;
+    public float RotationSpeedY = 0.05f;
+    public float MinimumY = -60F;
+    public float MaximumY = 60F;
+    float RotationY = 0F;
 
     private Transform _mainCameraTransform;
     private Transform _transform;
@@ -22,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         RotateCamera();
-
+        
         // movement
         var inputVector = new Vector3(CnInputManager.GetAxis("Horizontal"), 0, CnInputManager.GetAxis("Vertical"));
         Vector3 movementVector = Vector3.zero;
@@ -39,34 +42,16 @@ public class PlayerController : MonoBehaviour
             //Debug.Log("Movement Vector: " + movementVector);
         }
 
-
         movementVector += Physics.gravity;
         _characterController.Move(movementVector * Time.deltaTime * MovementSpeed);
     }
     
     private void RotateCamera()
     {
-        float yRot = -CnInputManager.GetAxis("CameraHorizontal") * RotationSpeed;
-        float xRot = -CnInputManager.GetAxis("CameraVertical") * RotationSpeed;
-
-
-        transform.localRotation *= Quaternion.Euler(0f, yRot, 0f) ;
-        _mainCameraTransform.localRotation *= Quaternion.Euler(-xRot, 0f, 0f);
-
-        //if (clampVerticalRotation)
-        //    m_CameraTargetRot = ClampRotationAroundXAxis(m_CameraTargetRot);
-
-        //if (smooth)
-        //{
-        //    character.localRotation = Quaternion.Slerp(character.localRotation, m_CharacterTargetRot,
-        //        smoothTime * Time.deltaTime);
-        //    camera.localRotation = Quaternion.Slerp(camera.localRotation, m_CameraTargetRot,
-        //        smoothTime * Time.deltaTime);
-        //}
-        //else
-        //{
-        //    character.localRotation = m_CharacterTargetRot;
-        //    camera.localRotation = m_CameraTargetRot;
-        //}
+        float xRot = CnInputManager.GetAxis("CameraHorizontal") * RotationSpeedX;
+        RotationY -= CnInputManager.GetAxis("CameraVertical") * RotationSpeedY;
+        RotationY = Mathf.Clamp(RotationY, MinimumY, MaximumY);
+        transform.localRotation *= Quaternion.Euler(0f, -xRot, 0f) ;
+        _mainCameraTransform.localEulerAngles = new Vector3(-RotationY, transform.localEulerAngles.y, 0);
     }
 }
