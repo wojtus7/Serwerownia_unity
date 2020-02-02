@@ -16,6 +16,7 @@ public class PlayerActions : MonoBehaviour {
 
     private GameObject[] szafki = new GameObject[5];
     private GameObject currentCabinet;
+    private GameObject currentOpenCabinet;
 
     private GameObject glassDoor;
     private bool glassDoorOpened = false;
@@ -44,6 +45,7 @@ public class PlayerActions : MonoBehaviour {
                 if (!isInCabinetView)
                 {
                     currentCabinet = szafki[InCabinetProximity - 1];
+                    currentOpenCabinet = szafki[InCabinetProximity - 1];
 
                     if (CabinetDoorNumber == 1)
                     {
@@ -61,16 +63,18 @@ public class PlayerActions : MonoBehaviour {
                 {
                     //zamykanie
                     OpenDoor(CabinetDoorNumber, false);
+                    
+                    currentCabinet = null;
 
-                    // zmiana kamery
-                    tempCamera.enabled = false;
-                    var cam = this.gameObject.GetComponentInChildren<Camera>();
-                    this.GetComponentInChildren<Camera>().enabled = true;
+                    // // zmiana kamery
+                    // tempCamera.enabled = false;
+                    // var cam = this.gameObject.GetComponentInChildren<Camera>();
+                    // this.GetComponentInChildren<Camera>().enabled = true;
 
-                    // wlaczenie coliddera
-                    this.GetComponent<CharacterController>().enabled = true;
+                    // // wlaczenie coliddera
+                    // this.GetComponent<CharacterController>().enabled = true;
 
-                    SwitchControl(normalController, cabinetController);
+                    // SwitchControl(normalController, cabinetController);
 
                     isInCabinetView = false;
                 }
@@ -84,18 +88,16 @@ public class PlayerActions : MonoBehaviour {
                 var door = glassDoor.transform;
                 if (!glassDoorOpened)
                 {
-                    var dir = door.TransformDirection(new Vector3(-1f, 0f, -2.8f));
-                    door.Translate(dir);
                     glassDoorOpened = true;
                 }  
                 else
                 {
-                    var dir = door.TransformDirection(new Vector3(1f, 0f, 2.8f));
-                    door.Translate(dir);
                     glassDoorOpened = false;
                 }
             }
         }
+        MoveDoors(glassDoorOpened);
+        MoveServerDoors();
     }
 
     private void SwitchToCabinetView(Transform currentCabinetDoor)
@@ -103,19 +105,19 @@ public class PlayerActions : MonoBehaviour {
         //otwieranie
         OpenDoor(CabinetDoorNumber, true);
 
-        //zmiana kamery
-        var cabinetCamera = currentCabinetDoor.GetComponentInChildren<Camera>();
-        this.GetComponentInChildren<Camera>().enabled = false;
-        tempCamera = cabinetCamera;
-        tempCamera.enabled = true;
+        // //zmiana kamery
+        // var cabinetCamera = currentCabinetDoor.GetComponentInChildren<Camera>();
+        // this.GetComponentInChildren<Camera>().enabled = false;
+        // tempCamera = cabinetCamera;
+        // tempCamera.enabled = true;
 
 
-        // wylaczenie collidera
-        GetComponent<CharacterController>().enabled = false;
+        // // wylaczenie collidera
+        // GetComponent<CharacterController>().enabled = false;
 
-        // zmiana inputu
-        cabinetController = currentCabinetDoor.GetComponentInChildren<CabinetViewController>();
-        SwitchControl(cabinetController, normalController);
+        // // zmiana inputu
+        // cabinetController = currentCabinetDoor.GetComponentInChildren<CabinetViewController>();
+        // SwitchControl(cabinetController, normalController);
 
         isInCabinetView = true;
     }
@@ -133,15 +135,7 @@ public class PlayerActions : MonoBehaviour {
 
     private void OpenDoor(int doorNumber, bool open)
     {
-        if (doorNumber == 1)
-        {
-            var door = currentCabinet.transform.Find("szafa_1_Drzwi");
-            if (open)
-                door.transform.Rotate(0f, 0f, -100f);
-            else
-                door.transform.Rotate(0f, 0f, 100f);
-        }
-        else if (doorNumber == 2)
+        if (doorNumber == 2)
         {
             var doorL = currentCabinet.transform.Find("szafa_1_D_L");
             var doorP = currentCabinet.transform.Find("szafa_1_D_P");
@@ -158,8 +152,38 @@ public class PlayerActions : MonoBehaviour {
             }
 
         }
-       
+    }
 
+    private void MoveDoors(bool isDoorOpen) {
+         if (isDoorOpen) {
+            var door = glassDoor.transform;
+            if (door.transform.position.x > -6.5) {
+                var dir = door.TransformDirection(new Vector3(-0.07f, 0f, 0f));
+                door.Translate(dir);
+            } else if (door.transform.position.z < 8) {
+                var dir = door.TransformDirection(new Vector3(0f, 0f, -0.07f));
+                door.Translate(dir);
+            }
+        } else if (!isDoorOpen) {
+            var door = glassDoor.transform;
+            if (door.transform.position.z > 5.0) {
+                var dir = door.TransformDirection(new Vector3(0f, 0f, 0.07f));
+                door.Translate(dir);
+            } else if (door.transform.position.x < -5.5) {
+                var dir = door.TransformDirection(new Vector3(0.07f, 0f, 0f));
+                door.Translate(dir);
+            }
+        }
+    }
 
+    private void MoveServerDoors() {
+        if (currentCabinet && currentOpenCabinet.transform.Find("szafa_1_Drzwi").transform.rotation.y > -0.5) {
+            var door = currentCabinet.transform.Find("szafa_1_Drzwi");
+            door.transform.Rotate(0f, 0f, -2f);
+        }
+        else if (!currentCabinet && currentOpenCabinet && currentOpenCabinet.transform.Find("szafa_1_Drzwi").transform.rotation.y <= -0.01) {
+            var doorC = currentOpenCabinet.transform.Find("szafa_1_Drzwi");
+            doorC.transform.Rotate(0f, 0f, 2f);
+        }
     }
 }
