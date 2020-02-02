@@ -20,6 +20,7 @@ public class PlayerActions : MonoBehaviour {
 
     private GameObject glassDoor;
     private bool glassDoorOpened = false;
+    private int currentDoorNumber = 0;
 
     // Use this for initialization
     void Start () {
@@ -62,8 +63,6 @@ public class PlayerActions : MonoBehaviour {
                 else
                 {
                     //zamykanie
-                    OpenDoor(CabinetDoorNumber, false);
-                    
                     currentCabinet = null;
 
                     // zmiana kamery
@@ -103,7 +102,7 @@ public class PlayerActions : MonoBehaviour {
     private void SwitchToCabinetView(Transform currentCabinetDoor)
     {
         //otwieranie
-        OpenDoor(CabinetDoorNumber, true);
+        currentDoorNumber = CabinetDoorNumber;
 
         //zmiana kamery
         var cabinetCamera = currentCabinetDoor.GetComponentInChildren<Camera>();
@@ -133,27 +132,6 @@ public class PlayerActions : MonoBehaviour {
         inputToEnable.enabled = true;
     }
 
-    private void OpenDoor(int doorNumber, bool open)
-    {
-        if (doorNumber == 2)
-        {
-            var doorL = currentCabinet.transform.Find("szafa_1_D_L");
-            var doorP = currentCabinet.transform.Find("szafa_1_D_P");
-
-            if (open)
-            {
-                doorL.transform.Rotate(0f, 0f, -100f);
-                doorP.transform.Rotate(0f, 0f, -100f);
-            }   
-            else
-            {
-                doorL.transform.Rotate(0f, 0f, 100f);
-                doorP.transform.Rotate(0f, 0f, -100f);
-            }
-
-        }
-    }
-
     private void MoveDoors(bool isDoorOpen) {
          if (isDoorOpen) {
             var door = glassDoor.transform;
@@ -177,13 +155,27 @@ public class PlayerActions : MonoBehaviour {
     }
 
     private void MoveServerDoors() {
-        if (currentCabinet && currentOpenCabinet.transform.Find("szafa_1_Drzwi").transform.rotation.y > -0.5) {
-            var door = currentCabinet.transform.Find("szafa_1_Drzwi");
-            door.transform.Rotate(0f, 0f, -2f);
-        }
-        else if (!currentCabinet && currentOpenCabinet && currentOpenCabinet.transform.Find("szafa_1_Drzwi").transform.rotation.y <= -0.01) {
-            var doorC = currentOpenCabinet.transform.Find("szafa_1_Drzwi");
-            doorC.transform.Rotate(0f, 0f, 2f);
+        if (currentDoorNumber == 1) {
+            if (currentCabinet && currentOpenCabinet.transform.Find("szafa_1_Drzwi").transform.rotation.y > -0.5) {
+                var door = currentCabinet.transform.Find("szafa_1_Drzwi");
+                door.transform.Rotate(0f, 0f, -2f);
+            }
+            else if (!currentCabinet && currentOpenCabinet && currentOpenCabinet.transform.Find("szafa_1_Drzwi").transform.rotation.y <= -0.01) {
+                var doorC = currentOpenCabinet.transform.Find("szafa_1_Drzwi");
+                doorC.transform.Rotate(0f, 0f, 2f);
+            }
+        } else if (currentDoorNumber == 2) {
+            if (currentCabinet && currentCabinet.transform.Find("szafa_1_D_L").transform.rotation.y < 0.5) {
+                var doorL = currentCabinet.transform.Find("szafa_1_D_L");
+                doorL.transform.Rotate(0f, 0f, 2f);
+                var doorP = currentCabinet.transform.Find("szafa_1_D_P");
+                doorP.transform.Rotate(0f, 0f, -2f);
+            } else if (!currentCabinet && currentOpenCabinet && currentOpenCabinet.transform.Find("szafa_1_D_L").transform.rotation.y >= 0.01) {
+                var doorL = currentOpenCabinet.transform.Find("szafa_1_D_L");
+                doorL.transform.Rotate(0f, 0f, -2f);
+                var doorP = currentOpenCabinet.transform.Find("szafa_1_D_P");
+                doorP.transform.Rotate(0f, 0f, 2f);
+            }
         }
     }
 }
