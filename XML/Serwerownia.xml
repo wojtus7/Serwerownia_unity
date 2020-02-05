@@ -1,8 +1,9 @@
 <inventory>
 
 <cabinet name="szafa_1">
-
-<item>blade1</item>
+<!-- Items to test the -->
+<!-- <item texture="bypass.jpg">newitem<size h="1.024" w="1.024" d="1.024"/></item> -->
+<!-- <item texture="as400.jpg">newitem2<size h="20" w="12" d="7.42"/></item> -->
 <item>blade1</item>
 <item>poweredge1855</item>
 <item>SPHEREON4500</item>
@@ -28,7 +29,7 @@
 <item>PS3</item>
 <item spacing="1.2"></item>
 <item>PS3</item>
-<item>AT9000-24</item>
+<!-- <item>AT9000-24</item> -->
 <item>blade2</item>
 <item>blades3</item>
 <item spacing="0.3"></item>
