@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 using UnityEngine;
 
 public class StartupLoading : MonoBehaviour {
@@ -35,9 +31,6 @@ public class StartupLoading : MonoBehaviour {
 
                 foreach (var item in items)
                 {
-
-
-
                     // check for custom offset
                     if (item.Attribute("spacing") != null)
                     {
@@ -72,7 +65,6 @@ public class StartupLoading : MonoBehaviour {
                             newItem.GetComponent<Renderer>().material.mainTexture = tex.texture;
                         }
 
-
                         // offset center of new object by half of its height + previous offset from other objects
                         float height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
                         heightOffset += height;
@@ -104,10 +96,8 @@ public class StartupLoading : MonoBehaviour {
                         heightOffset += height + verticalSpacing;
 
                     }
-
                 }
             }
- 
         }
     }
 
