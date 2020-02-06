@@ -58,6 +58,7 @@ public class StartupLoading : MonoBehaviour
                         var hide = new Vector3(100, 100, 100);
                         //hide the primitive item
                         primitiveItem.transform.position = hide;
+                        primitiveItem.transform.localScale = new Vector3(0,0,0);
                         primitiveItem.name = item.Value;
                         newItem = Instantiate(primitiveItem, cabinetObject.transform);
                         // apply sizing
@@ -76,6 +77,9 @@ public class StartupLoading : MonoBehaviour
                     else
                     {
                         newItem = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        var hide = new Vector3(100, 100, 100);
+                        newItem.transform.position = hide;
+                        newItem.transform.localScale = new Vector3(0,0,0);
                     }
 
                     // offset center of new object by half of its height + previous offset from other objects
