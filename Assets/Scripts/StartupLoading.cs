@@ -65,11 +65,10 @@ public class StartupLoading : MonoBehaviour
                         var size = item.Element("size");
                         if (size != null)
                         {
-                            var h = float.Parse(size.Attribute("h").Value) * 0.1345f;
-                            var w = float.Parse(size.Attribute("w").Value) * 0.1345f;
-                            var d = float.Parse(size.Attribute("d").Value) * 0.1345f;
+                            var height = float.Parse(size.Attribute("height").Value) * 0.1345f;
+                            var depth = float.Parse(size.Attribute("depth").Value) * 0.1345f * 0.22497f;
 
-                            var sizeVector = new Vector3(d, h, w);
+                            var sizeVector = new Vector3(depth, height, 2.3f);
                             newItem.transform.localScale = sizeVector;
                             newItem.transform.Rotate(-180, 0, 0);
                         }
@@ -83,8 +82,8 @@ public class StartupLoading : MonoBehaviour
                     }
 
                     // offset center of new object by half of its height + previous offset from other objects
-                    var height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
-                    heightOffset += height;
+                    var offset = newItem.GetComponent<Renderer>().bounds.extents.z; //z
+                    heightOffset += offset;
 
                     // apply offset
                     newPosition.z += heightOffset;
@@ -128,7 +127,7 @@ public class StartupLoading : MonoBehaviour
                     }
 
                     // add second half of object's height and global item spacing for offsetting next objects
-                    heightOffset += height + verticalSpacing;
+                    heightOffset += offset + verticalSpacing;
                 }
             }
         }

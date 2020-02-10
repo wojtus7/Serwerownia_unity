@@ -1,69 +1,78 @@
 <inventory>
 
-<cabinet name="szafa_1">
-<!-- Items to test the -->
-<!-- <item texture="bypass.jpg">newitem<size h="1.024" w="1.024" d="1.024"/></item> -->
-<!-- <item texture="as400.jpg">newitem2<size h="20" w="12" d="7.42"/></item> -->
-<item>blade1</item>
-<item>poweredge1855</item>
-<item>SPHEREON4500</item>
-<item>SPHEREON4500</item>
-<item>cs1708i</item>
-<item>ActinaSolar</item>
+    <cabinet name="szafa_1">
+        <item>newitem
+            <!--
+            size - rozmiar zdefinowanego elementu
+            height - wysokosc wyrazona w jednostkach
+            deptth - glebokosc wyrazona w centymetrach 
+            -->
+            <size height="42" depth="50"/>
+        </item>
 
-</cabinet>
-
-
-<cabinet name="szafa_2">
-
-<item spacing="2.6"></item>
-<item>WYSE<scale length="0.5" /></item>
-<item>RMS<scale length="0.3" /></item>
-<item>RMS<scale length="0.1" /></item>
+    </cabinet>
 
 
-</cabinet>
+    <cabinet name="szafa_2">
 
-<cabinet name="szafa_3">
-
-<item>PS3</item>
-<item spacing="1.2"></item>
-<item>PS3</item>
-<!-- <item>AT9000-24</item> -->
-<item>blade2</item>
-<item>blades3</item>
-<item spacing="0.3"></item>
-<item>RS815</item>
-<item>hp2530-24</item>
-
-</cabinet>
-
-<cabinet name="szafa_4">
-
-<item>strikeX<rotation x="90" y="180" z="0" /></item>
-<item>strikeX<rotation x="90" y="180" z="0" /></item>
-
-</cabinet>
-
-<cabinet name="szafa_5">
-
-<item>quick6</item>
-<item>quick6</item>
-<item>quick6</item>
-<item>AT-8000S</item>
-<item>quick6</item>
-<item>quick6</item>
-<item>quick6</item>
-<item>AT-8000S</item>
-<item>AT-8000S</item>
-<item>quick6</item>
-<item>quick6</item>
-<item>AT-AR770S</item>
-<item>AT-9424Ts</item>
-<item>AT-8948</item>
-<item>quick6</item>
+        <item spacing="2.6"></item>
+        <item>WYSE
+            <scale length="0.5" />
+        </item>
+        <item>RMS
+            <scale length="0.3" />
+        </item>
+        <item>RMS
+            <scale length="0.1" />
+        </item>
 
 
-</cabinet>
+    </cabinet>
+
+    <cabinet name="szafa_3">
+
+        <item>PS3</item>
+        <item spacing="1.2"></item>
+        <item>PS3</item>
+        <!-- <item>AT9000-24</item> -->
+        <item>blade2</item>
+        <item>blades3</item>
+        <item spacing="0.3"></item>
+        <item>RS815</item>
+        <item>hp2530-24</item>
+
+    </cabinet>
+
+    <cabinet name="szafa_4">
+
+        <item>strikeX
+            <rotation x="90" y="180" z="0" />
+        </item>
+        <item>strikeX
+            <rotation x="90" y="180" z="0" />
+        </item>
+
+    </cabinet>
+
+    <cabinet name="szafa_5">
+
+        <item>quick6</item>
+        <item>quick6</item>
+        <item>quick6</item>
+        <item>AT-8000S</item>
+        <item>quick6</item>
+        <item>quick6</item>
+        <item>quick6</item>
+        <item>AT-8000S</item>
+        <item>AT-8000S</item>
+        <item>quick6</item>
+        <item>quick6</item>
+        <item>AT-AR770S</item>
+        <item>AT-9424Ts</item>
+        <item>AT-8948</item>
+        <item>quick6</item>
+
+
+    </cabinet>
 
 </inventory>
