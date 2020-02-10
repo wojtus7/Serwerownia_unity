@@ -67,8 +67,8 @@ public class StartupLoading : MonoBehaviour
                         {
                             var height = float.Parse(size.Attribute("height").Value) * 0.1345f;
                             var depth = float.Parse(size.Attribute("depth").Value) * 0.1345f * 0.22497f;
-
-                            var sizeVector = new Vector3(depth, height, 2.3f);
+                            var width = 2.3f;
+                            var sizeVector = new Vector3(depth, height, width);
                             newItem.transform.localScale = sizeVector;
                             newItem.transform.Rotate(-180, 0, 0);
                         }
