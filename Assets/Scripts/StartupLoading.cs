@@ -13,7 +13,9 @@ public class StartupLoading : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-        GameObject newItem;
+        GameObject newFrontItem;
+        GameObject newBackItem;
+        GameObject newCenterItem;
 
         var xdoc = XDocument.Load("XML/Serwerownia.xml");
 
@@ -48,7 +50,9 @@ public class StartupLoading : MonoBehaviour
                     // get a prefab item
                     if (prefabType != null)
                     {
-                        newItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
+                        newFrontItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
+                        newBackItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
+                        newCenterItem = Instantiate(prefabType, cabinetObject.transform) as GameObject;
                     }
 
                     // create a new item with a given size
@@ -60,35 +64,58 @@ public class StartupLoading : MonoBehaviour
                         primitiveItem.transform.position = hide;
                         primitiveItem.transform.localScale = new Vector3(0,0,0);
                         primitiveItem.name = item.Value;
-                        newItem = Instantiate(primitiveItem, cabinetObject.transform);
+                        newFrontItem = Instantiate(primitiveItem, cabinetObject.transform);
+                        newBackItem = Instantiate(primitiveItem, cabinetObject.transform);
+                        newCenterItem = Instantiate(primitiveItem, cabinetObject.transform);
                         // apply sizing
                         var size = item.Element("size");
                         if (size != null)
                         {
-                            var h = float.Parse(size.Attribute("h").Value) * 0.1345f;
-                            var w = float.Parse(size.Attribute("w").Value) * 0.1345f;
-                            var d = float.Parse(size.Attribute("d").Value) * 0.1345f;
+                            var h = float.Parse(size.Attribute("height").Value) * 0.1345f;
+                            var w = 2.3f;
+                            var d = float.Parse(size.Attribute("depth").Value) * 0.1345f * 0.22497f;
 
-                            var sizeVector = new Vector3(d, h, w);
-                            newItem.transform.localScale = sizeVector;
-                            newItem.transform.Rotate(-180, 0, 0);
+                            var sizeVector = new Vector3(0.001f, h, w);
+                            newFrontItem.transform.localScale = sizeVector;
+                            newFrontItem.transform.Rotate(-180, 0, 0);
+                            newBackItem.transform.localScale = sizeVector;
+                            newBackItem.transform.Rotate(-180, 0, 0);
+                            newCenterItem.transform.localScale = new Vector3(d, h, w);
+                            newCenterItem.transform.Rotate(-180, 0, 0);
                         }
                     }
                     else
                     {
-                        newItem = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        newFrontItem = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        newBackItem = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        newCenterItem = GameObject.CreatePrimitive(PrimitiveType.Cube);
                         var hide = new Vector3(100, 100, 100);
-                        newItem.transform.position = hide;
-                        newItem.transform.localScale = new Vector3(0,0,0);
+                        newFrontItem.transform.position = hide;
+                        newFrontItem.transform.localScale = new Vector3(0,0,0);
+                        newBackItem.transform.position = hide;
+                        newBackItem.transform.localScale = new Vector3(0,0,0);
+                        newCenterItem.transform.position = hide;
+                        newCenterItem.transform.localScale = new Vector3(0,0,0);
                     }
 
                     // offset center of new object by half of its height + previous offset from other objects
-                    var height = newItem.GetComponent<Renderer>().bounds.extents.z; //z
+                    var height = newFrontItem.GetComponent<Renderer>().bounds.extents.z; //z
                     heightOffset += height;
 
                     // apply offset
                     newPosition.z += heightOffset;
-                    newItem.transform.localPosition = newPosition;
+                    var size2 = item.Element("size");
+                    newCenterItem.transform.localPosition = newPosition;
+                    if (size2 != null)
+                        {
+                            newPosition.x -= (float.Parse(size2.Attribute("depth").Value) / 2) * 0.1345f * 0.22497f;
+                        }
+                    newFrontItem.transform.localPosition = newPosition;
+                    if (size2 != null)
+                        {
+                            newPosition.x += float.Parse(size2.Attribute("depth").Value) * 0.1345f * 0.22497f;
+                        }
+                    newBackItem.transform.localPosition = newPosition;
 
                     // apply custom or default rotation
                     if (item.Element("rotation") != null)
@@ -97,34 +124,46 @@ public class StartupLoading : MonoBehaviour
                         r.x = float.Parse(item.Element("rotation").Attribute("x").Value);
                         r.y = float.Parse(item.Element("rotation").Attribute("y").Value);
                         r.z = float.Parse(item.Element("rotation").Attribute("z").Value);
-                        newItem.transform.Rotate(r);
+                        newFrontItem.transform.Rotate(r);
+                        newBackItem.transform.Rotate(r);
+                        newCenterItem.transform.Rotate(r);
                     }
                     else
                     {
-                        newItem.transform.Rotate(90, 0, 0);
+                        newFrontItem.transform.Rotate(90, 0, 0);
+                        newBackItem.transform.Rotate(90, 0, 0);
+                        newCenterItem.transform.Rotate(90, 0, 0);
                     }
 
                     // apply a texture
                     if (item.Attribute("texture") != null)
                     {
-                        var texturePath = item.Attribute("texture").Value;
-                        var filePath = $"XML/images/{texturePath}";
-                        var texture = new Texture2D(2, 2);
+                        var texturePathFront = item.Attribute("texture").Value;
+                        var texturePathBack = item.Attribute("textureBack").Value;
+                        var filePathFront = $"XML/images/{texturePathFront}";
+                        var filePathBack = $"XML/images/{texturePathBack}";
+                        var textureFront = new Texture2D(2, 2);
+                        var textureBack = new Texture2D(2, 2);
 
-                        if (File.Exists(filePath))
+                        if (File.Exists(filePathFront))
                         {
-                            var fileData = File.ReadAllBytes(filePath);
-                            texture.LoadImage(fileData);
+                            var fileDataFront = File.ReadAllBytes(filePathFront);
+                            var fileDataBack = File.ReadAllBytes(File.Exists(filePathBack) ? filePathBack : filePathFront);
+                            textureFront.LoadImage(fileDataFront);
+                            textureBack.LoadImage(fileDataBack);
                         }
 
-                        ApplyTextures(newItem, texture);
+                        newFrontItem.GetComponent<Renderer>().material.mainTexture = textureFront;
+                        newBackItem.GetComponent<Renderer>().material.mainTexture = textureBack;
                     }
 
                     if (item.Element("scale") != null)
                     {
-                        var newScale = newItem.transform.localScale;
+                        var newScale = newFrontItem.transform.localScale;
                         newScale.x *= float.Parse(item.Element("scale").Attribute("length").Value);
-                        newItem.transform.localScale = newScale;
+                        newFrontItem.transform.localScale = newScale;
+                        newBackItem.transform.localScale = newScale;
+                        newCenterItem.transform.localScale = newScale;
                     }
 
                     // add second half of object's height and global item spacing for offsetting next objects
@@ -132,29 +171,6 @@ public class StartupLoading : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void ApplyTextures(GameObject newItem, Texture2D texture)
-    {
-        var localScale = newItem.transform.localScale;
-        var multiplier = texture.width / localScale.z;
-
-        var atlas = new Texture2D(0, 0);
-        Texture2D[] atlasTextures =
-        {
-            texture,
-            new Texture2D((int) (localScale.x * multiplier), texture.width),
-            new Texture2D(texture.width, texture.height),
-            new Texture2D((int) (localScale.x * multiplier), texture.height),
-            new Texture2D((int) (localScale.x * multiplier), texture.height),
-            new Texture2D((int) (localScale.x * multiplier), texture.height)
-        };
-
-        atlas.PackTextures(atlasTextures, 0, 8192);
-
-        var bytes = atlas.EncodeToPNG();
-//        File.WriteAllBytes("test.png", bytes);
-        newItem.GetComponent<Renderer>().material.mainTexture = atlas;
     }
 
     // Update is called once per frame

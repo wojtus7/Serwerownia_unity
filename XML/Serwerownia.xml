@@ -2,8 +2,8 @@
 
 <cabinet name="szafa_1">
 <!-- Items to test the -->
-<!-- <item texture="bypass.jpg">newitem<size h="1.024" w="1.024" d="1.024"/></item> -->
-<!-- <item texture="as400.jpg">newitem2<size h="20" w="12" d="7.42"/></item> -->
+<item texture="bypass.jpg" textureBack="bypass.jpg">newitem<size height="20" depth="1.024"/></item>
+<item texture="as400.jpg" textureBack="as400Back.jpg">newitem2<size height="20" depth="4.42"/></item>
 <item>blade1</item>
 <item>poweredge1855</item>
 <item>SPHEREON4500</item>
