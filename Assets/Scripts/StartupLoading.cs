@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
 using System.Xml.Linq;
 using UnityEngine;
 
@@ -37,7 +38,7 @@ public class StartupLoading : MonoBehaviour
                     // check for custom offset
                     if (item.Attribute("spacing") != null)
                     {
-                        var spacingOffset = float.Parse(item.Attribute("spacing").Value);
+                        var spacingOffset = float.Parse(item.Attribute("spacing").Value, CultureInfo.InvariantCulture);
                         heightOffset += spacingOffset * 0.1345f;
                     }
 
@@ -71,9 +72,9 @@ public class StartupLoading : MonoBehaviour
                         var size = item.Element("size");
                         if (size != null)
                         {
-                            var h = float.Parse(size.Attribute("height").Value) * 0.1345f;
+                            var h = float.Parse(size.Attribute("height").Value, CultureInfo.InvariantCulture) * 0.1345f;
                             var w = 2.3f;
-                            var d = float.Parse(size.Attribute("depth").Value) * 0.1345f * 0.22497f;
+                            var d = float.Parse(size.Attribute("depth").Value, CultureInfo.InvariantCulture) * 0.1345f * 0.22497f;
 
                             var sizeVector = new Vector3(0.001f, h, w);
                             newFrontItem.transform.localScale = sizeVector;
@@ -108,12 +109,12 @@ public class StartupLoading : MonoBehaviour
                     newCenterItem.transform.localPosition = newPosition;
                     if (size2 != null)
                         {
-                            newPosition.x -= (float.Parse(size2.Attribute("depth").Value) / 2) * 0.1345f * 0.22497f;
+                            newPosition.x -= (float.Parse(size2.Attribute("depth").Value, CultureInfo.InvariantCulture) / 2) * 0.1345f * 0.22497f;
                         }
                     newFrontItem.transform.localPosition = newPosition;
                     if (size2 != null)
                         {
-                            newPosition.x += float.Parse(size2.Attribute("depth").Value) * 0.1345f * 0.22497f;
+                            newPosition.x += float.Parse(size2.Attribute("depth").Value, CultureInfo.InvariantCulture) * 0.1345f * 0.22497f;
                         }
                     newBackItem.transform.localPosition = newPosition;
 
@@ -121,9 +122,9 @@ public class StartupLoading : MonoBehaviour
                     if (item.Element("rotation") != null)
                     {
                         Vector3 r;
-                        r.x = float.Parse(item.Element("rotation").Attribute("x").Value);
-                        r.y = float.Parse(item.Element("rotation").Attribute("y").Value);
-                        r.z = float.Parse(item.Element("rotation").Attribute("z").Value);
+                        r.x = float.Parse(item.Element("rotation").Attribute("x").Value, CultureInfo.InvariantCulture);
+                        r.y = float.Parse(item.Element("rotation").Attribute("y").Value, CultureInfo.InvariantCulture);
+                        r.z = float.Parse(item.Element("rotation").Attribute("z").Value, CultureInfo.InvariantCulture);
                         newFrontItem.transform.Rotate(r);
                         newBackItem.transform.Rotate(r);
                         newCenterItem.transform.Rotate(r);
@@ -160,7 +161,7 @@ public class StartupLoading : MonoBehaviour
                     if (item.Element("scale") != null)
                     {
                         var newScale = newFrontItem.transform.localScale;
-                        newScale.x *= float.Parse(item.Element("scale").Attribute("length").Value);
+                        newScale.x *= float.Parse(item.Element("scale").Attribute("length").Value, CultureInfo.InvariantCulture);
                         newFrontItem.transform.localScale = newScale;
                         newBackItem.transform.localScale = newScale;
                         newCenterItem.transform.localScale = newScale;
